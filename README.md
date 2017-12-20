@@ -14,7 +14,7 @@ Kata Containers is an open source project and community working to build a stand
 
 The Kata Containers project will initially comprise six components, including the Agent, Runtime, Proxy, Shim, Kernel and packaging of QEMU 2.9. It is designed to be architecture agnostic, run on multiple hypervisors and be compatible with the OCI specification for Docker containers and CRI-O for Kubernetes.
 
-Kata Containers combines technology from Intel Clear Containers and Hyper runV. The code is hosted on Github under the Apache 2 license and the project is managed by the OpenStack Foundation. To learn more about the project and organizations backing the launch, visit www.katacontainers.io. 
+Kata Containers combines technology from [Intel® Clear Containers](https://github.com/clearcontainers/runtime) and [Hyper runV](https://github.com/hyperhq/runv). The code is hosted on Github under the Apache 2 license and the project is managed by the OpenStack Foundation. To learn more about the project and organizations backing the launch, visit https://www.katacontainers.io.
 
 # Community
 
