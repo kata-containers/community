@@ -2,8 +2,9 @@
 
 * [About Kata Containers](#about-kata-containers)
 * [Community](#community)
-    * [Contributor](#contributor)
-    * [Maintainer](#maintainer)
+    * [Developers](#developers)
+        * [Contributor](#contributor)
+        * [Maintainer](#maintainer)
 * [Governance](#governance)
     * [Architecture Committee](#architecture-committee)
     * [Working Committee](#working-committee)
@@ -20,13 +21,15 @@ Kata Containers combines technology from [Intel® Clear Containers](https://gith
 
 Kata Containers is working to build global, diverse and collaborative community. Anyone who is interested in supporting the technology is welcome to participate. We are seeking different expertise and skills, ranging from development, operations, documentation, marketing, community organization and product management.
 
+## Developers
+
 For code contributors, there are currently two roles relevant to project governance:
 
-## Contributor
+### Contributor
 
 A Contributor to the Kata Containers project is someone who has merged code within the last 12 months. Contributors are eligible to vote in the Architecture Committee elections. Contributors have read only access to the Kata Containers repos on Github.
 
-## Maintainer
+### Maintainer
 
 A Maintainer has the ability to merge code into the Kata Containers project. Maintainers are active Contributors and participants in the projects. In order to become a Maintainer, you must be nominated and approved by the established Maintainers. Maintainers have write access to the Kata Containers repos on Github.
 
