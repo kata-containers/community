@@ -2,6 +2,9 @@
 
 * [About Kata Containers](#about-kata-containers)
 * [Community](#community)
+    * [Users](#users)
+        * [Installing Clear Containers](#installing-clear-containers)
+        * [Installing runV](#installing-runv)
     * [Developers](#developers)
         * [Contributor](#contributor)
         * [Maintainer](#maintainer)
@@ -20,6 +23,25 @@ Kata Containers combines technology from [Intel® Clear Containers](https://gith
 # Community
 
 Kata Containers is working to build global, diverse and collaborative community. Anyone who is interested in supporting the technology is welcome to participate. We are seeking different expertise and skills, ranging from development, operations, documentation, marketing, community organization and product management.
+
+## Users
+
+Since Kata Containers does not yet provide an installation option, the current
+advice for users is to install either Clear Containers or runV since both
+projects will provide a migration path to Kata Containers at a later date.
+
+If you do not already have an installation of either project, Clear Containers
+may be the simplest option as packages for commont Linux* distributions are
+provided. However, your choice may depend on the particular project features
+that interest you.
+
+### Installing Clear Containers
+
+See https://github.com/clearcontainers/runtime/wiki/Installation.
+
+### Installing runV
+
+See https://github.com/hyperhq/runv.
 
 ## Developers
 
