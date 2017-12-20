@@ -1,5 +1,13 @@
 <img src="https://www.openstack.org/assets/kata/kata-vertical-on-white.png" width="150">
 
+* [About Kata Containers](#about-kata-containers)
+* [Community](#community)
+    * [Contributor](#contributor)
+    * [Maintainer](#maintainer)
+* [Governance](#governance)
+    * [Architecture Committee](#architecture-committee)
+    * [Working Committee](#working-committee)
+
 # About Kata Containers
 
 Kata Containers is an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs.
