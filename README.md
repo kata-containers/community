@@ -22,7 +22,7 @@ Kata Containers combines technology from [Intel® Clear Containers](https://gith
 
 # Community
 
-Kata Containers is working to build global, diverse and collaborative community. Anyone who is interested in supporting the technology is welcome to participate. We are seeking different expertise and skills, ranging from development, operations, documentation, marketing, community organization and product management.
+Kata Containers is working to build a global, diverse and collaborative community. Anyone who is interested in supporting the technology is welcome to participate. We are seeking different expertise and skills, ranging from development, operations, documentation, marketing, community organization and product management.
 
 ## Users
 
@@ -31,7 +31,7 @@ advice for users is to install either Clear Containers or runV since both
 projects will provide a migration path to Kata Containers at a later date.
 
 If you do not already have an installation of either project, Clear Containers
-may be the simplest option as packages for commont Linux* distributions are
+may be the simplest option as packages for common Linux\* distributions are
 provided. However, your choice may depend on the particular project features
 that interest you.
 
@@ -57,13 +57,13 @@ A Maintainer has the ability to merge code into the Kata Containers project. Mai
 
 # Governance
 
-The Kata Containers project is governed according to the “four opens,” which are open source, open design, open development and open community. Technical decisions will be made by technical contributors and a representative Architecture Committee. The community is committed to diversity, openness, encouraging new contributors and leaders to rise up. 
+The Kata Containers project is governed according to the [“four opens"](https://governance.openstack.org/tc/reference/opens.html), which are open source, open design, open development and open community. Technical decisions will be made by technical contributors and a representative Architecture Committee. The community is committed to diversity, openness, encouraging new contributors and leaders to rise up. 
 
 ## Architecture Committee
 
 The Architecture Committee is responsible for architectural decisions, including standardization, and making final decisions if Maintainers disagree. It will be comprised of 5 members, who are appointed by the Maintainers at launch but fully elected by Contributors within the first year. The initial Architecture Committee members are Samual Ortiz, Xu Wang, Zhang Wei and Tim AllClair.
 
-In June 2018, 3 of the 5 seats will be up for election by the project Contributors. Anyone who has made contributions to the project will be eligible to run, and anyone who has merged code into the Kata Containers project in the last 12 months (a Contributor) will be eligible to vote. In December 2018, the remaining 2 seats of the Architecture Committee will be up for election. The elections will continue on this staggered cycle (3 seats and 2 seats) every six months in order to allow new leaders to rise up, but also ensure some consistency across the terms. There are no term limits, but in order to encourage diversity, no more than 2 of the 5 seats can be filled by any one organization. The Architecture Committee will meet regularly in an open forum with times and locations published in community channels.
+In June 2018, 3 of the 5 seats will be up for election by the project Contributors. Anyone who has made contributions to the project will be eligible to run, and anyone who has had code merged into the Kata Containers project in the last 12 months (a Contributor) will be eligible to vote. In December 2018, the remaining 2 seats of the Architecture Committee will be up for election. The elections will continue on this staggered cycle (3 seats and 2 seats) every six months in order to allow new leaders to rise up, but also ensure some consistency across the terms. There are no term limits, but in order to encourage diversity, no more than 2 of the 5 seats can be filled by any one organization. The Architecture Committee will meet regularly in an open forum with times and locations published in community channels.
 
 The exact size and model for the Architecture Committee may evolve over time based on the needs and growth of the project, but the governing body will always be committed to openness, diversity and the principle that technical decisions are made by technical contributors.
 
