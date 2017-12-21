@@ -1,24 +1,57 @@
 <img src="https://www.openstack.org/assets/kata/kata-vertical-on-white.png" width="150">
 
+* [About Kata Containers](#about-kata-containers)
+* [Community](#community)
+    * [Users](#users)
+        * [Installing Clear Containers](#installing-clear-containers)
+        * [Installing runV](#installing-runv)
+    * [Developers](#developers)
+        * [Contributor](#contributor)
+        * [Maintainer](#maintainer)
+* [Governance](#governance)
+    * [Architecture Committee](#architecture-committee)
+    * [Working Committee](#working-committee)
+
 # About Kata Containers
 
 Kata Containers is an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs.
 
 The Kata Containers project will initially comprise six components, including the Agent, Runtime, Proxy, Shim, Kernel and packaging of QEMU 2.9. It is designed to be architecture agnostic, run on multiple hypervisors and be compatible with the OCI specification for Docker containers and CRI-O for Kubernetes.
 
-Kata Containers combines technology from Intel Clear Containers and Hyper runV. The code is hosted on Github under the Apache 2 license and the project is managed by the OpenStack Foundation. To learn more about the project and organizations backing the launch, visit www.katacontainers.io. 
+Kata Containers combines technology from [Intel® Clear Containers](https://github.com/clearcontainers/runtime) and [Hyper runV](https://github.com/hyperhq/runv). The code is hosted on Github under the Apache 2 license and the project is managed by the OpenStack Foundation. To learn more about the project and organizations backing the launch, visit https://www.katacontainers.io.
 
 # Community
 
 Kata Containers is working to build global, diverse and collaborative community. Anyone who is interested in supporting the technology is welcome to participate. We are seeking different expertise and skills, ranging from development, operations, documentation, marketing, community organization and product management.
 
+## Users
+
+Since Kata Containers does not yet provide an installation option, the current
+advice for users is to install either Clear Containers or runV since both
+projects will provide a migration path to Kata Containers at a later date.
+
+If you do not already have an installation of either project, Clear Containers
+may be the simplest option as packages for commont Linux* distributions are
+provided. However, your choice may depend on the particular project features
+that interest you.
+
+### Installing Clear Containers
+
+See https://github.com/clearcontainers/runtime/wiki/Installation.
+
+### Installing runV
+
+See https://github.com/hyperhq/runv.
+
+## Developers
+
 For code contributors, there are currently two roles relevant to project governance:
 
-## Contributor
+### Contributor
 
 A Contributor to the Kata Containers project is someone who has merged code within the last 12 months. Contributors are eligible to vote in the Architecture Committee elections. Contributors have read only access to the Kata Containers repos on Github.
 
-## Maintainer
+### Maintainer
 
 A Maintainer has the ability to merge code into the Kata Containers project. Maintainers are active Contributors and participants in the projects. In order to become a Maintainer, you must be nominated and approved by the established Maintainers. Maintainers have write access to the Kata Containers repos on Github.
 
