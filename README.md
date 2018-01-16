@@ -5,10 +5,10 @@
     * [Users](#users)
         * [Installing Clear Containers](#installing-clear-containers)
         * [Installing runV](#installing-runv)
+* [Governance](#governance)
     * [Developers](#developers)
         * [Contributor](#contributor)
         * [Maintainer](#maintainer)
-* [Governance](#governance)
     * [Architecture Committee](#architecture-committee)
     * [Working Committee](#working-committee)
 
@@ -43,6 +43,10 @@ See https://github.com/clearcontainers/runtime/wiki/Installation.
 
 See https://github.com/hyperhq/runv.
 
+# Governance
+
+The Kata Containers project is governed according to the [“four opens"](https://governance.openstack.org/tc/reference/opens.html), which are open source, open design, open development and open community. Technical decisions will be made by technical contributors and a representative Architecture Committee. The community is committed to diversity, openness, encouraging new contributors and leaders to rise up.
+
 ## Developers
 
 For code contributors, there are currently two roles relevant to project governance:
@@ -54,10 +58,6 @@ A Contributor to the Kata Containers project is someone who has merged code with
 ### Maintainer
 
 A Maintainer has the ability to merge code into the Kata Containers project. Maintainers are active Contributors and participants in the projects. In order to become a Maintainer, you must be nominated and approved by the established Maintainers. Maintainers have write access to the Kata Containers repos on Github.
-
-# Governance
-
-The Kata Containers project is governed according to the [“four opens"](https://governance.openstack.org/tc/reference/opens.html), which are open source, open design, open development and open community. Technical decisions will be made by technical contributors and a representative Architecture Committee. The community is committed to diversity, openness, encouraging new contributors and leaders to rise up. 
 
 ## Architecture Committee
 
