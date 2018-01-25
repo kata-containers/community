@@ -129,6 +129,9 @@ body:
   GitHub to render the list in a fixed-width font, which makes it easier to
   read.
 
+For additional information on using the `dep` tool, see
+"[Performing vendoring for the Kata Containers project](https://github.com/kata-containers/community/blob/master/VENDORING.md)".
+
 ## Patch format
 
 Beside the `Signed-off-by` footer, we expect each patch to comply with the
