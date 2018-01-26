@@ -66,7 +66,15 @@ A Maintainer has the ability to merge code into the Kata Containers project. Mai
 
 ## Architecture Committee
 
-The Architecture Committee is responsible for architectural decisions, including standardization, and making final decisions if Maintainers disagree. It will be comprised of 5 members, who are appointed by the Maintainers at launch but fully elected by Contributors within the first year. The initial Architecture Committee members are Samual Ortiz, Xu Wang, Zhang Wei and Tim AllClair.
+The Architecture Committee is responsible for architectural decisions, including standardization, and making final decisions if Maintainers disagree. It will be comprised of 5 members, who are appointed by the Maintainers at launch but fully elected by Contributors within the first year.
+
+The initial Architecture Committee members are:
+
+- Jess Frazelle ([`jessfraz`](https://github.com/jessfraz)), [Microsoft](https://www.microsoft.com/).
+- Samuel Ortiz ([`sameo`](https://github.com/sameo)), [Intel](https://www.intel.com).
+- Tim AllClair ([`tallclair`](https://github.com/tallclair)), [Google](https://www.google.com).
+- Xu Wang ([`gnawux`](https://github.com/gnawux)), [HyperHQ](https://hyper.sh).
+- Zhang Wei ([`WeiZhang555`](https://github.com/WeiZhang555)), [Huawei](http://www.huawei.com).
 
 In June 2018, 3 of the 5 seats will be up for election by the project Contributors. Anyone who has made contributions to the project will be eligible to run, and anyone who has had code merged into the Kata Containers project in the last 12 months (a Contributor) will be eligible to vote. In December 2018, the remaining 2 seats of the Architecture Committee will be up for election. The elections will continue on this staggered cycle (3 seats and 2 seats) every six months in order to allow new leaders to rise up, but also ensure some consistency across the terms. There are no term limits, but in order to encourage diversity, no more than 2 of the 5 seats can be filled by any one organization. The Architecture Committee will meet regularly in an open forum with times and locations published in community channels.
 
@@ -76,6 +84,13 @@ The exact size and model for the Architecture Committee may evolve over time bas
 
 The Working Committee is intended to make non-technical decisions and help influence the project strategy, including marketing and communications, product management and ecosystem support. Representatives are expected to be active contributors who are committed to the health and success of the project.
 
-Recognizing the project will grow and change quickly in the first six months, and in order to encourage diversity and participation, the Working Committee will be forming up and finalizing its structure after the project launch. Initial appointed members include Amy Leeland and James Kulina. During this initial period, the participants will appoint a leader to help organize and run regular meetings, coordinate the various workstreams and help define the long-term structure. The initial task will be to determine 2018 plans and appropriate work streams, working groups and funding to execute on those plans. 
+Recognizing the project will grow and change quickly in the first six months, and in order to encourage diversity and participation, the Working Committee will be forming up and finalizing its structure after the project launch.
+
+Initial appointed members include:
+
+- Amy Leeland ([`amyleeland`](https://github.com/amyleeland)), [Intel](https://www.intel.com).
+- James Kulina ([`jmknyc06`](https://github.com/jmknyc06)), [HyperHQ](https://hyper.sh).
+
+During this initial period, the participants will appoint a leader to help organize and run regular meetings, coordinate the various workstreams and help define the long-term structure. The initial task will be to determine 2018 plans and appropriate work streams, working groups and funding to execute on those plans.
 
 The estimated size of the Working Committee is 7 members, but there is opportunity for more contributors to get involved in various sub-teams working on specific topics, such as product management or conformance. The Working Committee will meet regularly in an open forum with times and locations published in community channels.
