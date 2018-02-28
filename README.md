@@ -2,6 +2,7 @@
 
 * [About Kata Containers](#about-kata-containers)
 * [Community](#community)
+    * [Join Us](#join-us)
     * [Users](#users)
         * [Installing Clear Containers](#installing-clear-containers)
         * [Installing runV](#installing-runv)
@@ -24,6 +25,15 @@ Kata Containers combines technology from [Intel® Clear Containers](https://gith
 # Community
 
 Kata Containers is working to build a global, diverse and collaborative community. Anyone who is interested in supporting the technology is welcome to participate. We are seeking different expertise and skills, ranging from development, operations, documentation, marketing, community organization and product management.
+
+## Join Us
+
+You can join our community on any of several places:
+
+* [Mailing List](http://lists.katacontainers.io/)
+* IRC on IRC.freenode.net: [#kata-dev](http://webchat.freenode.net/?channels=kata-dev) and [#kata-general](http://webchat.freenode.net/?channels=kata-general)
+* You can get an [invite to our Slack channel](http://bit.ly/KataSlack), and then [join us on Slack](https://katacontainers.slack.com/).
+* Follow us on [Twitter](https://twitter.com/KataContainers) or [Facebook](https://www.facebook.com/KataContainers).
 
 ## Users
 
