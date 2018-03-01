@@ -212,16 +212,9 @@ I love it! Very clean code and great tests. lgtm.
 
 ## Contact
 
-The Kata Containers community can be reached through its dedicated IRC
-channels, Slack channels, and mailing lists:
-
-* IRC:
-  * Development discussions: `#kata-dev @ freenode.net`.
-  * General discussions: `#kata-general @ freenode.net`.
-
-* [Slack channels](https://katacontainers.slack.com/) ([invite](http://bit.ly/KataSlack)).
-
-* [Mailing lists](http://lists.katacontainers.io/).
+The Kata Containers community can be reached through its [dedicated IRC
+channels, Slack channels, and mailing lists](README.md#join-us).  Development discussions
+happen on the #kata-dev channels on IRC and Slack, or on the mailing list.
 
 ### Project maintainers
 
