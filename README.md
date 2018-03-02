@@ -30,9 +30,9 @@ Kata Containers is working to build a global, diverse and collaborative communit
 
 You can join our community on any of the following places:
 
-* Via our [mailing list](http://lists.katacontainers.io/), or
-* Using IRC on IRC.freenode.net: [#kata-dev](http://webchat.freenode.net/?channels=kata-dev) and [#kata-general](http://webchat.freenode.net/?channels=kata-general), or
-* Get an [invite to our Slack channel](http://bit.ly/KataSlack), and then [join us on Slack](https://katacontainers.slack.com/), or
+* Join our [mailing list](http://lists.katacontainers.io/).
+* Use IRC on IRC.freenode.net to join discussions on [#kata-dev](http://webchat.freenode.net/?channels=kata-dev) and [#kata-general](http://webchat.freenode.net/?channels=kata-general).
+* Get an [invite to our Slack channel](http://bit.ly/KataSlack), and then [join us on Slack](https://katacontainers.slack.com/).
 * Follow us on [Twitter](https://twitter.com/KataContainers) or [Facebook](https://www.facebook.com/KataContainers).
 
 ## Users
