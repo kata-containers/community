@@ -183,6 +183,8 @@ likely to be identified during review.
 Before your PRs are merged into the main code base, they are reviewed. We
 encourage anybody to review any PR and leave feedback.
 
+See the [PR review guide](PR-Review-Guide.md) for tips on performing a careful review.
+
 We use an "acknowledge" system for people to note if they agree or disagree
 with a PR. We utilize some automated systems that can spot common acknowledge
 patterns, which include placing any of these **at the beginning of a comment
