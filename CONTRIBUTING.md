@@ -8,6 +8,13 @@
     * [Normal PR workflow](#normal-pr-workflow)
     * [Re-vendor PRs](#re-vendor-prs)
 * [Patch format](#patch-format)
+    * [General format](#general-format)
+    * [Subsystem](#subsystem)
+    * [Advice](#advice)
+    * [Verification](#verification)
+    * [Examples](#examples)
+        * [Main patch](#main-patch)
+        * [Supplementary patch](#supplementary-patch)
 * [Reviews](#reviews)
     * [Examples](#examples)
 * [Contact](#contact)
@@ -134,26 +141,69 @@ For additional information on using the `dep` tool, see
 
 ## Patch format
 
+### General format
+
 Beside the `Signed-off-by` footer, we expect each patch to comply with the
 following format:
 
 ```
-Subsystem: One line change summary
+subsystem: One line change summary
 
-More detailed explanation of your changes: Why and how.
+More detailed explanation of your changes (why and how)
+that spans as many lines as required.
 
-See:
-    http://chris.beams.io/posts/git-commit/
-
-For some more good advice, and the Linux Kernel document:
-    https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/tree/Documentation/SubmittingPatches
-
-Fixes: #nnn
+A "Fixes #XXX" comment listing the GitHub issue this change resolves.
+This comment is required for the main patch in a sequence. See the following examples.
 
 Signed-off-by: <contributor@foo.com>
 ```
 
-For example:
+The body of the message is not a continuation of the subject line and is not used to extend the subject line beyond its character limit. The subject line is a complete sentence and the body is a complete, standalone paragraph.
+
+### Subsystem
+
+The "subsystem" describes the area of the code that the change applies to. It does not have to match a particular directory name in the source tree because it is a "hint" to the reader. The subsystem is generally a single word. Although the subsystem must be specified, it is not validated. The author decides what is a relevant subsystem for each patch.
+
+Examples:
+
+| Subsystem | Description |
+|--|--|
+| `build` | `Makefile` or configuration script change |
+| `cli` | Change affecting command line options or commands |
+| `docs` | Documentation change |
+| `logging` | Logging change |
+| `vendor` | [Re-vendoring](#re-vendor-prs) change |
+
+To see the subsystem values chosen for existing commits:
+
+```
+$ git log --no-merges --pretty="%s" | cut -d: -f1 | sort -u
+```
+
+### Advice
+
+It is recommended that each of your patches fixes one thing. Smaller patches
+are easier to review, more likely accepted and merged, and problems are more
+likely to be identified during review.
+
+A PR can contain multiple patches. These patches should generally be related to the [main patch](#main-patch) and the overall goal of the PR. However, it is also acceptable to include additional or [supplementary patches](#supplementary-patch) for things such as:
+
+- Formatting (or whitespace) fixes
+- Comment improvements
+- Tidy up work
+- Refactoring to simplify the codebase
+
+### Verification
+
+Correct formatting of the PR patches is verified using the
+[checkcommits](https://github.com/kata-containers/tests/tree/master/cmd/checkcommits)
+tool.
+
+### Examples
+
+#### Main patch
+
+The following is an example of a full patch description for the main change that shows the required "`Fixes #XXX`" comment, which references the GitHub issue this patch resolves:
 
 ```
 pod: Remove token from Cmd structure
@@ -166,17 +216,22 @@ Fixes: #123
 Signed-off-by: Sebastien Boeuf <sebastien.boeuf@intel.com>
 ```
 
-Correct formatting of the PR patches is verified using the
-[checkcommits](https://github.com/kata-containers/tests/tree/master/cmd/checkcommits)
-tool.
+#### Supplementary patch
 
-Note, that the body of the message should not just be a continuation of the
-subject line, and is not used to extend the subject line beyond its length
-limit. They should stand alone as complete sentence and paragraphs.
+If a PR contains multiple patches, [only one of those patches](#main-patch) needs to specify the "`Fixes #XXX`" comment. Supplementary patches have an identical format to the main patch, but do not need to specify a "`Fixes #XXX`"
+comment.
 
-It is recommended that each of your patches fixes one thing. Smaller patches
-are easier to review, more likely accepted and merged, and problems are more
-likely to be identified during review.
+Example:
+
+```
+image-builder: Fix incorrect error message
+
+Fixed an error message which was referring to an incorrect rootfs
+variable name.
+
+Signed-off-by: James O. D. Hunt <james.o.hunt@intel.com>
+```
+
 
 ## Reviews
 
