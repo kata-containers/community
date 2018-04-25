@@ -11,7 +11,7 @@
 * [Reviews](#reviews)
     * [Examples](#examples)
 * [Contact](#contact)
-    * [Project maintainers](#project-maintainers)
+* [Project maintainers](#project-maintainers)
 * [Issue tracking](#issue-tracking)
 * [Closing issues](#closing-issues)
 
@@ -223,7 +223,7 @@ channels, Slack channels, and mailing lists:
 
 * [Mailing lists](http://lists.katacontainers.io/).
 
-### Project maintainers
+## Project maintainers
 
 The Kata Containers project maintainers are the people accepting or
 rejecting any PR. They are listed in the `OWNERS` files. There can be one
