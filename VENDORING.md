@@ -36,7 +36,6 @@ $ export PATH=$GOPATH/bin:$PATH
 
 - `dep init`: Initialize a new project with manifest and lock files.
 - `dep ensure`: Ensure a dependency is safely vendored in the project.
-- `dep prune`: Prune the vendor tree of unused packages.
 
 ## Vendoring use cases
 
@@ -83,11 +82,30 @@ The following is what `Gopkg.toml` should look like:
 # [[override]]
 #  name = "github.com/x/y"
 #  version = "2.4.0"
-
+#
+# [prune]
+#   non-go = false
+#   go-tests = true
+#   unused-packages = true
 ```
+
 This file contains all the information you need to modify it properly.
 
 At this point you can vendor any package needed from your code.
+
+### Pruning non-go files
+
+`dep` provides the feature to remove all non-go files from your vendor tree
+during its prune phase. By default this is not enabled, but generally for
+Kata Containers repositories, we do enable this feature. If possible, modify your
+`[prune]` section to enable this feature:
+
+```toml
+ [prune]
+   non-go = true
+   go-tests = true
+   unused-packages = true
+```
 
 ### Vendor a newly imported package
 
@@ -95,7 +113,6 @@ The following case describes a situation when you add new code that relies
 on a package that has never been imported (e.g. `github.com/foo/bar`):
 ```bash
 $ dep ensure
-$ dep prune
 ```
 
 At this point, only the required files will be copied into `vendor`.
@@ -158,7 +175,6 @@ updating the vendoring version:
 Let `dep` update the vendoring by relying on this new revision:
 ```bash
 $ dep ensure
-$ dep prune
 ```
 
 ### Remove a vendored package
@@ -169,7 +185,6 @@ removes the vendored package from `vendor` directory and from
 `Gopkg.lock`:
 ```bash
 $ dep ensure
-$ dep prune
 ```
 
 If a constraint is set in `Gopkg.toml`, it is your responsibility to remove
