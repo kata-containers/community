@@ -18,7 +18,7 @@
 * [Reviews](#reviews)
     * [Examples](#examples)
 * [Contact](#contact)
-    * [Project maintainers](#project-maintainers)
+* [Project maintainers](#project-maintainers)
 * [Issue tracking](#issue-tracking)
 * [Closing issues](#closing-issues)
 
@@ -280,20 +280,26 @@ channels, Slack channels, and mailing lists:
 
 * [Mailing lists](http://lists.katacontainers.io/).
 
-### Project maintainers
+## Project maintainers
 
 The Kata Containers project maintainers are the people accepting or
-rejecting any PR. They are listed in the `OWNERS` files. There can be one
-`OWNERS` file per directory.
+rejecting any PR. Although [anyone can review PRs](#reviews), only the
+acknowledgement (or "ack") from an Approver counts towards the approval of a PR.
 
-The `OWNERS` files split maintainership into 2 categories: reviewers and
-approvers. All approvers also belong to the reviewers list. There must be at
-least one approval from one member of each list for a PR to be merged.
+Approvers are listed in GitHub teams, one for each repository. The project
+uses the [Pull Approve](https://pullapprove.com) service meaning each
+repository contains a top level `.pullapprove.yml` configuration file. This
+file lists the GitHub team used for that repository's approvals.
 
-Since approvers are also reviewers, they technically can approve a PR without
-getting another reviewer's approval. However, it is their due diligence to
-rely on reviewers and should use their approval power only in very specific
-cases.
+Each repository can have custom review requirements but the minimum approval
+requirements are:
+
+- Two approvals from the approval team listed in the configuration file.
+
+- One [documentation team](https://github.com/orgs/kata-containers/teams/documentation/members)
+  approval if the PR modifies documentation.
+
+See the `.pullapprove.yml` configuration files for full details.
 
 ## Issue tracking
 
