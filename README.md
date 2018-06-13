@@ -3,8 +3,6 @@
 * [About Kata Containers](#about-kata-containers)
 * [Community](#community)
     * [Users](#users)
-        * [Installing Clear Containers](#installing-clear-containers)
-        * [Installing runV](#installing-runv)
     * [Contributors](#contributors)
 * [Governance](#governance)
     * [Developers](#developers)
@@ -27,22 +25,8 @@ Kata Containers is working to build a global, diverse and collaborative communit
 
 ## Users
 
-Since Kata Containers does not yet provide an installation option, the current
-advice for users is to install either Clear Containers or runV since both
-projects will provide a migration path to Kata Containers at a later date.
-
-If you do not already have an installation of either project, Clear Containers
-may be the simplest option as packages for common Linux\* distributions are
-provided. However, your choice may depend on the particular project features
-that interest you.
-
-### Installing Clear Containers
-
-See https://github.com/clearcontainers/runtime/wiki/Installation.
-
-### Installing runV
-
-See https://github.com/hyperhq/runv.
+See [Kata Containers installation user guides](https://github.com/kata-containers/documentation/blob/master/install/README.md) for details on how to install Kata Containers for your preferred 
+distribution.
 
 ## Contributors
 
