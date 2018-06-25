@@ -6,6 +6,7 @@
 * [Pull requests](#pull-requests)
     * [Before starting work on a PR](#before-starting-work-on-a-pr)
     * [Normal PR workflow](#normal-pr-workflow)
+    * [Assisted PR workflow](#assisted-pr-workflow)
     * [Re-vendor PRs](#re-vendor-prs)
 * [Patch format](#patch-format)
     * [General format](#general-format)
@@ -91,6 +92,74 @@ requests](http://blog.adamspiers.org/2015/03/24/why-and-how-to-correctly-amend-g
 Your PR can contain more than one patch. Use as many patches as necessary to
 implement the request. Each PR should only cover one topic. If you mix up
 different items in your patches or PR, they will likely need to be reworked.
+
+### Assisted PR workflow
+
+If your PR is deemed useful but you are struggling to update it based on
+review feedback, or your PR appears to have been abandoned, the project
+maintainers might suggest (or decide in your absence) that an assisted PR
+workflow be employed. In that case, a new PR is created using your PR as a
+base and applying fixes to it.
+
+The following steps outline the full Assisted PR workflow:
+
+1. A team member is assigned to handling the assisted PR.
+
+1. The team member adds a comment on the original PR explaining what is
+   about to happen:
+
+   > Thank you for your contribution but we are unable to merge it until all
+   > review feedback has been applied and all CI checks have passed.
+   >
+   > Since we have not heard from you for a while, we assume you are unable to
+   > progress this PR. As such, we intend to create a new PR based on this
+   > one, and resolve the identified issues on the new PR. The new PR will
+   > reference this PR for tracking purposes.
+   >
+   > This PR will be marked `do-not-merge` and will be closed when our new PR
+   > has been merged. We will credit all authors of this PR on the new PR.
+
+1. The team member applies the `do-not-merge` label to the original PR.
+
+1. The team member creates a new PR based on the contents of the original
+   PR.
+
+   The commits from the original PR should be retained where possible.
+
+   At least one commit in the new PR should reference the old PR or its
+   associated issue.
+
+   All authors of the new PR, which includes all authors of the original PR,
+   should be credited using a `Signed-off-by` comment for each author.
+
+1. The team updates the new PR to resolve the issues with the original PR.
+
+   They might decide to collaborate on this work if it makes sense to do so.
+   In this scenario, multiple people push commits to the same PR branch.
+
+   This approach might be adopted in the following scenarios:
+
+   - The number of changes required is high.
+   - The changes can be split into logical and discrete groups.
+   - The PR requires input from multiple team members.
+   - The PR is urgent and needs to be resolved as soon as possible. For
+     example, with [documentation PRs](Documentation-Review-Process.md)
+     it is essential the documentation is correct.
+
+1. Once the creator of the new PR believes that all issues are resolved in the
+   original PR, they request a review of the new PR by the team
+   *and the original PR creator*.
+
+   Once all the standard approvals are obtained, the new PR is merged.
+
+   The original PR creator's approval is recommended, but optional. If they do
+   not respond in a timely fashion (generally a week, but this might be a much
+   shorter period for urgent PRs) the PR is merged regardless.
+
+   If the original PR creator disagrees with the contents of the new PR after
+   it is merged, they can raise a PR to resolve the issues.
+
+1. When the new PR is merged, the team member closes the original PR.
 
 ### Re-vendor PRs
 
