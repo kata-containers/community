@@ -319,6 +319,9 @@ line**:
  - +1
  - Approve
 
+Documentation PRs can sometimes use a modified process explained in the
+[Documentation Review Process](Documentation-Review-Process.md) guide.
+
 ### Examples
 
 The following is an example of a valid "ack":
