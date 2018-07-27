@@ -197,7 +197,7 @@ body:
      $ cd $GOPATH/src/github.com/opencontainers/runc
      $ old_commit="..."
      $ new_commit="..."
-     $ git log --no-merges --abbrev-commit --pretty=oneline "${old_commit}..${new_commit}") | sed 's/^/    /g'
+     $ git log --no-merges --abbrev-commit --pretty=oneline "${old_commit}..${new_commit}" | sed 's/^/    /g'
      ```
 
   Paste the output of the previous command directly into the commit "as-is".
