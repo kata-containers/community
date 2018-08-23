@@ -1,0 +1,20 @@
+Name: Wei Zhang
+
+Email: zhangwei555@huawei.com
+
+Introduction:
+
+I am now working as a Senior Engineer in Huawei Corporation,
+leading a team which is responsible for providing container solutions based on
+K8s/docker/kata-containers to other departments and Huawei Public Cloud. 
+
+I was once a docker developer and now is an active kata contributor, and has been
+Architecture Committee Member for about eight months. Kata Containers is a great
+project which can help reduce some security concerns comparing to native container
+solution, and I don't think I need more words to elaborate how great it is because
+I believe all the readers of this file are familiar enough to Kata. :-)
+
+So I wish to renew my seat, and do more work to help kata community
+to make excellent open source project, and then make better product based on 
+Kata to our customers.
+
