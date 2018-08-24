@@ -1,0 +1,53 @@
+Kata-containers Architecture Committee Candidacy Declaration
+
+Platform: Arm
+
+Candidate: Kaly Xin <Kaly.Xin@arm.com>
+
+I'm working for Arm Electronic Technology (Shanghai) Co.Ltd.
+This candidacy is representing Arm company to be voted for one seat of the
+Kata-container architecture committee.
+
+My current role is Senior Engineering Manager in the Open Source Software Group
+and I lead a team working on virtualization and container technology on the Arm
+platform. I have more than 10 years of experience in virtualization, especially
+for hardware virtualization development including KVM and Xen. After that, I
+transferred focus to OS virtualization and container development.
+
+In recent years, my team started development on RunV project, one of the
+predecessors to Kata-containers, to enable and enhance the multi-arch support.
+Our focus areas included KVMtool support, performance profiling of the network
+and storage devices for virtual machines, and we also worked on stability and
+density improvements. For example, we identified a networking performance gap
+and improved throughput by 10x on both Arm and x86 platforms. Another example,
+we proposed and modified the synchronization mechanism between the hyperstart
+thread and VM. These and other contributions were all merged in RunV upstream.
+Some of them are already in Kata-container project too.
+
+For these collaborations, there were public blogs announced at
+https://blog.hyper.sh/arm_and_hyper.html and
+https://community.arm.com/iot/b/blog/posts/arm-and-hyper-hq-will-push-runv-for-the-future-of-container-security. 
+We have met regularly with Hyper team to discuss the development issues and solutions
+of the project.
+
+When RunV evolved into kata-containers, we transferred our effort into this
+new joint project and contribute to it as ever. Initially, We found it couldn't
+run successfully with multi-arch as before, lots of current test cases and CI
+environment setting up are not for multi-arch in the first stage. We start to
+fix the compatibility issues for different architectures. We are also working on the
+public CI support for mutli-arch to ensure the ongoing reliability and stability
+of the project. During the process, we feel this new joint project is very open,
+friendly and full of vitality as before. That's so great to work in the community!
+
+Interests:
+
+We believe this is just the beginning for the Kata-containers project and that it
+will have much broader applicability across different architectures and use
+cases, especially within the emerging next-generation IoT and 5G era!  These
+different use cases will generate new design requirements of the underlying
+architecture and we believe strongly that good multi-architecture support will
+be essential to position Kata-containers for broad adoption throughout the cloud
+native ecosystem.
+We look forward to driving these changes together, so the Kata-containers project
+can reach its full potential!
+
