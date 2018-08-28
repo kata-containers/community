@@ -1,0 +1,23 @@
+Name: Jon Olson
+
+Email: jonolson@google.com
+
+Background:
+
+I am a staff software engineer at Google working on the core virtualization and
+I/O layer backing Google Compute Engine. My work is focused on resource
+footprint minimization as well as performance optimization and stability. Part
+of this work is improving our support for containerized workloads and ensuring
+it is aligned with the needs of our customer community (e.g., Kata users).
+
+My involvement with the Kata community has included being a regular attendee at
+the weekly Kata Arch Council meetings. To these meetings I’ve brought context
+from my work building and maintaining a hypervisor that supports long-lived
+workloads at scale, as well as the occasional PR for getting Kata running in
+GCE. I believe whole workload containment via virtualization is a key component
+to addressing the broad problem of container security. Having a strong, open
+solution to that problem is critical to ensuring all workloads can run
+securely, regardless of where they are deployed.
+
+I enjoy working with the Kata community to build such a solution, and look
+forward to many more core-hours of security contained workloads.
