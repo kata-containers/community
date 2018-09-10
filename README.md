@@ -67,17 +67,17 @@ A Maintainer has the ability to merge code into the Kata Containers project. Mai
 
 ## Architecture Committee
 
-The Architecture Committee is responsible for architectural decisions, including standardization, and making final decisions if Maintainers disagree. It will be comprised of 5 members, who are appointed by the Maintainers at launch but fully elected by Contributors within the first year.
+The Architecture Committee is responsible for architectural decisions, including standardization, and making final decisions if Maintainers disagree. It is comprised of 5 members, who are elected by contributors.
 
-The initial Architecture Committee members are:
+The current Architecture Committee members are:
 
-- Jess Frazelle ([`jessfraz`](https://github.com/jessfraz)), [Microsoft](https://www.microsoft.com/).
+- Eric Ernst ([`egernst`](https://github.com/egernst)), [Intel](https://www.intel.com/).
 - Samuel Ortiz ([`sameo`](https://github.com/sameo)), [Intel](https://www.intel.com).
-- Tim AllClair ([`tallclair`](https://github.com/tallclair)), [Google](https://www.google.com).
+- Jon Olson ([`jon`](https://github.com/jon)), [Google](https://www.google.com).
 - Xu Wang ([`gnawux`](https://github.com/gnawux)), [HyperHQ](https://hyper.sh).
 - Zhang Wei ([`WeiZhang555`](https://github.com/WeiZhang555)), [Huawei](http://www.huawei.com).
 
-In September 2018, 3 of the 5 seats will be up for election by the project Contributors. Anyone who has made contributions to the project will be eligible to run, and anyone who has had code merged into the Kata Containers project in the last 12 months (a Contributor) will be eligible to vote. In February 2019, the remaining 2 seats of the Architecture Committee will be up for election. The elections will continue on this staggered cycle (3 seats and 2 seats) every six months in order to allow new leaders to rise up, but also ensure some consistency across the terms. There are no term limits, but in order to encourage diversity, no more than 2 of the 5 seats can be filled by any one organization. The Architecture Committee will meet regularly in an open forum with times and locations published in community channels.
+Architecture Committee elections take place in September (3 seats available) and February (2 seats available). Anyone who has made contributions to the project will be eligible to run, and anyone who has had code merged into the Kata Containers project in the 12 months (a Contributor) before the election will be eligible to vote. There are no term limits, but in order to encourage diversity, no more than 2 of the 5 seats can be filled by any one organization. The Architecture Committee will meet regularly in an open forum with times and locations published in community channels.
 
 The exact size and model for the Architecture Committee may evolve over time based on the needs and growth of the project, but the governing body will always be committed to openness, diversity and the principle that technical decisions are made by technical contributors.
 
