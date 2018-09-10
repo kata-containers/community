@@ -5,6 +5,7 @@
 * [Certificate of Origin](#certificate-of-origin)
 * [Pull requests](#pull-requests)
     * [Before starting work on a PR](#before-starting-work-on-a-pr)
+    * [Before submitting a PR](#before-submitting-a-pr)
     * [Normal PR workflow](#normal-pr-workflow)
     * [Assisted PR workflow](#assisted-pr-workflow)
     * [Re-vendor PRs](#re-vendor-prs)
@@ -63,6 +64,34 @@ issue yourself. This gives the team visibility of the work you plan to do.
 
 The other advantage to raising the issue at the outset is that our process requires an
 issue to be associated with every PR (see [patch format](#patch-format)).
+
+### Before submitting a PR
+
+Kata Containers utilizes a number of [CI systems](https://en.wikipedia.org/wiki/Continuous_integration)
+to automatically check every PR. As well as performing execution tests locally on
+your PR before submission, you are strongly encouraged to also run the same suite of
+[static checks](https://github.com/kata-containers/tests/blob/master/.ci/static-checks.sh)
+the CI will execute. The easiest way to execute these in most of the repositories is
+to invoke the `Makefile` `check` and `test` rules, while developer mode is enabled:
+
+```sh
+$ export KATA_DEV_MODE=true
+$ make check
+$ make test
+```
+
+These should execute without errors. If errors are reported, fix them
+before submitting your PR.
+
+> **Note:** To ensure you replicate the static checks performed by the CI system, it is
+recommended that you:
+> * Ensure you have a 'clean' source tree, as the checks will check all files present, and
+might fail if you have extra files or your files are out of date in your tree.
+> * Ensure that [gometalinter](https://github.com/alecthomas/gometalinter) is current or
+has not been installed (the static check scripts will install it if necessary). Changes
+in either the linters used or the Kata Containers code base can produce spurious errors
+that do not fail inside the CI systems.
+
 
 ### Normal PR workflow
 
