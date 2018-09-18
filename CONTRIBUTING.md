@@ -9,6 +9,7 @@
     * [Normal PR workflow](#normal-pr-workflow)
     * [Assisted PR workflow](#assisted-pr-workflow)
     * [Re-vendor PRs](#re-vendor-prs)
+    * [Stable branch backports](#stable-branch-backports)
 * [Patch format](#patch-format)
     * [General format](#general-format)
     * [Subsystem](#subsystem)
@@ -105,6 +106,10 @@ name.
 By default, GitHub copies the message from your first patch, which is often
 appropriate. However, ensure your message is accurate and complete for the
 entire PR because it ends up in the Git log as the merge message.
+
+You should also assign any appropriate GitHub labels to your PR. This
+is particularly relevant to maintain stable backports. See the
+[Stable branch backports](#stable-branch-backports) section for more details.
 
 Your PR might get feedback and comments, and require rework. The recommended
 procedure for reworking is to redo your branch to a clean state and "force
@@ -236,6 +241,30 @@ body:
 
 For additional information on using the `dep` tool, see
 "[Performing vendoring for the Kata Containers project](https://github.com/kata-containers/community/blob/master/VENDORING.md)".
+
+### Stable branch backports
+
+Kata Containers maintains a number of stable branch releases. Bug fixes to the
+master branch are selectively applied to (or 'backported') these stable branches.
+
+In order to aid identification of commits that potentially should be backported to
+the stable branches, all PRs submitted must be labelled with one or more of the
+following labels. At least one label that is *not* `stable-candidate` must
+be included.
+
+| Label              | Meaning |
+| -----              | ------- |
+| `bug`              | A bug fix, which will potentially be a backport candidate |
+| `cleanup`          | A cleanup, which will likely not be backported                 |
+| `feature`          | A new feature/enhancement, that will likely not be backported  |
+| `stable-candidate` | A PR selected for backporting - very likely a bug fix          |
+| `vendor`           | A golang vendor update. Might be considered for backport if the vendor update includes critical bug fixes |
+
+In the event that a bug fix PR is selected for backporting to the stable branches,
+the `stable-candidate` label is added if not already present, and the original author
+of the PR is asked if they will submit the relevant backport PRs. For a quick guide
+on how to perform and submit a backport, see the [Backport Guide](Backport-Guide.md)
+in this repository.
 
 ## Patch format
 
