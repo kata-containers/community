@@ -20,6 +20,7 @@
         * [Supplementary patch](#supplementary-patch)
 * [Reviews](#reviews)
     * [Examples](#examples)
+* [Continuous Integration](#continuous-integration)
 * [Contact](#contact)
 * [Project maintainers](#project-maintainers)
 * [Issue tracking](#issue-tracking)
@@ -396,6 +397,27 @@ at the beginning of the line:
 ```
 I love it! Very clean code and great tests. lgtm.
 ```
+
+## Continuous Integration
+
+The Kata Containers project has a gating process to prevent introducing
+regressions. When your PR is submitted, a Continuous Integration (CI) system
+will run different checks on different platforms upon your changes. Currently
+Kata uses [Jenkins](http://jenkins.katacontainers.io) and
+[Travis CI](https://travis-ci.org/kata-containers/) for testing your changes.
+
+Some of the checks are:
+
+- Static analysis checks.
+- Unit tests.
+- Functional tests.
+- Integretation tests.
+
+The travis job will be executed right after the PR is opened, while the Jenkins
+jobs will wait to be triggered. A maintainer must add a `/test` comment
+on the PR to let the CI jobs run.
+
+All CI jobs must pass in order to merge your PR.
 
 ## Contact
 
