@@ -11,6 +11,7 @@
         * [Maintainer](#maintainer)
     * [Architecture Committee](#architecture-committee)
     * [Working Committee](#working-committee)
+* [Vulnerability Disclosure](#vulnerability-disclosure)
 
 # About Kata Containers
 
@@ -95,3 +96,13 @@ Initial appointed members include:
 During this initial period, the participants will appoint a leader to help organize and run regular meetings, coordinate the various workstreams and help define the long-term structure. The initial task will be to determine 2018 plans and appropriate work streams, working groups and funding to execute on those plans.
 
 The estimated size of the Working Committee is 7 members, but there is opportunity for more contributors to get involved in various sub-teams working on specific topics, such as product management or conformance. The Working Committee will meet regularly in an open forum with times and locations published in community channels.
+
+# Vulnerability Disclosure
+
+Vulnerabilities in the Kata Container project are managed by the Kata Containers
+Vulnerability Management Team (VMT). Vulnerabilities are managed using a
+[responsible disclosure](https://en.wikipedia.org/wiki/Responsible_disclosure) model.
+
+Details of how to report a vulnerability, the process and procedures
+used for vulnerability management, and responsibilites of the VMT members
+can be found in the [VMT documentation](VMT/VMT.md).
