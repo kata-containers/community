@@ -73,8 +73,17 @@ Kata Containers utilizes a number of [CI systems](https://en.wikipedia.org/wiki/
 to automatically check every PR. As well as performing execution tests locally on
 your PR before submission, you are strongly encouraged to also run the same suite of
 [static checks](https://github.com/kata-containers/tests/blob/master/.ci/static-checks.sh)
-the CI will execute. The easiest way to execute these in most of the repositories is
-to invoke the `Makefile` `check` and `test` rules, while developer mode is enabled:
+the CI will execute.
+
+> **Note:** If working on `kata-runtime`, first ensure `make` and `make install` has been run in the virtcontainers subdirectory. (See [virtcontainers](https://github.com/kata-containers/runtime/blob/master/virtcontainers/documentation/Developers.md#testing) documentation for more information.)
+> 
+> ```sh
+> $ cd runtime/virtcontainers
+> $ make
+> $ sudo -E PATH=$PATH make install
+> ```
+
+The easiest way to execute static checks in most of the repositories is to invoke the `Makefile` `check` and `test` rules, while developer mode is enabled.
 
 ```sh
 $ export KATA_DEV_MODE=true
