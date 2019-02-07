@@ -10,7 +10,6 @@
         * [Contributor](#contributor)
         * [Maintainer](#maintainer)
     * [Architecture Committee](#architecture-committee)
-    * [Working Committee](#working-committee)
 * [Vulnerability Disclosure](#vulnerability-disclosure)
 
 # About Kata Containers
@@ -81,21 +80,6 @@ The current Architecture Committee members are:
 Architecture Committee elections take place in September (3 seats available) and February (2 seats available). Anyone who has made contributions to the project will be eligible to run, and anyone who has had code merged into the Kata Containers project in the 12 months (a Contributor) before the election will be eligible to vote. There are no term limits, but in order to encourage diversity, no more than 2 of the 5 seats can be filled by any one organization. The Architecture Committee will meet regularly in an open forum with times and locations published in community channels.
 
 The exact size and model for the Architecture Committee may evolve over time based on the needs and growth of the project, but the governing body will always be committed to openness, diversity and the principle that technical decisions are made by technical contributors.
-
-## Working Committee
-
-The Working Committee is intended to make non-technical decisions and help influence the project strategy, including marketing and communications, product management and ecosystem support. Representatives are expected to be active contributors who are committed to the health and success of the project.
-
-Recognizing the project will grow and change quickly in the first six months, and in order to encourage diversity and participation, the Working Committee will be forming up and finalizing its structure after the project launch.
-
-Initial appointed members include:
-
-- Amy Leeland ([`amyleeland`](https://github.com/amyleeland)), [Intel](https://www.intel.com).
-- James Kulina ([`jmknyc06`](https://github.com/jmknyc06)), [HyperHQ](https://hyper.sh).
-
-During this initial period, the participants will appoint a leader to help organize and run regular meetings, coordinate the various workstreams and help define the long-term structure. The initial task will be to determine 2018 plans and appropriate work streams, working groups and funding to execute on those plans.
-
-The estimated size of the Working Committee is 7 members, but there is opportunity for more contributors to get involved in various sub-teams working on specific topics, such as product management or conformance. The Working Committee will meet regularly in an open forum with times and locations published in community channels.
 
 # Vulnerability Disclosure
 
