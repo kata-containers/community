@@ -1,0 +1,28 @@
+Name: Samuel Ortiz
+
+Email: samuel.ortiz@intel.com
+
+Background:
+
+I am a software engineer at Intel where I work on different projects
+related to virtualization and containers: rust-vmm, NEMU and Kata
+Containers. I have been involved with Kata Containers for about 3 years
+now, as I started to work on what used to be Clear Containers before the
+2.0 release. I was part of the small OSF-Hyper-Intel team that worked
+together to merge Clear Containers and runV into what today is Kata
+Containers.
+
+I deeply believe that Kata Containers is a key project for the cloud
+native ecosystem. Thanks to an ever growing community effort, we moved
+it from two diverging code bases to something that can now be deployed
+at scale. In order to reach that state we built a very versatile software
+architecture that can adapt to a large number of use cases. On one hand
+this architecture really put hardware virtualized container runtimes in
+the cloud native map, but on the other hand it added complexity and in
+some cases technical debt to our project. With new specifications and
+APIs (runtimeClass, containerd shim v2) truly taking vm based runtimes
+into account, I think it's time for us to work on simplifying and
+cleaning our feature bloat and push that into Kata Containers v2.
+This is what I'd like to focus on for the next few months and this is
+one of the main reason why I'd like to renew my seat at the
+Architecture Committee.
