@@ -1,0 +1,21 @@
+Name: Xu Wang
+
+Email: xu@hyper.sh
+
+Background:
+
+I am the CTO of hyper.sh, leading the Hyper team contributing to Kata Containers and related communities.
+Before Kata, our team and I worked on runV, which is one of the predecessors of Kata Containers. It was 
+my great honor to involve the creating of the Kata Containers project and became a initial member of 
+the Architecture Committee together with Samual Ortiz. 
+
+After having Kata Containers announced, more and more people began to consider the container security as
+a solvable problem and several open source secure container runtime projects were released in the past
+year. And Kata Containers is becoming the de facto standard: we have had better integration with containerd
+via shimv2, and the better CRI-O integration is on its way; we have had more hypervisors support, such as
+firecracker and NEMU.
+
+For me, I focused on kubernetes integration efficiency and boot-time related topics in the past months, and
+had an eye on runtime benchmarks, multi-architecture support as well. In the future, I will pay more attention
+to both the runtime development and the documentation to help users to adopt Kata Containers.
+
