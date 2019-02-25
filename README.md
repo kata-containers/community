@@ -90,3 +90,5 @@ Vulnerability Management Team (VMT). Vulnerabilities are managed using a
 Details of how to report a vulnerability, the process and procedures
 used for vulnerability management, and responsibilites of the VMT members
 can be found in the [VMT documentation](VMT/VMT.md).
+
+Previous Kata Containers Security Advisories are [listed on their own page](VMT/KCSA.md).
