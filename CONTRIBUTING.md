@@ -9,6 +9,7 @@
     * [Normal PR workflow](#normal-pr-workflow)
         * [First PR example](#first-pr-example)
             * [Updating your PR based on review comments](#updating-your-pr-based-on-review-comments)
+    * [Temporarily blocking a PR](#temporarily-blocking-a-pr)
     * [Assisted PR workflow](#assisted-pr-workflow)
     * [Re-vendor PRs](#re-vendor-prs)
     * [Stable branch backports](#stable-branch-backports)
@@ -489,6 +490,33 @@ Your PR is now updated on GitHub. To ensure team member are aware of this,
 leave a message on the PR stating something like, "review feedback applied".
 Then, the team is notified and able to re-review your PR more quickly.
 
+### Temporarily blocking a PR
+
+Kata Containers CI systems have two methods that allow marking
+PRs to prevent them being merged. The methods are
+[GibHub labels](https://help.github.com/articles/about-labels/)
+or keywords in the PR subject line. The keywords can appear anywhere
+in the subject line.
+
+The following table summarises some common scenarios and appropriate use
+of labels or keywords:
+
+| Scenario | github label | PR description contains |
+| -------- | ------------ | ----------------------- |
+| PR created "as an idea" and feedback sought | `rfc` | RFC |
+| PR incomplete - needs more work or rework | `do-not-merge` `wip` | WIP |
+| PR should not be merged (has all required "acks", but needs more reviewer input) | `do-not-merge` | |
+| PR is a "work In progress", raised to get early feedback | `wip` | WIP |
+| PR is complete but depends on another so should not be merged (yet) | `do-not-merge` | |
+
+If any of the values in the table above are set on a PR, it will be
+automatically blocked from merging.
+
+> **Note:** Often during dicsussions the abbreviated and full terms are
+> used interchangably. For instance, often `DNM` is used
+> in discussions as shorthand for `do-not-merge`. The CI systems only
+> recognise the above phrases as shown.
+
 ### Assisted PR workflow
 
 If your PR is deemed useful but you are struggling to update it based on
@@ -729,34 +757,25 @@ encourage anybody to review any PR and leave feedback.
 
 See the [PR review guide](PR-Review-Guide.md) for tips on performing a careful review.
 
-We use an "acknowledge" system for people to note if they agree or disagree
-with a PR. We utilize some automated systems that can spot common acknowledge
-patterns, which include placing any of these **at the beginning of a comment
-line**:
-
- - LGTM
- - lgtm
- - +1
- - Approve
+We use the GitHub [Required Reviews](https://help.github.com/articles/approving-a-pull-request-with-required-reviews/)
+system for reviewers to note if they agree or disagree with a PR. To have
+an acknowledgement or 'nack' registered with github, you **must** use the
+github 'Review changes' dialog to leave feedback. Notes left only in the
+comments fields, whilst sometimes useful, will not get registered
+in the acknowledgement counting system.
 
 Documentation PRs can sometimes use a modified process explained in the
 [Documentation Review Process](Documentation-Review-Process.md) guide.
 
 ### Examples
 
-The following is an example of a valid "ack":
+The following is an example of a valid "ack", as long as
+the 'Approve' box is ticked in the Review changes dialog:
 
 ```
 Excellent work - thanks for your contribution.
 
 lgtm
-```
-
-The following comment is *not* valid because the magic "lgtm" does not start
-at the beginning of the line:
-
-```
-I love it! Very clean code and great tests. lgtm.
 ```
 
 ## Continuous Integration
