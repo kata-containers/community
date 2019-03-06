@@ -588,7 +588,16 @@ The following steps outline the full Assisted PR workflow:
 ### Re-vendor PRs
 
 If you raise a PR to update the vendored copy of one or more golang packages,
-there are two critical pieces of information you need to add to the commit
+after running the
+[`dep`](https://github.com/kata-containers/community/blob/master/VENDORING.md)
+command ensure you add any modified files under the `vendor/` directory to Git
+before committing the changes:
+
+```sh
+$ git add vendor/
+```
+
+There are two critical pieces of information you need to add to the commit
 body:
 
 - A brief explanation why the re-vendor is required.
