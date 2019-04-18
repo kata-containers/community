@@ -22,7 +22,7 @@
         * [Main patch](#main-patch)
         * [Supplementary patch](#supplementary-patch)
 * [Reviews](#reviews)
-    * [Examples](#examples)
+    * [Review Examples](#review-examples)
 * [Continuous Integration](#continuous-integration)
 * [Contact](#contact)
 * [Project maintainers](#project-maintainers)
@@ -776,7 +776,7 @@ in the acknowledgement counting system.
 Documentation PRs can sometimes use a modified process explained in the
 [Documentation Review Process](Documentation-Review-Process.md) guide.
 
-### Examples
+### Review Examples
 
 The following is an example of a valid "ack", as long as
 the 'Approve' box is ticked in the Review changes dialog:
