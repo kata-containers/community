@@ -78,13 +78,16 @@ your PR before submission, you are strongly encouraged to also run the same suit
 [static checks](https://github.com/kata-containers/tests/blob/master/.ci/static-checks.sh)
 the CI will execute.
 
-> **Note:** If working on `kata-runtime`, first ensure `make` and `make install` has been run in the virtcontainers subdirectory. (See [virtcontainers](https://github.com/kata-containers/runtime/blob/master/virtcontainers/documentation/Developers.md#testing) documentation for more information.)
+> **Note:** If working on `kata-runtime`, first ensure `make` and `make install` has been run in the `virtcontainers` subdirectory. (See [virtcontainers](https://github.com/kata-containers/runtime/blob/master/virtcontainers/documentation/Developers.md#testing) documentation for more information.)
 > 
 > ```sh
-> $ cd runtime/virtcontainers
+> $ pushd runtime/virtcontainers
 > $ make
 > $ sudo -E PATH=$PATH make install
+> $ popd
 > ```
+>
+> The final `popd` is required to return to the top-level directory from where other build rules can be executed.
 
 The easiest way to execute static checks in most of the repositories is to invoke the `Makefile` `check` and `test` rules, while developer mode is enabled.
 
