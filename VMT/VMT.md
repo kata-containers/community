@@ -53,7 +53,7 @@ If no KCSA is warranted and there is no benefit to a KCSN then the KCSA Issue wi
 
 If a Kata Containers Security Note ([KCSN](templates/KCSN.md)) is warranted, one should be written and posted to the [Kata Containers Security Note](https://github.com/kata-containers/documentation/security/KCSN.md) document.
 
-The specifics are indexed in the [report taxonomy](#incident-report-taxonomy) and [task status](#KCSA-task-status) tables.
+The specifics are indexed in the [report taxonomy](#incident-report-taxonomy) and [task status](#kcsa-task-status) tables.
 
 ## Patch development
 
@@ -127,12 +127,12 @@ On the disclosure hour, open bug, push patches to GitHub PR for review on master
 
 Embargo reminder can be removed at that point.
 
-[MITRE's CVE Request form](https://cveform.mitre.org/) should be used again at this point, but instead select a *request type* of `Notify CVE about a publication` and fill in the coordinator's *e-mail address*, provide a *link to the advisory* (Use the links from the [Kata Containers Security Advisories page](https://github.com/kata-containers/documentation/security/KCSA.md) if this is a formal KCSA), the *CVE IDs* covered, and the *date published*.
+[MITRE's CVE Request form](https://cveform.mitre.org/) should be used again at this point, but instead select a *request type* of `Notify CVE about a publication` and fill in the coordinator's *e-mail address*, provide a *link to the advisory* (Use the links from the [Kata Containers Security Advisories page](KCSA.md) if this is a formal KCSA), the *CVE IDs* covered, and the *date published*.
 Once more, fill in the *security code* at the bottom of the page and *submit request*.
 
 ## Publish KCSA
 
-Shortly after pushing the patches (potentially waiting for the first test runs to complete), publish the advisory to the [Kata Containers Dev ML](mailto:kata-dev@lists.katacontainers.io) and slack channels, and add the issue to the [list of KCSA's](//github.com/kata-containers/documentation/security/KCSA.md).
+Shortly after pushing the patches (potentially waiting for the first test runs to complete), publish the advisory to the [Kata Containers Dev ML](mailto:kata-dev@lists.katacontainers.io) and slack channels, and add the issue to the [list of KCSA's](KCSA.md).
 Wait until all patches are merged to supported branches before setting the KCSA Issue status to *Fix released*.
 
 ## All patches merged
