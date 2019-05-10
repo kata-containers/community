@@ -630,6 +630,7 @@ body:
   1. Run the commands below:
 
      ```
+     $ go get -d -u github.com/opencontainers/runc
      $ cd $GOPATH/src/github.com/opencontainers/runc
      $ old_commit="..."
      $ new_commit="..."
