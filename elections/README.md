@@ -5,6 +5,7 @@
       * [Candidacy](#candidacy)
       * [Architecture Committee Responsibilities](#architecture-committee-responsibilities)
       * [System](#system)
+      * [Previous elections](#previous-elections)
 
 # Kata Containers Elections
 
@@ -76,3 +77,16 @@ Containers project. This includes, but is not limited to:
 
 The Architecture Committee election uses
 [CIVS with condorcet method voting](https://civs.cs.cornell.edu/)
+
+## Tools
+
+See the [election tools documentation](tools).
+
+## Previous elections
+
+- March 2019
+  - [election](arch-committee-2019-03)
+  - [results](arch-committee-2019-03/Results.md)
+
+- September 2018
+  [election](arch-committee-2018-09)

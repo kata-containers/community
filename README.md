@@ -10,7 +10,9 @@
         * [Contributor](#contributor)
         * [Maintainer](#maintainer)
     * [Architecture Committee](#architecture-committee)
+* [Vendoring code](#vendoring-code)
 * [Vulnerability Disclosure](#vulnerability-disclosure)
+* [Week in Review template](#week-in-review-template)
 
 # About Kata Containers
 
@@ -81,6 +83,12 @@ Architecture Committee elections take place in September (3 seats available) and
 
 The exact size and model for the Architecture Committee may evolve over time based on the needs and growth of the project, but the governing body will always be committed to openness, diversity and the principle that technical decisions are made by technical contributors.
 
+See [the elections documentation](elections) for further details.
+
+# Vendoring code
+
+See the [vendoring documentation](VENDORING.md).
+
 # Vulnerability Disclosure
 
 Vulnerabilities in the Kata Container project are managed by the Kata Containers
@@ -92,3 +100,7 @@ used for vulnerability management, and responsibilites of the VMT members
 can be found in the [VMT documentation](VMT/VMT.md).
 
 Previous Kata Containers Security Advisories are [listed on their own page](VMT/KCSA.md).
+
+# Week in Review template
+
+See the [week in review report template](statusreports/REPORT_TEMPLATE.md).
