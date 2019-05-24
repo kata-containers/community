@@ -34,10 +34,10 @@ The following GitHub team lists the users who are members of the Documentation T
 ## Default document review process
 
 [Project maintainers](https://github.com/kata-containers/community/blob/master/CONTRIBUTING.md#project-maintainers)
-have the power to approve or reject PRs using the pullapprove tool employed by
+have the power to approve or reject PRs using the PullApprove tool employed by
 all repositories.
 
-If a Documentation Team review is required, the pullapprove configuration will
+If a Documentation Team review is required, the PullApprove configuration will
 apply and the PR will be blocked until the required number of acks are
 obtained for the documentation changes.
 
@@ -154,7 +154,7 @@ PTAL @kata-containers/documentation
 
 1. Request a project maintainer force-merges the PR.
 
-   This operation bypasses the pullapprove check that normally stops a PR from
+   This operation bypasses the PullApprove check that normally stops a PR from
    landing until the Documentation Team ack the PR.
 
 1. The maintainer should notify the Documentation Team out of courtesy that

@@ -52,7 +52,7 @@ notes:
 ```
 
 Once approved, the request will be added to the documentation repo and linked from the KCSA index page. It will then be emailed out.
-We send two separate emails, to avoid off-topic replies to oss-security list:
+We send two separate emails, to avoid off-topic replies to `oss-security` list:
 
 ```
 -   To: <kata-dev@lists.katacontainers.io>
