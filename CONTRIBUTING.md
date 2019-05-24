@@ -104,7 +104,7 @@ before submitting your PR.
 recommended that you:
 > * Ensure you have a "clean" source tree, as the checks will check all files present, and
 might fail if you have extra files or your files are out of date in your tree.
-> * Ensure that [`gometalinter`](https://github.com/alecthomas/gometalinter) is current or
+> * Ensure that [`golangci-lint`](https://github.com/golangci/golangci-lint) is current or
 has not been installed (the static check scripts will install it if necessary). Changes
 in either the linters used or the Kata Containers code base can produce spurious errors
 that do not fail inside the CI systems.
