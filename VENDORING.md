@@ -5,10 +5,13 @@
     * [Overview of the main commands](#overview-of-the-main-commands)
 * [Vendoring use cases](#vendoring-use-cases)
     * [Initialize vendoring of the package](#initialize-vendoring-of-the-package)
+    * [Pruning non-go files](#pruning-non-go-files)
     * [Vendor a newly imported package](#vendor-a-newly-imported-package)
     * [Update a vendored package](#update-a-vendored-package)
     * [Remove a vendored package](#remove-a-vendored-package)
     * [Test a pending pull request](#test-a-pending-pull-request)
+        * [From the main repository](#from-the-main-repository)
+        * [From a forked repository](#from-a-forked-repository)
 * [Miscellaneous](#miscellaneous)
 
 ## Vendoring tool
