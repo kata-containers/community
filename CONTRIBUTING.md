@@ -823,19 +823,16 @@ rejecting any PR. Although [anyone can review PRs](#reviews), only the
 acknowledgement (or "ack") from an Approver counts towards the approval of a PR.
 
 Approvers are listed in GitHub teams, one for each repository. The project
-uses the [Pull Approve](https://PullApprove.com) service meaning each
-repository contains a top level `.PullApprove.yml` configuration file. This
-file lists the GitHub team used for that repository's approvals.
+uses the
+[GitHub required status checks](https://help.github.com/en/articles/enabling-required-status-checks)
+along with the [GitHub `CODEOWNERS`
+file](https://help.github.com/en/articles/about-code-owners) to specify who
+can approve PRs. All repositories are configured to require:
 
-Each repository can have custom review requirements but the minimum approval
-requirements are:
-
-- Two approvals from the approval team listed in the configuration file.
+- Two approvals from the repository-specific approval team.
 
 - One [documentation team](https://github.com/orgs/kata-containers/teams/documentation/members)
   approval if the PR modifies documentation.
-
-See the `.PullApprove.yml` configuration files for full details.
 
 ## Issue tracking
 
