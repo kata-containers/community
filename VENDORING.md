@@ -1,15 +1,18 @@
 # Performing vendoring for the Kata Containers project
 
 * [Vendoring tool](#vendoring-tool)
-    * [How to install and update dep](#how-to-install-and-update-dep)
+    * [How to install and update `dep`](#how-to-install-and-update-dep)
     * [Overview of the main commands](#overview-of-the-main-commands)
 * [Vendoring use cases](#vendoring-use-cases)
     * [Initialize vendoring of the package](#initialize-vendoring-of-the-package)
+    * [Pruning non-go files](#pruning-non-go-files)
     * [Vendor a newly imported package](#vendor-a-newly-imported-package)
     * [Update a vendored package](#update-a-vendored-package)
     * [Remove a vendored package](#remove-a-vendored-package)
     * [Test a pending pull request](#test-a-pending-pull-request)
-* [Miscellaneaous](#miscellaneaous)
+        * [From the main repository](#from-the-main-repository)
+        * [From a forked repository](#from-a-forked-repository)
+* [Miscellaneous](#miscellaneous)
 
 ## Vendoring tool
 
@@ -18,9 +21,9 @@ project because it is simple and powerful for some corner cases. Furthermore,
 this tool is expected to be the official vendoring tool for Golang.
 
 Ensure you use the latest version of the `dep` tool. See 
-[How to install and update dep](#how-to-install-and-update-dep) for details.
+[How to install and update `dep`](#how-to-install-and-update-dep) for details.
 
-### How to install and update dep
+### How to install and update `dep`
 
 Install or update this tool using the following command:
 ```bash
@@ -241,7 +244,7 @@ development branch called `work-dev`. In this case you will need to modify
 The previous case is more common because typically you do not have permissions
 to push directly to the main repository.
 
-## Miscellaneaous
+## Miscellaneous
 
 For additional information about vendoring, see
 "[Re-vendor PRs](https://github.com/kata-containers/community/blob/master/CONTRIBUTING.md#re-vendor-prs)".

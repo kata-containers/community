@@ -1,6 +1,6 @@
 # Downstream stakeholders notification email (private issues) template
 
-We send two separate emails, to avoid off-topic replies to linux-distros:
+We send two separate emails, to avoid off-topic replies to Linux-distros:
 
 ```
 -   To: <embargo-notice@lists.katacontainers.io>

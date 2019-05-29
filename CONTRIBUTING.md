@@ -102,9 +102,9 @@ before submitting your PR.
 
 > **Note:** To ensure you replicate the static checks performed by the CI system, it is
 recommended that you:
-> * Ensure you have a 'clean' source tree, as the checks will check all files present, and
+> * Ensure you have a "clean" source tree, as the checks will check all files present, and
 might fail if you have extra files or your files are out of date in your tree.
-> * Ensure that [gometalinter](https://github.com/alecthomas/gometalinter) is current or
+> * Ensure that [`golangci-lint`](https://github.com/golangci/golangci-lint) is current or
 has not been installed (the static check scripts will install it if necessary). Changes
 in either the linters used or the Kata Containers code base can produce spurious errors
 that do not fail inside the CI systems.
@@ -112,7 +112,7 @@ that do not fail inside the CI systems.
 
 ### Normal PR workflow
 
-Github has a basic introduction to the PR process
+GitHub has a basic introduction to the PR process
 [here](https://help.github.com/articles/using-pull-requests/).
 
 When submitting your PR, treat the PR message the same
@@ -256,8 +256,8 @@ This is the official location for this repository and is referred to as the
   repository" into your local repository.
 
   You might ask how Git knows which repository to pull changes from. Simply,
-  it defaults to pull from the repository you `git clone`'d in previous steps.
-  In Git terminology that default repository is given two names:
+  it defaults to pull from the repository in which you ran `git clone`
+  previously. In Git terminology that default repository is given two names:
 
   - The URL for the default upstream repository is called the `origin`.
 
@@ -362,7 +362,7 @@ $ git log master.. --oneline --decorate=no
 ```
 
 > **Note:** The `git log` command compares your current branch (`fix-doc-bugs`)
-> with the `master` branch and lists all the commmits, one per line.
+> with the `master` branch and lists all the commits, one per line.
 
 Since all four commits are related to *the same change* to fix spelling mistakes
 and break long lines up into shorter lines, it makes sense to combine all four
@@ -427,9 +427,8 @@ Taking each step in turn:
   ```
 
 - In your editor, read the comments at the bottom of the screen. Next, without
-  modifying the first line (`pick 2e335ac docs: Fix typos and fold long
-  lines`), change the "`pick`" at the start of all the other lines to
-  "`squash`".
+  modifying the first line (`pick 2e335ac docs: Fix typos and fold long lines`),
+  change the "`pick`" at the start of all the other lines to "`squash`".
 
   As an example, your editor window could appear as follows:
 
@@ -445,7 +444,7 @@ Taking each step in turn:
   will see all the commit *messages*. These messages are descriptions for all the
   commits you created. At this point you can modify the file as you wish. Once
   you save and exit the editor, Git uses whatever is left in the file as the
-  commit message for your "squashed' commit.
+  commit message for your "squashed" commit.
 
   If you followed the example [first PR](#first-pr-example),
   your first commit ("`2e335ac docs: Fix typos and fold long lines`")
@@ -497,14 +496,14 @@ Then, the team is notified and able to re-review your PR more quickly.
 
 Kata Containers CI systems have two methods that allow marking
 PRs to prevent them being merged. The methods are
-[GibHub labels](https://help.github.com/articles/about-labels/)
+[GitHub labels](https://help.github.com/articles/about-labels/)
 or keywords in the PR subject line. The keywords can appear anywhere
 in the subject line.
 
 The following table summarises some common scenarios and appropriate use
 of labels or keywords:
 
-| Scenario | github label | PR description contains |
+| Scenario | GitHub label | PR description contains |
 | -------- | ------------ | ----------------------- |
 | PR created "as an idea" and feedback sought | `rfc` | RFC |
 | PR incomplete - needs more work or rework | `do-not-merge` `wip` | WIP |
@@ -515,8 +514,8 @@ of labels or keywords:
 If any of the values in the table above are set on a PR, it will be
 automatically blocked from merging.
 
-> **Note:** Often during dicsussions the abbreviated and full terms are
-> used interchangably. For instance, often `DNM` is used
+> **Note:** Often during discussions the abbreviated and full terms are
+> used interchangeably. For instance, often `DNM` is used
 > in discussions as shorthand for `do-not-merge`. The CI systems only
 > recognise the above phrases as shown.
 
@@ -648,7 +647,7 @@ For additional information on using the `dep` tool, see
 ### Stable branch backports
 
 Kata Containers maintains a number of stable branch releases. Bug fixes to the
-master branch are selectively applied to (or 'backported') these stable branches.
+master branch are selectively applied to (or "backported") these stable branches.
 
 In order to aid identification of commits that potentially should be backported to
 the stable branches, all PRs submitted must be labelled with one or more of the
@@ -726,7 +725,7 @@ A PR can contain multiple patches. These patches should generally be related to 
 ### Verification
 
 Correct formatting of the PR patches is verified using the
-[checkcommits](https://github.com/kata-containers/tests/tree/master/cmd/checkcommits)
+[`checkcommits`](https://github.com/kata-containers/tests/tree/master/cmd/checkcommits)
 tool.
 
 ### Examples
@@ -772,8 +771,8 @@ See the [PR review guide](PR-Review-Guide.md) for tips on performing a careful r
 
 We use the GitHub [Required Reviews](https://help.github.com/articles/approving-a-pull-request-with-required-reviews/)
 system for reviewers to note if they agree or disagree with a PR. To have
-an acknowledgement or 'nack' registered with github, you **must** use the
-github 'Review changes' dialog to leave feedback. Notes left only in the
+an acknowledgement or "nack" registered with GitHub, you **must** use the
+GitHub "Review changes" dialog to leave feedback. Notes left only in the
 comments fields, whilst sometimes useful, will not get registered
 in the acknowledgement counting system.
 
@@ -783,7 +782,7 @@ Documentation PRs can sometimes use a modified process explained in the
 ### Review Examples
 
 The following is an example of a valid "ack", as long as
-the 'Approve' box is ticked in the Review changes dialog:
+the "Approve" box is ticked in the Review changes dialog:
 
 ```
 Excellent work - thanks for your contribution.
@@ -806,7 +805,7 @@ Some of the checks are:
 - Functional tests.
 - Integretation tests.
 
-The travis job will be executed right after the PR is opened, while the Jenkins
+The Travis job will be executed right after the PR is opened, while the Jenkins
 jobs will wait to be triggered. A maintainer must add a `/test` comment
 on the PR to let the CI jobs run.
 
@@ -824,19 +823,16 @@ rejecting any PR. Although [anyone can review PRs](#reviews), only the
 acknowledgement (or "ack") from an Approver counts towards the approval of a PR.
 
 Approvers are listed in GitHub teams, one for each repository. The project
-uses the [Pull Approve](https://pullapprove.com) service meaning each
-repository contains a top level `.pullapprove.yml` configuration file. This
-file lists the GitHub team used for that repository's approvals.
+uses the
+[GitHub required status checks](https://help.github.com/en/articles/enabling-required-status-checks)
+along with the [GitHub `CODEOWNERS`
+file](https://help.github.com/en/articles/about-code-owners) to specify who
+can approve PRs. All repositories are configured to require:
 
-Each repository can have custom review requirements but the minimum approval
-requirements are:
-
-- Two approvals from the approval team listed in the configuration file.
+- Two approvals from the repository-specific approval team.
 
 - One [documentation team](https://github.com/orgs/kata-containers/teams/documentation/members)
   approval if the PR modifies documentation.
-
-See the `.pullapprove.yml` configuration files for full details.
 
 ## Issue tracking
 

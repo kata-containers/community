@@ -20,7 +20,7 @@ Kata Containers is an open source project and community working to build a stand
 
 The Kata Containers project will initially comprise six components, including the Agent, Runtime, Proxy, Shim, Kernel and packaging of QEMU 2.9. It is designed to be architecture agnostic, run on multiple hypervisors and be compatible with the OCI specification for Docker containers and CRI-O for Kubernetes.
 
-Kata Containers combines technology from [Intel® Clear Containers](https://github.com/clearcontainers/runtime) and [Hyper runV](https://github.com/hyperhq/runv). The code is hosted on Github under the Apache 2 license and the project is managed by the OpenStack Foundation. To learn more about the project and organizations backing the launch, visit https://www.katacontainers.io.
+Kata Containers combines technology from [Intel® Clear Containers](https://github.com/clearcontainers/runtime) and [Hyper runV](https://github.com/hyperhq/runv). The code is hosted on GitHub under the Apache 2 license and the project is managed by the OpenStack Foundation. To learn more about the project and organizations backing the launch, visit https://www.katacontainers.io.
 
 # Community
 
@@ -53,7 +53,7 @@ See the [contributing guide](CONTRIBUTING.md) for details on how to contribute t
 
 # Governance
 
-The Kata Containers project is governed according to the [“four opens"](https://governance.openstack.org/tc/reference/opens.html), which are open source, open design, open development, and open community. Technical decisions are made by technical contributors and a representative Architecture Committee. The community is committed to diversity, openness, and encouraging new contributors and leaders to rise up.
+The Kata Containers project is governed according to the ["four opens"](https://governance.openstack.org/tc/reference/opens.html), which are open source, open design, open development, and open community. Technical decisions are made by technical contributors and a representative Architecture Committee. The community is committed to diversity, openness, and encouraging new contributors and leaders to rise up.
 
 ## Developers
 
@@ -61,11 +61,11 @@ For code contributors, there are currently two roles relevant to project governa
 
 ### Contributor
 
-A Contributor to the Kata Containers project is someone who has had code merged within the last 12 months. Contributors are eligible to vote in the Architecture Committee elections. Contributors have read only access to the Kata Containers repos on Github.
+A Contributor to the Kata Containers project is someone who has had code merged within the last 12 months. Contributors are eligible to vote in the Architecture Committee elections. Contributors have read only access to the Kata Containers repos on GitHub.
 
 ### Maintainer
 
-A Maintainer has the ability to merge code into the Kata Containers project. Maintainers are active Contributors and participants in the projects. In order to become a Maintainer, you must be nominated and approved by the established Maintainers. Maintainers have write access to the Kata Containers repos on Github.
+A Maintainer has the ability to merge code into the Kata Containers project. Maintainers are active Contributors and participants in the projects. In order to become a Maintainer, you must be nominated and approved by the established Maintainers. Maintainers have write access to the Kata Containers repos on GitHub.
 
 ## Architecture Committee
 
@@ -96,7 +96,7 @@ Vulnerability Management Team (VMT). Vulnerabilities are managed using a
 [responsible disclosure](https://en.wikipedia.org/wiki/Responsible_disclosure) model.
 
 Details of how to report a vulnerability, the process and procedures
-used for vulnerability management, and responsibilites of the VMT members
+used for vulnerability management, and responsibilities of the VMT members
 can be found in the [VMT documentation](VMT/VMT.md).
 
 Previous Kata Containers Security Advisories are [listed on their own page](VMT/KCSA.md).

@@ -23,6 +23,6 @@ example snippets of configuration files should be included here.
 ### Contacts / References ###
 Author: <author name(s) and company(s)>
 This KCSN : <link to KCSN on documents repo>
-Original LaunchPad Bug : <link to launchpad bug for affected project/service>
+Original Launchpad Bug : <link to launchpad bug for affected project/service>
 Mailing List : [Security] tag on kata-dev@lists.katacontainers.io 
 CVE: <CVE number if one was filed>

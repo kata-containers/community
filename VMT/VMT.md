@@ -36,7 +36,7 @@ Here are the steps followed.
 
 ## Reception
 
-A report is received via the [Kata Containers Launchpad](https://launchpad.net/katacontainers.io). New reports should be created as a 'Private Bug', thus initially restricting visibility
+A report is received via the [Kata Containers Launchpad](https://launchpad.net/katacontainers.io). New reports should be created as a "Private Bug", thus initially restricting visibility
 to the VMT members and the reporter.
 
 The first steps performed by the VMT are:
@@ -57,7 +57,7 @@ The specifics are indexed in the [report taxonomy](#incident-report-taxonomy) an
 
 ## Patch development
 
-For a private report, the reporter and the affected projects' core security review teams, plus anyone they deem necessary to develop and validate a fix, are added to the Launchpad bug subscription list.
+For a private report, the reporter and the affected project's core security review teams, plus anyone they deem necessary to develop and validate a fix, are added to the Launchpad bug subscription list.
 A fix is proposed as a patch to the current master branch (as well as any affected supported branches) and attached to the Launchpad bug, **not sent to the public code review system**.
 
 For public reports, there is no need to directly subscribe anyone and patches can be submitted directly to the code review system instead as Pull Requests (PR).
@@ -132,7 +132,7 @@ Once more, fill in the *security code* at the bottom of the page and *submit req
 
 ## Publish KCSA
 
-Shortly after pushing the patches (potentially waiting for the first test runs to complete), publish the advisory to the [Kata Containers Dev ML](mailto:kata-dev@lists.katacontainers.io) and slack channels, and add the issue to the [list of KCSA's](KCSA.md).
+Shortly after pushing the patches (potentially waiting for the first test runs to complete), publish the advisory to the [Kata Containers development mailing list](mailto:kata-dev@lists.katacontainers.io) and slack channels, and add the issue to the [list of KCSA's](KCSA.md).
 Wait until all patches are merged to supported branches before setting the KCSA Issue status to *Fix released*.
 
 ## All patches merged
@@ -191,7 +191,7 @@ Issues that take too much time to be fixed (e.g., more than 2 weeks) or Issues t
 
 Whenever such a case occurs, the Kata Containers [Architecture Committee](https://github.com/kata-containers/community#architecture-committee) is subscribed to the Launchpad bug in order to discuss whether or not it's imperative to keep that particular bug private.
 
-The same process is followed if an embargoed issue is, accidentally or not, leaked to the public. In all likelyhood that Issue will then be moved to the Public state.
+The same process is followed if an embargoed issue is, accidentally or not, leaked to the public. In all likelihood that Issue will then be moved to the Public state.
 
 ## Downstream stakeholders
 
@@ -199,7 +199,7 @@ Kata Containers as an upstream project is used in a number of distributions, pro
 In the spirit of [responsible disclosure](https://en.wikipedia.org/wiki/Responsible_disclosure), this ecosystem, collectively known as the downstream stakeholders, needs to be warned in advance to be able to prepare patches and roll them out in a coordinated fashion on disclosure day.
 The embargo period is kept voluntarily small (3-5 business days), as a middle ground between keeping the vulnerability under cover for too long and not giving a chance to downstream stakeholders to react.
 
-If you are currently not a referenced stakeholder and think you should definitely be included on that email distribution list, please submit a [Launchpad bug](https://launchpad.net/katacontainers.io) with a rationale for your additon.
+If you are currently not a referenced stakeholder and think you should definitely be included on that email distribution list, please submit a [Launchpad bug](https://launchpad.net/katacontainers.io) with a rationale for your addition.
 
 # Templates
 
