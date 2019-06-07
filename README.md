@@ -5,6 +5,7 @@
     * [Join Us](#join-us)
     * [Users](#users)
     * [Contributors](#contributors)
+    * [Review Team](#review-team)
 * [Governance](#governance)
     * [Developers](#developers)
         * [Contributor](#contributor)
@@ -50,6 +51,10 @@ distribution.
 ## Contributors
 
 See the [contributing guide](CONTRIBUTING.md) for details on how to contribute to the project.
+
+## Review Team
+
+See the [rota documentation](Rota-Process.md).
 
 # Governance
 
