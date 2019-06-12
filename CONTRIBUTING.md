@@ -803,7 +803,7 @@ Some of the checks are:
 - Static analysis checks.
 - Unit tests.
 - Functional tests.
-- Integretation tests.
+- Integration tests.
 
 The Travis job will be executed right after the PR is opened, while the Jenkins
 jobs will wait to be triggered. A maintainer must add a `/test` comment
