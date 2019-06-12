@@ -12,7 +12,7 @@ serve as a short introduction and reminder of the basic stable backport process.
 ## Backport Workflow
 
 The basic workflow involves creating a new local branch from the stable tree you
-are targetting, then cherry picking the commits from your master branch PR
+are targeting, then cherry picking the commits from your master branch PR
 onto that branch. You then submit your branch to GitHub as a PR against the
 stable branch (and not the `master` branch).
 
