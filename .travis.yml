@@ -1,0 +1,21 @@
+#
+# Copyright (c) 2019 Intel Corporation
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+dist: xenial
+
+language: go
+
+go:
+  - master
+
+before_install:
+  - ".ci/setup.sh"
+
+before_script:
+  - ".ci/static-checks.sh"
+
+script:
+  - ".ci/run.sh"
