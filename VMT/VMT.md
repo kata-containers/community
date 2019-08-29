@@ -51,7 +51,7 @@ The first steps performed by the VMT are:
 For some lower-risk issues or problems which may only be easy to solve in future releases, the KCSA Issue will be set to *Opinion* and the core security reviewers for Kata Containers will be subscribed to determine whether they wish to issue a Kata Containers Security Note (KCSN) (these reports may still sometimes remain under embargo until the KCSN is issued).
 If no KCSA is warranted and there is no benefit to a KCSN then the KCSA Issue will be set to *Won't Fix* or *Invalid* (depending on the specific situation) and the bug state switched from *Private Security* to *Public*, optionally adding the *security* bug tag if the report concerns a potential security hardening opportunity.
 
-If a Kata Containers Security Note ([KCSN](templates/KCSN.md)) is warranted, one should be written and posted to the [Kata Containers Security Note](https://github.com/kata-containers/documentation/security/KCSN.md) document.
+If a Kata Containers Security Note (KCSN) is warranted, one should be written and posted to the [Kata Containers Security Note](templates/KCSN.md) document.
 
 The specifics are indexed in the [report taxonomy](#incident-report-taxonomy) and [task status](#kcsa-task-status) tables.
 
