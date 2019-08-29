@@ -1,9 +1,9 @@
 # Architecture Committee Elections: September 2018
 
 There are three Architecture Committee seats up for election. The seats up for
-election are currently filled by Wei Zhang, Tim Allclair, and Jessie Frazelle.
+election are currently filled by `Wei Zhang`, `Tim Allclair`, and `Jessie Frazelle`.
 
-Refer to the [elections folder README.md](https://github.com/kata-containers/community/tree/master/elections)
+Refer to the [elections folder README](https://github.com/kata-containers/community/tree/master/elections)
 for election process, declaring candidacy, and eligible voters.
 
 Election Dates:
