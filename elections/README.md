@@ -28,7 +28,7 @@ of the Community README.
 The election process begins three calendar weeks prior to the election.
 - One week for candidates to submit their candidacy
 - One week "debate period" for electorate to pose questions on the community
-mailing lists to learn the candidates' platforms
+mailing lists to learn the candidates platforms
 - One week for voting
 - Results announced
 
@@ -42,7 +42,7 @@ Committee elections.
 ## Candidacy
 
 Anyone who has made contributions to the Kata Containers project is eligible
-to run. Candidates submit their candidacy by adding a textfile to the
+to run. Candidates submit their candidacy by adding a text file to the
 corresponding election folder under the community repo with their interest
 and platform, and announcing their candidacy on the [community developer mailing
 list](http://lists.katacontainers.io/cgi-bin/mailman/listinfo/kata-dev).
@@ -76,7 +76,7 @@ Containers project. This includes, but is not limited to:
 ## System
 
 The Architecture Committee election uses
-[CIVS with condorcet method voting](https://civs.cs.cornell.edu/)
+[CIVS with Condorcet method voting](https://civs.cs.cornell.edu/)
 
 ## Tools
 
