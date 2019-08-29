@@ -2,8 +2,8 @@
 
 Two nominations were received for the March 2019 elections:
 
-- [Samuel Ortiz](https://github.com/sameo)
-- [Xu Wang](https://github.com/gnawux)
+- [`Samuel Ortiz`](https://github.com/sameo)
+- [`Xu Wang`](https://github.com/gnawux)
 
 As the number of applications matched the number of available seats, the
 question and voting phases of the elections were bypassed, and the two

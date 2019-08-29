@@ -1,9 +1,9 @@
 # Architecture Committee Elections: March 2019
 
 There are two Architecture Committee seats up for election. The seats up for
-election are currently filled by Xu Wang and Samuel Ortiz.
+election are currently filled by `Xu Wang` and `Samuel Ortiz`.
 
-Refer to the [elections folder README.md](https://github.com/kata-containers/community/tree/master/elections)
+Refer to the [elections folder README](https://github.com/kata-containers/community/tree/master/elections)
 for election process, declaring candidacy, and eligible voters.
 
 Election Dates:
