@@ -289,11 +289,10 @@ anomalies of CI test failures.
 helps us to identify "flaky" tests and prioritize the problematic bugs that
 make review/merges slower.
 
-Use the following link to search all issues (open and closed) and look for the
-key failure message before you raise an issue. This allows you to see if the
-issue has been raised before:
+Search for the key failure message in all issues (open and closed) before you
+raise an issue. This allows you to see if the issue has been raised before:
 
-- https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+org%3Akata-containers+
+- https://github.com/kata-containers
 
   Enter an error message in the search box and press enter.
 
