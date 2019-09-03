@@ -6,6 +6,7 @@
     * [Users](#users)
     * [Contributors](#contributors)
     * [Review Team](#review-team)
+    * [Resource Owners](#resource-owners)
 * [Governance](#governance)
     * [Developers](#developers)
         * [Contributor](#contributor)
@@ -55,6 +56,11 @@ See the [contributing guide](CONTRIBUTING.md) for details on how to contribute t
 ## Review Team
 
 See the [rota documentation](Rota-Process.md).
+
+## Resource Owners
+
+Details of which Kata Containers project resources are owned, managed or controlled by whom
+are detailed on the [Areas of Intetest](https://github.com/kata-containers/community/wiki/Areas-of-interest) wiki page, under the [Resource Owners](https://github.com/kata-containers/community/wiki/Areas-of-interest#resource-owners) section.
 
 # Governance
 
