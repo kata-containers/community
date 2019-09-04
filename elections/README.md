@@ -82,6 +82,11 @@ The Architecture Committee election uses
 
 See the [election tools documentation](tools).
 
+## Current elections
+
+- September 2019
+  - [election](arch-committee-2019-09)
+
 ## Previous elections
 
 - March 2019
