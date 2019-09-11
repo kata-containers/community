@@ -1,0 +1,39 @@
+Name: Haomin Tsai
+  
+Email: caihaomin@huawei.com
+
+Introduction:
+
+I am now working as a Senior Engineer in Huawei Corporation, leading a technical team
+to provide container solutions for other departments in our Corporation and Huawei Public Cloud.
+We focus on docker/containerd/kata-containers/linux kernel and other infrastructure technology.
+I am now working on Kunpeng Arch which based on arm64 extended.
+
+Before Kata, I was a docker/contaienrd developer and spent time working on operating system.
+In the early days of Kata's establishment, I participated in it. After that my team and I wishes 
+to make a good product for more users. 
+Last year, our product Huawei Cloud Container Instance(aka CCI) which based on Kata has a rapid growth. 
+After this period of practice, we truely believe that Kata is really a good solution in production. 
+We extended the use of the scene based on Kata and enhanced the scene 
+including genetic calculation, AI calculation, CDN, big data and so on.
+
+Talking about community, a good community makes both developers and users comfortable. 
+And I think Kata is one of these communitiesm, beyond this  Kata even is going to become 
+the cornerstone of cloud computing, not only in serverless/multi-tenant scene,
+ but also in more general scenes.
+
+Next I want to talk a little about future. If I can be honored to take one of the seats, 
+my goals are composed of two parts: 
+First part, I want to promote our production practice which will make users more comfortable. 
+Second part, our team are now working on Kunpeng Arch, 
+and I think we have a further work to do for Kata based on Kunpeng.
+
+I hope I can get this seat and make contribution to the community.
+
+^_^
+
+BR~
+Haomin
+
+
+
