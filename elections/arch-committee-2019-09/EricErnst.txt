@@ -1,0 +1,23 @@
+Name: Eric Ernst
+  
+Email: eric.ernst@intel.com
+
+Background:
+
+I am a senior software engineer in Intel's Open Source Technology Center, acting both as a contributor
+as well as a technical lead for the Intel-team contributing to Kata Containers. Before Kata, I spent time working
+on Clear Containers, and prior to that spent a few years working on Linux kernel.
+
+Since the initial discussions of creating Kata started I have been an active contributor and advocate for the
+project, both in code and in the greater Kata community/ecosystem. While I do work within
+a silicon company, one of my primary goals for helping guide Kata has been developing a neutral and
+diverse contribution base. Aside from having a stable, compatible, and viable technical basis for the
+project, I think a healthy and robust community is key to sustained success.
+
+Over the last year, I have served as a member of the Kata Containers architecture committee. The project has
+matured a lot over the last year, with expanding production usage and user-base. Despite this, we still have a lot of room
+for development, continuing to improve our density and security profile, all while providing improved manageability 
+and serviceability for users who are deploying Kata. Beyond this work, we will need to focus on attaining and addressing
+input from end-users, as well as adapting to and influencing the cloud native ecosystem.  
+
+In other words, we still have a lot of fun work to do! I look forward to continuing to contribute to the project.
