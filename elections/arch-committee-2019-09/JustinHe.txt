@@ -1,0 +1,51 @@
+Kata-containers Architecture Committee Candidacy Declaration
+
+Platform: Arm
+
+Candidate: Justin He <Justin.He@arm.com>
+
+I'm working for Arm Electronic Technology (Shanghai) Co.Ltd.
+This candidacy is representing Arm company to be voted for one seat of the
+Kata-container architecture committee.
+
+My current role is Staff Engineering in the Open Source Software Group and I
+am working on virtualization and container technology on the Arm
+platform. I have more than 10 years of experience in low level Linux software
+development, especially for linux kernel [1], DPDK on arm64 [2] and hardware
+virtualization development including KVM and qemu [3].
+[1] https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/log/?qt=grep&q=Jia+he
+[2] http://dpdk.org/browse/dpdk/log/?qt=author&q=Jia+He
+[3] https://git.qemu.org/qemu.git/?p=qemu.git&a=search&h=HEAD&st=author&s=jia+he
+
+In recent years, our team started development on RunV project, one of the
+predecessors to Kata-containers, to enable and enhance the multi-arch support.
+Our focus areas included KVMtool support, performance profiling of the network
+and storage devices for virtual machines, and we also worked on stability and
+density improvements. For example, our team enabled the memory hotplug support,
+vm template on Kata-containers project. As for virtio-fs support on arm64, we
+fixed a lot issues on persistent memory and DAX support.
+
+For these collaborations, there were public blogs announced at [4] and [5]
+[4] https://blog.hyper.sh/arm_and_hyper.html
+[5] https://community.arm.com/iot/b/blog/posts/arm-and-hyper-hq-will-push-runv-for-the-future-of-container-security.
+We have met regularly with Hyper team to discuss the development issues and
+solutions of the project.
+
+For conference presentation, our team members once attended Denver 2019 summit
+as speakers [4]:
+https://www.openstack.org/videos/summits/denver-2019/kata-containers-on-arm-lets-talk-about-our-progress
+
+Interests:
+We believe Kata-containers is a fast developping project and that it
+will have much broader applicability across different architectures and use
+cases, especially within the emerging next-generation IoT and 5G era!  These
+different use cases will generate new design requirements of the underlying
+architecture and we believe strongly that good multi-architecture support will
+be essential to position Kata-containers for broad adoption throughout the cloud
+native ecosystem.
+
+We look forward to driving these changes together, so the Kata-containers project
+can reach its full potential!
+
+Cheers,
+Justin (Jia He)
