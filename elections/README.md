@@ -86,6 +86,7 @@ See the [election tools documentation](tools).
 
 - September 2019
   - [election](arch-committee-2019-09)
+  - [results](arch-committee-2019-09/Results.md)
 
 ## Previous elections
 

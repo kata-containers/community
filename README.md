@@ -60,7 +60,7 @@ See the [rota documentation](Rota-Process.md).
 ## Resource Owners
 
 Details of which Kata Containers project resources are owned, managed or controlled by whom
-are detailed on the [Areas of Intetest](https://github.com/kata-containers/community/wiki/Areas-of-interest) wiki page, under the [Resource Owners](https://github.com/kata-containers/community/wiki/Areas-of-interest#resource-owners) section.
+are detailed on the [Areas of Interest](https://github.com/kata-containers/community/wiki/Areas-of-interest) wiki page, under the [Resource Owners](https://github.com/kata-containers/community/wiki/Areas-of-interest#resource-owners) section.
 
 # Governance
 
@@ -86,9 +86,9 @@ The current Architecture Committee members are:
 
 - `Eric Ernst` ([`egernst`](https://github.com/egernst)), [Intel](https://www.intel.com/).
 - `Samuel Ortiz` ([`sameo`](https://github.com/sameo)), [Intel](https://www.intel.com).
-- `Jon Olson` ([`jon`](https://github.com/jon)), [Google](https://www.google.com).
+- `Justin He` ([`jon`](https://github.com/justin-he)), [ARM](https://www.arm.com).
 - `Xu Wang` ([`gnawux`](https://github.com/gnawux)), [Ant Financial](https://www.antfin.com/index.htm?locale=en_US).
-- `Zhang Wei` ([`WeiZhang555`](https://github.com/WeiZhang555)), [Huawei](http://www.huawei.com).
+- `Haomin Tsai` ([`WeiZhang555`](https://github.com/jshachm)), [Huawei](http://www.huawei.com).
 
 Architecture Committee elections take place in September (3 seats available) and February (2 seats available). Anyone who has made contributions to the project will be eligible to run, and anyone who has had code merged into the Kata Containers project in the 12 months (a Contributor) before the election will be eligible to vote. There are no term limits, but in order to encourage diversity, no more than 2 of the 5 seats can be filled by any one organization. The Architecture Committee will meet regularly in an open forum with times and locations published in community channels.
 
