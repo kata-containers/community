@@ -38,7 +38,7 @@ You can join our community on any of the following places:
   * General discussions channel: [`#kata-general`](http://webchat.freenode.net/?channels=kata-general).
   * Development discussions channel: [`#kata-dev`](http://webchat.freenode.net/?channels=kata-dev).
 
-* Get an [invite to our Slack channel](http://bit.ly/KataSlack),
+* Get an [invite to our Slack channel](https://bit.ly/katacontainersslack),
   and then [join us on Slack](https://katacontainers.slack.com/).
 
 * Follow us on [Twitter](https://twitter.com/KataContainers) or
