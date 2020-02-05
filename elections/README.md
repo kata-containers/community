@@ -84,11 +84,15 @@ See the [election tools documentation](tools).
 
 ## Current elections
 
+- February 2020
+  - [election](arch-committee-2020-02)
+  - [results](arch-committee-2020-02/Results.md)
+
+## Previous elections
+
 - September 2019
   - [election](arch-committee-2019-09)
   - [results](arch-committee-2019-09/Results.md)
-
-## Previous elections
 
 - March 2019
   - [election](arch-committee-2019-03)
