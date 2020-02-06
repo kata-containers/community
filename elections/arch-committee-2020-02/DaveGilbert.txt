@@ -1,0 +1,27 @@
+Name: David Alan Gilbert
+
+Email: dgilbert@redhat.com
+
+Introduction:
+
+I'm a Principal Software Engineer working for Red Hat in our
+virtualization team.  I've been working on QEMU for the past
+6 years, mostly in live migration but more recently working
+on the virtiofs project.  I'm a QEMU maintainer for live migration,
+virtiofs and the HMP monitor.
+
+My previous work with Kata has mainly been in relation to 
+virtiofs and helping debug CI issues on Red Hat/CentOS and Fedora.
+
+My primary interest is ensuring that hypervisors (QEMU included)
+provide the necessary features to enable Kata to operate securely
+and efficiently.
+
+I'm keen to understand the real-world uses of Kata, how virtiofs is used
+in practice and resolving any usage difficulties in those deployments.
+
+I look forward to promoting the wider usage of Kata and pushing its
+usage in the general enterprise and more specialist areas such as
+telecommunication systems.
+
+Dave (IRC: davidgiluk)
