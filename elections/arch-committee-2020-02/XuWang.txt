@@ -1,0 +1,19 @@
+Name: Xu Wang
+
+Email: xu@hyper.sh, gnawux@antfin.com
+
+Background:
+
+I am a senior staff engineer of Ant Financial, a related company of Alibaba Group (BABA). I am leading
+the secure container development team in Ant Financial currently and working for the Cloud-Native
+open-source of Alibaba as a member of the Ali Open Source TOC. Our team has been working on not only 
+contributing upstream, but also deploying Kata Containers in the productions since we joined Ant Financial.
+
+Before joining Ant Financial, Our team, the hyper.sh, had been keep contributing to Kata Containers 
+and related communities since the day 0 of Kata. It was my great honor to involve the creating of the 
+Kata Containers project and became a initial member of the Architecture Committee together with Samual Ortiz. 
+
+In the past months, we celebrated the two year anniversary of Kata. Look back at the past two years, we have
+improved the isolation in the container world at the expense of some overhead. We believe the container world 
+needs a better isolation solution without hurts on the application-centric nature of Cloud-Native. In 2020,
+I expect we could developing the virtualization technologies for Cloud Native in the 2.0 development cycle.
