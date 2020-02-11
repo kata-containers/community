@@ -1,0 +1,29 @@
+Name: Samuel Ortiz
+
+Email: sameo@linux.intel.com
+
+Background:
+
+I am a Principal Software Engineer working for Intel, where I work on several
+projects related to virtualization and containers: Kata Containers, rust-vmm
+and Cloud Hypervisor.
+
+My journey with the Kata Containers project started back when I initially lead
+the Clear Containers project at Intel, a few years ago. Since then I have
+contributed to many different areas of the project, from core components like
+the virtcontainers package to integration work with the CRI-O and containerd
+projects. I was part of the initial Clear Container and RunV engineering
+efforts to merge the two projects and have been on the Kata Containers
+Architecture Committee since then.
+
+Over the past few months we've seen Kata Containers being deployed in several
+very large production environments, showing how strong and scalable the
+project has become. Such large deployments also bring new requirements for
+security, density and performance that we, as a community, need to look at
+and meet. I believe this can only be achieved with Kata supporting new security
+models and virtualization technologies, losing a few abstraction layers and
+features, and being more tightly integrated with the Cloud Native ecosystem.
+This is what I want to help push through Kata Containers 2.0, and this is why
+I'd like to renew my seat on the Kata Architecture Committee.
+
+Samuel.
