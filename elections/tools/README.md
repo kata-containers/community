@@ -1,9 +1,13 @@
 
 # Election Tools
 
-This directory contains the tools required to generate the Kata Containers electorate
+This directory contains tools that can help generate the Kata Containers eligible
+electorate details.
 
 ## `generate_electorate.py`
+
+The `generate_electorate.py` tool gathers data from GitHub and generates a `YAML`
+dataset containing the details of the eligible electorate for a defined date range.
 
 This tool needs the following python libraries:
 
@@ -21,11 +25,19 @@ $ .venv/bin/pip install pytz github3.py pyyaml
 Before running the tool you will need to create a
 [GitHub API token](https://github.blog/2013-05-16-personal-api-tokens/)
 
-replace `__API_TOKEN__` with your personal token.
+replace `__API_TOKEN__` in the script with your personal token.
 
-Also update the election start and end times.  Then run the tool with:
+Also update the election start and end times to cover the period being
+examined for this election period. The lines to edit look like:
 
+```python
+start_time = datetime.datetime(2018, 1, 1, 0, 0, 0, tzinfo=pytz.UTC)
+end_time = datetime.datetime(2018, 8, 1, 0, 0, 0, tzinfo=pytz.UTC)
 ```
+
+Then run the tool with:
+
+```bash
 $ .venv/bin/python ./generate_electorate.py
 ```
 
@@ -44,3 +56,9 @@ The sources for email addresses are:
 * Look for a `Signed-Off-By` line in the commit message
 
 The GitHub login is always stored so that is the primary identifier.
+
+## Output results
+
+As the script runs it prints a summary on `stdout`. When the script has completed it places the
+generated data into a file called `electorate.yaml`. Use this file to send the bulk email notification
+to the eligible electorate.
