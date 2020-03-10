@@ -84,7 +84,7 @@ The Architecture Committee is responsible for architectural decisions, including
 
 The current Architecture Committee members are:
 
-- `Eric Ernst` ([`egernst`](https://github.com/egernst)), [Intel](https://www.intel.com/).
+- `Eric Ernst` ([`egernst`](https://github.com/egernst)), [Ampere Computing](https://amperecomputing.com/).
 - `Samuel Ortiz` ([`sameo`](https://github.com/sameo)), [Intel](https://www.intel.com).
 - `Justin He` ([`justin-he`](https://github.com/justin-he)), [ARM](https://www.arm.com).
 - `Xu Wang` ([`gnawux`](https://github.com/gnawux)), [Ant Financial](https://www.antfin.com/index.htm?locale=en_US).
