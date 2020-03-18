@@ -13,7 +13,9 @@
         * [Maintainer](#maintainer)
     * [Architecture Committee](#architecture-committee)
 * [Vendoring code](#vendoring-code)
-* [Vulnerability Disclosure](#vulnerability-disclosure)
+* [Vulnerability Handling](#vulnerability-handling)
+    * [Reporting Vulnerabilities](#reporting-vulnerabilities)
+    * [Vulnerability Disclosure Process](#vulnerability-disclosure-process)
 * [Week in Review template](#week-in-review-template)
 
 # About Kata Containers
@@ -100,7 +102,32 @@ See [the elections documentation](elections) for further details.
 
 See the [vendoring documentation](VENDORING.md).
 
-# Vulnerability Disclosure
+# Vulnerability Handling
+
+Vulnerabilities in Kata are handled by the
+[Vulnerability Management Team (VMT)](VMT/VMT.md).
+There are generally two phases:
+- The reporting of a vulnerability to the VMT
+- Handling and disclosure of the vulnerability by the VMT
+
+## Reporting Vulnerabilities
+
+Vulnerabilities in Kata should be reported using the
+[responsible disclosure](https://en.wikipedia.org/wiki/Responsible_disclosure) model.
+
+There are two methods available to report vulnerabilities to the Kata community:
+
+1) Report via a private issue on the [Kata Containers launchpad](https://launchpad.net/katacontainers.io)
+1) Email any member of the [Kata Containers architecture committee](#architecture-committee) directly
+
+When reporting a vulnerability via the launchpad:
+
+- You will need to create a launchpad login account.
+- Preferably, but at your discretion, create the report as "Private Security", so the VMT can assess and
+  respond in a responsible manner. Only the VMT members will be able to view a "Private Security" tagged
+  issue initially, until it is deemed OK to make it publicly visible.
+
+## Vulnerability Disclosure Process
 
 Vulnerabilities in the Kata Container project are managed by the Kata Containers
 Vulnerability Management Team (VMT). Vulnerabilities are managed using a
