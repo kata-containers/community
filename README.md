@@ -28,7 +28,7 @@ Kata Containers combines technology from [Intel® Clear Containers](https://gith
 
 # Community
 
-Kata Containers is working to build a global, diverse and collaborative community. Anyone who is interested in supporting the technology is welcome to participate. We are seeking different expertise and skills, ranging from development, operations, documentation, marketing, community organization and product management.
+Kata Containers is working to build a global, diverse and collaborative community. Anyone who is interested in supporting the technology is welcome to participate. Learn how to contribute on the [Community pages](https://katacontainers.io/community/). We are seeking different expertise and skills, ranging from development, operations, documentation, marketing, community organization and product management.
 
 ## Join Us
 
