@@ -542,7 +542,7 @@ that spans as many lines as required.
 A "Fixes #XXX" comment listing the GitHub issue this change resolves.
 This comment is required for the main patch in a sequence. See the following examples.
 
-Signed-off-by: <contributor@foo.com>
+Signed-off-by: Contributors Name <contributor@foo.com>
 ```
 
 #### Pull request format
