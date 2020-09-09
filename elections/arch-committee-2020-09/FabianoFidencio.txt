@@ -1,0 +1,51 @@
+Name: Fabiano Fidêncio
+ 
+Email: fabiano@fidencio.org
+ 
+Background:
+ 
+I am a Senior Software Engineer working for Red Hat's virtualization team, a
+tattoo canvas for abstract art, a music addict, and a big fan of old video
+games.
+ 
+In the past 6 months I have been dedicating a big chunk of my time contributing
+and helping to make the Kata Containers project solid across different
+communities, such as Fedora, CentOS, and CRI-O, supporting Kata Containers
+exposure and adoption in the enterprise Linux world.
+
+My involvement with Kata Containers has been quite intense in this period,
+from providing simple patches, doing code reviews on pretty much all
+components, fixing issues not only on Kata Containers but also in the
+communities surrounding the project, to becoming a point of contact for Fedora,
+CentOS, and RHEL related issues, always focusing on what could benefit the
+project and its community.
+
+To keep improving Kata Containers adoption, I recently became the CRI-O
+maintainer for the VM runtime type (used together with the "shim v2") and I am
+and will be enforcing Kata Containers play well also with one of the most
+widely used container runtimes in the Kubernetes ecosystem.
+
+My primary interest is to ensure that Kata Containers can be used in enterprise
+Linux solutions, which can be achieved by improving stability, debuggability,
+and out-of-the-box usage, everything done as a symbiotic process with an
+organic growth. Enforcing this growth will fundamentally benefit this community
+and the communities around this one.
+
+In order to make it possible, I plan to continue working in the integration
+bits, while keeping connecting and facilitating the communication between the 
+Kata Containers community and the communities that both Red Hat and I are part
+of.
+
+The contributions I have participated in and I am the most proud to mention
+are:
+
+* Out-of-the-box virtio-fs support on Fedora, and CentOS;
+* Helping with the SELinux support on Kata Containers, CRI-O, and
+  container-selinux projects;
+* Helping to educate & to onboard colleagues to the project, assisting them so
+  they can get up to speed to start contributing with different pieces and also
+  to become part of this community; 
+* Helping to lower the maintenance burden by dropping OBS package builds in
+  favor of kata-deploy usage (still in progress).
+
+Fabiano Fidêncio (IRC / Slack: fidencio)
