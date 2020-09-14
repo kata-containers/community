@@ -40,7 +40,7 @@ The two branches used in the examples in this guide are:
 This document assumes an understanding of:
 
 - The `git(1)` tool.
-- The [standard PR workflow](https://github.com/kata-containers/community/blob/master/CONTRIBUTING.md#normal-pr-workflow).
+- The [standard PR workflow](https://github.com/kata-containers/community/blob/master/CONTRIBUTING.md#pull-requests).
 - The [stable branch strategy](https://github.com/kata-containers/documentation/blob/master/Stable-Branch-Strategy.md).
 
 ## Graphical overview of backporting
