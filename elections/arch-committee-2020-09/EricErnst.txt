@@ -1,0 +1,19 @@
+Name: Eric Ernst
+
+Email: eric.ernst@apple.com
+
+Background:
+
+I am a senior software engineer at Apple, focused on cloud infrastructure, and despite a couple of exciting employer changes this year,
+I continue to be very interested in this project, and engaged in the Kata community as a contributor.
+
+Since the initial discussions of creating Kata started I have been an active contributor and advocate for the
+project, both in code and in the greater Kata community/ecosystem. I am running again as I am very interested in this project's success in
+the ecosystem, and am focused on making sure Kata continues to be a production-ready solution for providing stronger container isolation.
+
+Over the last two years, I have served as a member of the Kata Containers architecture committee. As I stated last year, the project has
+matured a lot, with expanding production usage and user-base. Even more so now, we have a lot of important changes this year:
+Cloud Hypervisor VMM support, PodOverhead support in Kubernetes, cgroups-v2 support, cpuset support, rust-agent support, improved telemetry/observability,
+virtio-fs support. Each of these are important improvements that make the project more attractive and viable for production use cases.
+
+We still have a lot of interesting work to do, and I look forward to continuing to contribute to the project.
