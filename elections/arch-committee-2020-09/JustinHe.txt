@@ -1,0 +1,38 @@
+Kata-containers Architecture Committee Candidacy Declaration
+
+Platform: Arm
+
+Candidate: Justin He <Justin.He@arm.com>
+
+I'm working for Arm Electronic Technology (Shanghai) Co.Ltd.
+This candidacy is representing Arm company to be voted for one seat of the
+Kata-container architecture committee.
+
+My current role is Principal Engineering in the Open Source Software Group and I
+am working on virtualization and container technology on the Arm platform. I
+have more than 10 years of experience in low level Linux software development,
+especially for linux kernel and hardware virtualization development including
+KVM and qemu.
+
+In recent years, our team started development on:
+ - Enablement the Kata runtime for arm64
+ - CI maintenance for Kata arm64
+ - firecracker arm64 support
+ - Cloud hypervisor arm64 enablement
+ - Kubernetes integration test on arm64
+ - Optimize the performance of Kata runtime/agent/vmm/kernel
+
+We believe Kata-containers is a fast developping project and that it will have
+much broader applicability across different architectures and use cases,
+especially within the emerging next-generation IoT and 5G era!  These
+different use cases will generate new design requirements of the underlying
+architecture and we believe strongly that good multi-architecture support will
+be essential to position Kata-containers for broad adoption throughout the cloud
+native ecosystem.  We still have strong interests in the future of Kata project
+and will keep enabling and tuning Kata in many aspects.
+
+We look forward to driving these changes together, so the Kata-containers project
+can reach its full potential!
+
+Cheers,
+Justin (Jia He)
