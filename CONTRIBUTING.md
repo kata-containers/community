@@ -66,7 +66,7 @@ Prerequisites.
 * Review [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments) to avoid common `Golang` errors.
 * Use `gofmt` to fix any mechanical style issues.
 
-## Certificate of Origin
+### Certificate of Origin
 
 In order to get a clear contribution chain of trust we use the [signed-off-by
 language](https://ltsi.linuxfoundation.org/software/signed-off-process/)
@@ -135,7 +135,7 @@ In this section, we explain these augmentations in more detail. Follow these gui
 * [Rebase](https://help.github.com/en/github/using-git/about-git-rebase)
   commits on your branch and `force push` after each cycle of feedback.
 
-#### Configure your environment
+### Configure your environment
 
 Most [Kata Containers repositories](https://github.com/kata-containers)
 contain code written in the [Go language (golang)](https://golang.org/). Go 
@@ -153,7 +153,7 @@ For further details on `golang`, refer to the
 >*Note*: If you intend to make minor edits, it's acceptable
 > to simply fork and clone without adding the GOPATH variable.
 
-##### Fork and clone
+#### Fork and clone
 
 In this example, we configure a Git environment to contribute to this very 
 `Community` repo. We create a sample branch, incorporate reviewer feedback, and rebase our commits.
@@ -178,7 +178,7 @@ $ cd community
    
 >**Note:** Cloning a forked repository automatically gives a remote `origin`.
 
-##### Configure the upstream remote
+#### Configure the upstream remote
 
 Next, add the remote `upstream`. Configuring this remote allows you to
 synchronize your forked copy, `origin`, with the `upstream`. The 
@@ -203,7 +203,7 @@ synchronize your forked copy, `origin`, with the `upstream`. The
 
 For more details, see how to [set up a git remote](https://help.github.com/articles/configuring-a-remote-for-a-fork).
 
-##### Create a topic branch
+#### Create a topic branch
 
 1. Create a new "topic branch" to do your work on:
 
@@ -247,7 +247,7 @@ For more details, see how to [set up a git remote](https://help.github.com/artic
 
   >**Note:** You do not need to change any of the defaults on this page.
 
-##### Update your PR based on review comments
+#### Update your PR based on review comments
 
 Suppose you received some reviewer feedback that asked you to make some
 changes to your PR. You updated your local branch and committed those
@@ -268,7 +268,7 @@ $ git log master.. --oneline --decorate=no
 >(`fix-contrib-bugs`) with the `master` branch and lists all the commits,
 >one per line.
 
-##### Git rebase if multiple commits
+#### Git rebase if multiple commits
 
 Since all four commits are related to *the same change*, it makes sense to
 combine all four commits into a *single commit* on your PR. You need to
@@ -486,7 +486,7 @@ view its build logs to determine the cause of failure.
 
     ![Build log error messages](fig2-ci-cd-log.png)
 
-#### Kata runtime static checks
+### Kata runtime static checks
 
 If working on `kata-runtime`, first ensure you run `make` and `make install` 
 in the `virtcontainers` subdirectory, as shown below. For more information, 
