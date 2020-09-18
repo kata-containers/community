@@ -1,0 +1,14 @@
+Name: Archana Shinde
+
+Email: archana.m.shinde@intel.com
+
+Background:
+
+I am a software engineer at Intel working on Cloud technologies and have been an active contributor on the Kata Containers project since it's inception. I have been engaged in various aspects of the project from the initial design to driving its adoption in production use cases. I am invested in the open source community we have built over the years around the project and am very interested in pushing the project forward towards greater adoption.
+
+Over the years, I have played an active role in contributing towards the project code base as well as advocating the project in the greater open source community at various container events. In terms of code, I have made solid contributions towards implementing networking and storage solutions in Kata to make sure Kata works well with the rest of the container ecosystem. Some of the contributions I have made overs the years include implementing tcfilter and macvtap networking models, ipv6 networking stack support, integration with various CNI plugins, support for devicemapper leveraging block-based storage, as well as adding in support for time-synchronization to make sure we get meaningful traces with Kata among others. I have also contributed towards integration of Kata with container runtimes such as crio and making sure Kata meets e2e testing criteria with kubernetes.
+
+Going forward, we have quite a bit of exciting features coming up in the project including cloud hypervisor support, switch to virtio-fs from 9p and improved debuggability  to name a few. I am interested in driving these forward as well as seeing through integration of Kata with other open source solutions stacks.
+I look forward to working on Kata's continuing success!
+
+-Archana Shinde
