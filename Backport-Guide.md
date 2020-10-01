@@ -11,6 +11,7 @@
     * [Apply the commits](#apply-the-commits)
     * [Check the result](#check-the-result)
     * [Raise a PR](#raise-a-pr)
+* [Further information](#further-information)
 
 ## Introduction
 
@@ -40,7 +41,7 @@ The two branches used in the examples in this guide are:
 This document assumes an understanding of:
 
 - The `git(1)` tool.
-- The [standard PR workflow](https://github.com/kata-containers/community/blob/master/CONTRIBUTING.md#normal-pr-workflow).
+- The [standard PR workflow](https://github.com/kata-containers/community/blob/master/CONTRIBUTING.md#pull-requests).
 - The [stable branch strategy](https://github.com/kata-containers/documentation/blob/master/Stable-Branch-Strategy.md).
 
 ## Graphical overview of backporting
@@ -185,3 +186,14 @@ Make a note of the SHA values for the commits in the PR to backport.
   When you submit your PR on GitHub, make sure to choose the stable branch that you
   based your branch on and are submitting to. This *should* be the same as the
   base branch for the PR.
+
+- Add a special comment to the *original* PR with a reference to the backport
+  PR(s). See the [contributing guide](CONTRIBUTING.md#porting-comments) for
+  further information.
+
+- Add the `backport` label to the PR to denote it is a backport.
+
+## Further information
+
+For further information on porting, see the [contributing
+guide](CONTRIBUTING.md#porting).
