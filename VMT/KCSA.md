@@ -11,6 +11,7 @@ This table lists all previously published Kata Containers Security Advisories ([
 
 | Date       | [KCSA]                                             | Affected Versions  | Description                                         |
 | ---------- | -------------------------------------------------- | ------------------ | --------------------------------------------------- |
+| 2020-12-03 | [KCSA-CVE-2020-27151](KCSA/KCSA-CVE-2020-27151.md) | < 1.11.5           | Executing host binaries using annotations           |
 | 2020-11-17 | [KCSA-CVE-2020-28914](KCSA/KCSA-CVE-2020-28914.md) | < 1.11.5           | Improper file permissions for read-only volumes     |
 | 2020-06-12 | [KCSA-CVE-2020-2026](KCSA/KCSA-CVE-2020-2026.md)   | < 1.10.5, < 1.11.1 | Improper link resolution before file access         |
 | 2020-06-12 | [KCSA-CVE-2020-2023](KCSA/KCSA-CVE-2020-2023.md)   | < 1.11.1           | Execution with unnecessary privileges               |
