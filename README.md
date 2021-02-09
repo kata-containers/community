@@ -12,6 +12,7 @@
         * [Contributor](#contributor)
         * [Maintainer](#maintainer)
     * [Architecture Committee](#architecture-committee)
+        * [Architecture Committee Meetings](#architecture-committee-meetings)
 * [Vendoring code](#vendoring-code)
 * [Vulnerability Handling](#vulnerability-handling)
     * [Reporting Vulnerabilities](#reporting-vulnerabilities)
@@ -92,11 +93,17 @@ The current Architecture Committee members are:
 - `Xu Wang` ([`gnawux`](https://github.com/gnawux)), [Ant Financial](https://www.antfin.com/index.htm?locale=en_US).
 - `Fabiano Fidêncio` ([`fidencio`](https://github.com/fidencio)), [Red Hat](http://www.redhat.com).
 
-Architecture Committee elections take place in September (3 seats available) and February (2 seats available). Anyone who has made contributions to the project will be eligible to run, and anyone who has had code merged into the Kata Containers project in the 12 months (a Contributor) before the election will be eligible to vote. There are no term limits, but in order to encourage diversity, no more than 2 of the 5 seats can be filled by any one organization. The Architecture Committee will meet regularly in an open forum with times and locations published in community channels.
+Architecture Committee elections take place in September (3 seats available) and February (2 seats available). Anyone who has made contributions to the project will be eligible to run, and anyone who has had code merged into the Kata Containers project in the 12 months (a Contributor) before the election will be eligible to vote. There are no term limits, but in order to encourage diversity, no more than 2 of the 5 seats can be filled by any one organization.
 
 The exact size and model for the Architecture Committee may evolve over time based on the needs and growth of the project, but the governing body will always be committed to openness, diversity and the principle that technical decisions are made by technical contributors.
 
 See [the elections documentation](elections) for further details.
+
+### Architecture Committee Meetings
+
+The Architecture Committee meets every Tuesdays at 7:00am PST. Agenda & call info can be found [here](https://etherpad.opendev.org/p/Kata_Containers_2021_Architecture_Committee_Mtgs)
+
+In order to efficiently organize the Architecture Committee (AC) meetings, maximize the benefits for the community, and be as inclusive as possible, the AC recommends following a set of [guidelines](AC-Meeting-Guidelines.md) for raising topics during the weekly meetings.
 
 # Vendoring code
 
