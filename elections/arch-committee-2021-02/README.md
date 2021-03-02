@@ -8,7 +8,7 @@ for election process, declaring candidacy, and eligible voters.
 
 Election Dates:
 
-* February 24, 15:00 UTC - March 3, 2021 14:59 UTC: Candidate nominations open
-* March 4, 15:00 UTC - March 15, 2021 14:59 UTC: Q&A/Debate period
-* March 16, 15:00 UTC - March 22, 2021 14:59 UTC: Voting open
-* March 23, 2021, results announced
+* February 24, 15:00 UTC - March 10, 2021 14:59 UTC: Candidate nominations open
+* March 11, 15:00 UTC - March 22, 2021 14:59 UTC: Q&A/Debate period
+* March 23, 15:00 UTC - March 29, 2021 14:59 UTC: Voting open
+* March 30, 2021, results announced
