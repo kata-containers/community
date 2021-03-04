@@ -1,0 +1,21 @@
+Name: Peng, Tao
+
+Email: bergwolf@hyper.sh, bergwolf@antgroup.com
+
+Background:
+
+Peng Tao is a staff engineer of Ant Group. In Ant Group, we have large deployments of Kubernetes
+and about 10K nodes of them are running Kata containers. Our team is responsible for the runtime
+and cloud-native storage of Ant Group.
+
+Peng Tao, toegther with Xu and other teammates, used to be the dev team of hyper.sh. The team was
+one of the creators of Kata Containers, and has kept working on Kata Containers since joining 
+Ant Group. When the Kata Containers project was created, Peng Tao committed the first commit for it:
+
+https://github.com/kata-containers/proxy/commit/94a07ff010b80fad8235278032d0b58927d4f1d5
+
+And he was known as the release manager of the Kata 2.0 as well.
+
+In 2021, Ant Group has joined the Open Infrastructure and become a member of the board of directors.
+We commit our team will keep working with the Kata Community for the following release cycles.
+
