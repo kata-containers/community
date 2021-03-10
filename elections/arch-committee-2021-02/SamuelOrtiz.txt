@@ -1,0 +1,24 @@
+Name: Samuel Ortiz
+
+Email: sameo@linux.intel.com
+
+Background:
+
+I am a Principal Software Engineer working for Intel, where I work on several
+projects related to virtualization and containers: Kata Containers, rust-vmm
+and Cloud Hypervisor.
+
+I started to work on Kata Containers a few years ago, back when I initially led
+the Clear Containers project at Intel. Since then I have contributed to many
+different areas of the project, from core components like the virtcontainers
+package to integration work with the CRI-O and containerd projects.
+
+Together with the folks from hyper.sh, we began the Kata Containers journey
+with the ambitious goal of providing stronger isolation to cloud native
+workloads, with minimal overhead. Three years ago, this was a fairly innovative
+approach and at some point I stopped counting the number of hours that Xu, Eric,
+Peng or myself spent at conferences, meetups or foundation booths demonstrating
+how Kata Containers met that promise. I believe it is now time to bring the next
+generation of hardware isolation and confidentiality technologies to the cloud
+native ecosystem, and in the upcoming months I'd like to help the Kata
+Containers project reach that goal.
