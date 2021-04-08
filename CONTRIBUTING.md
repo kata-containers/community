@@ -243,6 +243,12 @@ For more details, see how to [set up a git remote](https://help.github.com/artic
     $ $EDITOR CONTRIBUTING.md
     ```
 
+   >**Note:** If editing in Windows make sure that all documents end with LF
+   > and not CRLF. The CI system will fail if carriage returns are in the
+   > document. Many editors support the ability to change this. There is a
+   > tool called dos2unix available on Git Bash for Windows and also available
+   > on Linux systems that can convert files to LF endings. 
+
 1. Commit your changes to the current (`fix-contrib-bugs`) branch. Assure
    you use the correct [patch format](#patch-format):
 
