@@ -6,6 +6,7 @@
     * [Prerequisites](#prerequisites)
     * [Contributor roles](#contributor-roles)
     * [Golang coding style](#golang-coding-style)
+    * [Rustlang coding style](#rustlang-coding-style)
     * [Certificate of Origin](#certificate-of-origin)
 * [GitHub best practices](#github-best-practices)
     * [Submit issues before PRs](#submit-issues-before-prs)
@@ -78,6 +79,7 @@ To get started, complete the prerequisites below.
 Special Git configuration is required for these contributors:
 
 * [Golang coding style](#golang-coding-style)
+* [Rustlang coding style](#rustlang-coding-style)
 * [Kata runtime static checks](#kata-runtime-static-checks)
 
 For all other contributor roles, follow the standard configuration, shown in
@@ -87,6 +89,18 @@ Prerequisites.
 
 * Review [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments) to avoid common `Golang` errors.
 * Use `gofmt` to fix any mechanical style issues.
+
+### Rustlang coding style
+
+* Use `rustfmt` to fix any mechanical style issues. Rustfmt uses a style which conforms to the
+[Rust Style Guide](https://github.com/rust-dev-tools/fmt-rfcs/blob/master/guide/guide.md).
+* Use `clippy` to catch common mistakes and improve your Rust code.
+
+You can install the above tools as follows.
+
+```sh
+$ rustup component add rustfmt clippy
+```
 
 ### Certificate of Origin
 
