@@ -37,9 +37,9 @@ You can join our community on any of the following places:
 
 * Join our [mailing list](http://lists.katacontainers.io/).
 
-* Use the `irc.freenode.net` IRC server to join the discussions:
-  * General discussions channel: [`#kata-general`](http://webchat.freenode.net/?channels=kata-general).
-  * Development discussions channel: [`#kata-dev`](http://webchat.freenode.net/?channels=kata-dev).
+* Use the `irc.oftc.net` IRC server to join the discussions:
+  * General discussions channel: [`#kata-general`](http://webchat.oftc.net/?channels=kata-general).
+  * Development discussions channel: [`#kata-dev`](http://webchat.oftc.net/?channels=kata-dev).
 
 * Get an [invite to our Slack channel](https://bit.ly/katacontainersslack),
   and then [join us on Slack](https://katacontainers.slack.com/).
