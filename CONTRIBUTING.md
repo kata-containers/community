@@ -929,8 +929,8 @@ lgtm
 
 The Kata Containers project has a gating process to prevent introducing
 regressions. When your PR is submitted, a Continuous Integration (CI) system
-will run different checks on different platforms, based upon your changes. Currently Kata uses [Jenkins](http://jenkins.katacontainers.io) and
-[Travis CI](https://travis-ci.org/kata-containers/) for testing your changes.
+will run different checks on different platforms, based upon your changes. Currently Kata uses [Jenkins](http://jenkins.katacontainers.io)
+for testing your changes.
 
 Some of the checks are:
 
@@ -939,8 +939,7 @@ Some of the checks are:
 - Functional tests.
 - Integration tests.
 
-The Travis job will be executed right after the PR is opened, while the 
-Jenkins jobs will wait to be triggered. A maintainer must add a `/test` 
+The Jenkins jobs will wait to be triggered. A maintainer must add a `/test` 
 comment on the PR to let the CI jobs run.
 
 All CI jobs must pass in order to merge your PR.
