@@ -88,7 +88,7 @@ The Architecture Committee is responsible for architectural decisions, including
 The current Architecture Committee members are:
 
 - `Eric Ernst` ([`egernst`](https://github.com/egernst)), [Apple](https://apple.com/).
-- `Samuel Ortiz` ([`sameo`](https://github.com/sameo)), [Intel](https://www.intel.com).
+- `Samuel Ortiz` ([`sameo`](https://github.com/sameo)), [Apple](https://apple.com/).
 - `Archana Shinde` ([`amshinde`](https://github.com/amshinde)), [Intel](https://www.intel.com).
 - `Peng Tao` ([`bergwolf`](https://github.com/bergwolf)), [Ant Financial](https://www.antfin.com/index.htm?locale=en_US).
 - `Fabiano Fidêncio` ([`fidencio`](https://github.com/fidencio)), [Red Hat](http://www.redhat.com).
