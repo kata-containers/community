@@ -41,7 +41,7 @@ You can join our community on any of the following places:
   * General discussions channel: [`#kata-general`](http://webchat.oftc.net/?channels=kata-general).
   * Development discussions channel: [`#kata-dev`](http://webchat.oftc.net/?channels=kata-dev).
 
-* Get an [invite to our Slack channel](https://bit.ly/katacontainersslack),
+* Get an [invite to our Slack channel](http://bit.ly/kataslack).
   and then [join us on Slack](https://katacontainers.slack.com/).
 
 * Follow us on [Twitter](https://twitter.com/KataContainers) or
