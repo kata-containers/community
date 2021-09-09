@@ -1,0 +1,44 @@
+Name: Fabiano Fidêncio
+
+Email: fabiano@fidencio.org
+
+Background:
+
+I am a Software Engineer, a tattoo canvas for abstract art, a music addict, a
+goats and pigs instagram follower, and a big fan of old video games.
+
+In the past 18 months I dedicated a huge chunk of my professional and personal
+time contributing to the Kata Containers project and community, with a strong
+focus on helping Red Hat to build a product from the Kata Containers project.
+
+My involvement with Kata Containers has been intense.  I've been involved on
+pretty much every part of the project, on projects Kata Containers interacts
+with.  Moreover, I've already been serving the community as a current member of
+the Kata Containers Architecture Committee.
+
+In the enterprise world, I have worked on making the upstream project a Red
+Hat's downstream product, passing by Fedora, CentOS, Red Hat CoreOS, and
+OpenShift components.  As a result of this effort Red Hat now has an official
+product which uses Kata Containers underneath. 
+
+In the community space, I also have helped on a lot of different parts of the
+project. connected people to have their problems solved, mentored both
+newcomers and students into our community, led Architecture Committee meetings,
+led the last vPTG's Kata Containers session. I also went hands-on on CI,
+code-reviewing, development focusing on easing the adoption of the project,
+managed the past and current releases, and have been working as much as
+possible to grow this community in a healthy way.
+
+My main motivations are still to increase Kata Containers adoption in the
+industry, while ensuring the project is stable and easily consumable.  This is
+more important now than ever as new players are adopting and contributing to
+the Kata Containers project.
+
+To make it possible, I plan to continue working in the integration bits, while
+connecting and facilitating the communication between the Kata Containers
+community and the communities that I am part of.
+
+On a side note, I'd like to mention that from November 1st, 2021, I'll be
+working for Intel, focusing on the Kata Containers project.
+
+Fabiano Fidêncio (IRC / Slack: fidencio)
