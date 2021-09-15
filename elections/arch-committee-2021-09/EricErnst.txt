@@ -1,0 +1,21 @@
+---
+Name: Eric Ernst
+Email: eric_ernst at apple dot com
+
+Background:
+
+I am a software engineer at Apple, focused on cloud infrastructure, and I continue to be very invested in this project and engaged in the Kata community as a contributor.
+
+Since the initial discussions of creating Kata started, I have been an active contributor and advocate for the
+project, both in code and in the greater Kata community/ecosystem. I am running again as I am very interested in this project's success in the ecosystem, and am very focused on making sure Kata continues to be a stable, production-ready solution for providing stronger container isolation.
+
+Over the last couple of years, I have served as a member of the Kata Containers architecture committee. As I stated last year, the project has matured a lot, with expanding production usage and user-base. I think there's a lot of exciting work for our primary use cases, still.
+
+One area is improved integration with CRI/CNI/CSI/Kubelet. In particular, the work around providing VM-friendly devices where feasible, and updating the flow to provide sandbox details to the runtime to facilitate simpler life cycle management. Similarly, we have plenty of work to improve our performance efficiency, in both CPU utilization and memory footprint.
+
+We also have new use cases that are now feasible with encrypted VM memory becoming more widely available. This is exciting and requires very careful thought for the architecture of our project (and our integration with the rest of the stack) as we continue improving existing stable production use cases while also enabling a totally new threat model.
+
+We still have a lot of interesting work to do, and I look forward to continuing to contribute to the success of Kata Containers!
+
+--Eric
+
