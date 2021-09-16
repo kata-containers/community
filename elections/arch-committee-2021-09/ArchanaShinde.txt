@@ -1,0 +1,15 @@
+Name: Archana Shinde
+
+Email: archana.m.shinde at intel.com
+
+Background:
+
+I work as a software engineer at Intel, with my primary focus being on open source technologies for cloud. I would like to announce my candidacy for the Kata Architecture committee elections. I have been deeply involved in the project in the past right from its inception and am very much invested in seeing the project thrive and be widely adopted in the future as well.
+
+I have been an active contributor in the project in the past assuming ownership of key aspects of the project including networking and storage. I have also been an advocate of the project in the greater open source community at various open source meetups and conferences. I have served as a member of the Kata architecture committee. I continue to be active in engaging with various organizations interested in evaluating Kata, helping them onboard and making sure Kata meets their production use case requirements.
+
+I have been absent from the project early this year due to personal time off. But I plan to swing back in action and continue my contributions this year:). I am particularly excited and interested in the Confidential Computing use case and would love to contribute my part in enabling this new threat model for Kata customers.
+
+I look forward to continuing to contribute to the success of Kata Containers!
+
+-Archana Shinde
