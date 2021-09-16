@@ -1,0 +1,39 @@
+Name: Christophe de Dinechin
+Email: dinechin@redhat.com
+
+Caveat: This is a conditional candidacy, in case Archana does not reapply for
+the seat she was holding. I feel that we need a quorum in the AC, but I also
+would be happy to accelerate things and have no vote if we have enough
+candidates.
+
+
+Background:
+
+I am the PO for OpenShift sandboxed containers at Red Hat, which uses Kata
+Containers to make it easy to consume inside OpenShift. In that role, I have
+been leading and coordinating the effort made by numerous contributors from Red
+Hat in order to improve Kata Containers, its CI and its interaction with
+components such as qemu, CRI-O or the kernel (e.g. SR-IOV).
+
+Over the recent years, I have created the initial Kata packages for Fedora, and
+then focused on security and threat model, performance, scalability,
+debuggability and testability. Among the process changes that happened with the
+help of Ariel, I can mention a weekly "triage" meeting as well as the use of
+GitHub "projects" to coordinate efforts such as Confidential Containers.
+
+For the future, I have a genuine interest in long-term evolutions of Kata,
+including Confidential Containers, as well as a better API for communicating
+with other components, which I recently renamed from "Sandbox API" to "Pod API"
+to distinguish it from the containerd Sandbox API proposal. I really want to
+address many CPU and I/O performance issues, as well as memory usage and general
+scalability of Kata Containers.
+
+Since I started working on Kata Containers, I believe that I have rarely missed
+an architecture committee meeting, despite not being officially on the
+committee. That works fine with me: the architecture committee has always been
+extremely open to external input. However, I feel that the Architecture
+committee needs a quorum, and I am happy to fill the third seat that is up for
+this election if Archana is not re-applying for her own seat.
+
+I really enjoy working with this community, and I look forward to keep
+contributing, whether it's through the architecture committee or otherwise.
