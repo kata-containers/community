@@ -49,8 +49,7 @@ You can join our community on any of the following places:
 
 ## Users
 
-See [Kata Containers installation user guides](https://github.com/kata-containers/documentation/blob/master/install/README.md) for details on how to install Kata Containers for your preferred 
-distribution.
+See [Kata Containers installation user guides](https://github.com/kata-containers/documentation/blob/master/install/README.md) for details on how to install Kata Containers for your preferred distribution.
 
 ## Contributors
 
@@ -101,7 +100,7 @@ See [the elections documentation](elections) for further details.
 
 ### Architecture Committee Meetings
 
-The Architecture Committee meets every Tuesdays at 7:00am PST. Agenda & call info can be found [here](https://etherpad.opendev.org/p/Kata_Containers_2021_Architecture_Committee_Mtgs)
+The Architecture Committee meets every Tuesdays at 7:00am PST. Agenda & call info can be found [here](https://etherpad.opendev.org/p/Kata_Containers_Architecture_Committee_Mtgs).
 
 In order to efficiently organize the Architecture Committee (AC) meetings, maximize the benefits for the community, and be as inclusive as possible, the AC recommends following a set of [guidelines](AC-Meeting-Guidelines.md) for raising topics during the weekly meetings.
 
