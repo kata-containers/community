@@ -1,0 +1,47 @@
+Name: Tao Peng
+
+Email: bergwolf@hyper.sh, bergwolf@antgroup.com
+
+Background:
+
+I am a staff engineer at Ant Group. My primary focus is container
+infrastructure related technologies.
+
+I have been deeply engaged in Kata Containers since the start of the project,
+both in development and community. I continue to be very interested in the
+project and want to be part of the efforts to ensure its success. I have
+served as a member of the Kata architecture committee. And I'm running again in
+the new round of the architecture committee election.
+
+I have been an active contributor in the past in many different areas across the
+runtime and the agent. I served as a member of the vulnerability management team,
+the review team and the release management team. I also advocated the project in
+various open source events, conferences and meetups.
+
+Within Ant Group, our team is responsible for the large scale Kata Containers
+deployment in production. We have been pioneers in new features and new architectures
+of Kata. We believe it is very important to bridge production requirements and
+upstream development. We have been actively engaged in the upstream development
+in the past, and will continue to do so in the future.
+
+Since its foundation, Kata Containers has matured quite a bit with an expanding
+user-base. There are still a lot of exciting things to do.
+
+One area is better integration in the container ecosystem. It has been a goal of the
+project since the very beginning. And the current focus is the improved integration
+with CNI/CSI/CRI. We expect to have a more VM-friendly interfaces that will help to
+improve our performance and efficiency.
+
+Another exciting thing is the integrated rust runtime. It continues to innovate
+with cloud-native virtualization in mind and makes all Kata components work
+tightly together, further reduce Kata's resource overhead and management complexity.
+
+Last but not least, the Confidential Containers support expands the Kata Containers
+threat model from protecting the infrastructure to also protecting the workloads.
+It is a very appealing direction and attracts a lot of community interests.
+
+Kata Containers 3.0 release is paving its way to be a real thing. These features
+will certainly be important part of Kata 3.0. I look forward to continuing to
+contribute and help the project thrive.
+
+-Tao
