@@ -1,0 +1,49 @@
+Name: Samuel Ortiz
+
+Email: samuel.e.ortiz@protonmail.com
+
+Background:
+
+I am a software engineer at Apple, where I work on container and virtualization
+related projects.
+
+More than 4 years ago, I attended the foundational meeting between us (I was
+working at Intel back then), Hyper and the OpenStack Foundation. We merged
+Clear Containers and Hyper Runv into what became Kata Containers a few months
+later. Even though I've been working on and contributing to many other open
+souce projects since then, the excitement I feel about Kata Containers, its
+community and its innovation potential, is intact. Running `uname -a` on a
+Kata Containers never gets old to me. Especially when the host operating
+system is not Linux ;-)
+
+Over the past year, I dedicated some of my time on a new cloud capability:
+Confidential Computing. This is a very disruptive technology, that redefines
+and expands the cloud threat model, and I truly believe that Kata Containers
+has the potential to become a foundational Confidential Computing software
+component. I think that Confidential Computing will eventually become the
+default security setting for cloud native applications, and in my mind that
+can only happen with the Kata Containers runtime. This is what I want to help
+this community achieve over the next couple of years.
+
+Another recent personal source of excitement for me is the ability to run
+Linux containers on top of non Linux host operating systems, like Darwin for
+example. This does not come easy, as we have spent all those years assuming
+we will always be walking on top of a cozy Linux kernel. In the upcoming
+months, I want to break that assumption and use the Darwin enablement as a
+forcing function to clean our code base through saner, OS-agnostic
+abstractions.
+
+Finally, I want to confess something: I love writing Rust code. It's not easy
+to admit, especially after initially cursing so much at the borrow checker.
+But I listened to it and learned, and my appreciation for the language and
+its unique features steadily grew to eventually become a favorite of mine.
+That's why I'm very excited about us writing a new Rust runtime, taking this
+rewrite as an opportunity to build a more integrated and efficient
+architecture. I want to make sure that we learn from both our mistakes and
+our victories, to build a new code base that synthesizes those learnings.
+And at the same time, knowing how steep the Rust learning curve can be, I
+also want to keep this new implementation accessible to our community and
+contributors.
+
+Cheers,
+Samuel
