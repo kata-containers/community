@@ -62,7 +62,7 @@ A fix is proposed as a patch to the current master branch (as well as any affect
 
 For public reports, there is no need to directly subscribe anyone and patches can be submitted directly to the code review system instead as Pull Requests (PR).
 
-If project-side delays are encountered at this or any subsequent stage of the process, the VMT and other interested parties may reach out to all or any of the following [OpenStack Foundation](https://www.openstack.org/foundation/) members:
+If project-side delays are encountered at this or any subsequent stage of the process, the VMT and other interested parties may reach out to all or any of the following [Open Infrastructure Foundation](https://openinfra.dev/about/) members:
 
 - @ttx
 - @fungi
