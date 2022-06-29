@@ -817,6 +817,17 @@ The body of the message is **not** a continuation of the subject line and is
 not used to extend the subject line beyond its character limit. The subject 
 line is a complete sentence and the body is a complete, standalone paragraph.
 
+Additionally, PR body line length is not checked for special lines:
+
+* Lines that do not start with an alphabetic character
+
+* Sign-off lines (as to not penalize long names)
+
+* Lines without spaces (as in urls)
+
+These should allow contributors to pass checks while including relevant
+information **if needed**.
+
 ### Subsystem
 
 The "subsystem" describes the area of the code that the change applies to.
@@ -859,9 +870,7 @@ is also acceptable to include additional or
 
 ### Verification
 
-Correct formatting of the PR patches is verified using the
-[`checkcommits`](https://github.com/kata-containers/tests/tree/master/cmd/checkcommits)
-tool.
+Correct formatting of the PR patches is verified using the commit-message-check Github Action.
 
 ### Examples
 
