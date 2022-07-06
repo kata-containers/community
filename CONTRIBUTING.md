@@ -92,7 +92,7 @@ Prerequisites.
 
 ### Rustlang coding style
 
-* Use `rustfmt` to fix any mechanical style issues. Rustfmt uses a style which conforms to the
+* Use `rustfmt` to fix any mechanical style issues. `Rustfmt` uses a style which conforms to the
 [Rust Style Guide](https://github.com/rust-dev-tools/fmt-rfcs/blob/master/guide/guide.md).
 * Use `clippy` to catch common mistakes and improve your Rust code.
 
@@ -811,7 +811,7 @@ As shown above, pull requests must adhere to these guidelines:
 * Ensure PR title length is 75 characters or fewer, including whichever 
   `subsystem` term is used.
 
-* Ensure the PR body line length is 72 characters or fewer.
+* Ensure the PR body line length is 150 characters or fewer.
 
 The body of the message is **not** a continuation of the subject line and is 
 not used to extend the subject line beyond its character limit. The subject 
@@ -823,7 +823,7 @@ Additionally, PR body line length is not checked for special lines:
 
 * Sign-off lines (as to not penalize long names)
 
-* Lines without spaces (as in urls)
+* Lines without spaces
 
 These should allow contributors to pass checks while including relevant
 information **if needed**.
@@ -870,7 +870,7 @@ is also acceptable to include additional or
 
 ### Verification
 
-Correct formatting of the PR patches is verified using the commit-message-check Github Action.
+Correct formatting of the PR patches is verified using the commit-message-check GitHub Action.
 
 ### Examples
 
