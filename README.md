@@ -23,9 +23,9 @@
 
 Kata Containers is an open source project and community working to build a standard implementation of lightweight Virtual Machines (VMs) that feel and perform like containers, but provide the workload isolation and security advantages of VMs.
 
-The Kata Containers project will initially comprise six components, including the Agent, Runtime, Proxy, Shim, Kernel and packaging of QEMU 2.9. It is designed to be architecture agnostic, run on multiple hypervisors and be compatible with the OCI specification for Docker containers and CRI-O for Kubernetes.
+The Kata Containers project is designed to be architecture agnostic, run on multiple hypervisors and be compatible with the OCI specification and Kubernetes.
 
-Kata Containers combines technology from [Intel® Clear Containers](https://github.com/clearcontainers/runtime) and [Hyper runV](https://github.com/hyperhq/runv). The code is hosted on GitHub under the Apache 2 license and the project is managed by the OpenStack Foundation. To learn more about the project and organizations backing the launch, visit https://www.katacontainers.io.
+Kata Containers combines technology from [Intel® Clear Containers](https://github.com/clearcontainers/runtime) and [Hyper runV](https://github.com/hyperhq/runv). The code is hosted on GitHub under the Apache 2 license and the project is managed by the Open Infrastructure Foundation. To learn more about the project and organizations backing the launch, visit https://www.katacontainers.io.
 
 # Community
 
@@ -49,7 +49,7 @@ You can join our community on any of the following places:
 
 ## Users
 
-See [Kata Containers installation user guides](https://github.com/kata-containers/documentation/blob/master/install/README.md) for details on how to install Kata Containers for your preferred distribution.
+See [Kata Containers installation user guides](https://github.com/kata-containers/kata-containers/blob/main/docs/install/README.md) for details on how to install Kata Containers for your preferred distribution.
 
 ## Contributors
 
@@ -66,7 +66,7 @@ are detailed on the [Areas of Interest](https://github.com/kata-containers/commu
 
 # Governance
 
-The Kata Containers project is governed according to the ["four opens"](https://governance.openstack.org/tc/reference/opens.html), which are open source, open design, open development, and open community. Technical decisions are made by technical contributors and a representative Architecture Committee. The community is committed to diversity, openness, and encouraging new contributors and leaders to rise up.
+The Kata Containers project is governed according to the ["four opens"](https://openinfra.dev/four-opens/), which are open source, open design, open development, and open community. Technical decisions are made by technical contributors and a representative Architecture Committee. The community is committed to diversity, openness, and encouraging new contributors and leaders to rise up.
 
 ## Developers
 
