@@ -18,7 +18,7 @@
 This document provides a short guide explaining how to perform a backport.
 Backporting refers to applying changes to a stable branch from a newer branch.
 The changes comprise one or more commits in the form of a PR and the newer
-branch is generally the `master` branch.
+branch is generally the `main` branch.
 
 Since new features are not added to stable branches, backported changes are
 generally bug fixes and security fixes. See the
@@ -32,9 +32,9 @@ document for further details.
 
 The two branches used in the examples in this guide are:
 
-- The `master` branch (which contains all commits).
+- The `main` branch (which contains all commits).
 - A `stable-1.2` branch which will be the target of the backport: commits will
-  be selectively "copied" ("cherry-picked") into this branch from the `master` branch.
+  be selectively "copied" ("cherry-picked") into this branch from the `main` branch.
 
 ## Assumptions
 
@@ -48,21 +48,21 @@ This document assumes an understanding of:
 
 ### Before the backport
 
-Imagine that initially both the `master` branch and the stable branch
+Imagine that initially both the `main` branch and the stable branch
 (`stable-1.2`) contain only the commits `A`, `B` and `C`:
 
 ```
           + (stable-1.2 branch)
          /
-A---B---C (master branch)
+A---B---C (main branch)
 ```
 
-New commits (`D`, `E`, `F` and `G`) are added to the `master` branch:
+New commits (`D`, `E`, `F` and `G`) are added to the `main` branch:
 
 ```
           + (stable-1.2 branch)
          /
-A---B---C---D---E---F---G (master branch)
+A---B---C---D---E---F---G (main branch)
 ```
 
 Imagine that:
@@ -77,7 +77,7 @@ After the backporting:
 ```
           +-----E-------G (stable-1.2 branch)
          /      ^       ^
-A---B---C---D---E---F---G (master branch)
+A---B---C---D---E---F---G (main branch)
 ```
 
 After the backport, the `stable-1.2` branch contains commits  `A`, `B` and
@@ -85,11 +85,34 @@ After the backport, the `stable-1.2` branch contains commits  `A`, `B` and
 
 ## Backport Workflow
 
+### Auto-backporting
+Auto-backporting is a helpful feature than can be used to speed up the backport process.
+The project uses [Backport Action](https://github.com/marketplace/actions/backport-action) to handle the backporting and another GitHub workflow to automatically add the `auto-backport` label.
+
+The following PRs will automatically have the `auto-backport` label added:
+- PRs whose [associated issue](CONTRIBUTING.md#submit-issues-before-prs) has the `bug` label set.
+- PR contains `backport-needed` label
+
+PRs with the `no-backport-needed` label will automatically have their `auto-backport` label removed, superseding the above conditions.
+
+Additionally, the `auto-backport` label can be added or removed manually.
+> **Note:** The check for labels is triggered whenever a label is added or removed from the PR.
+
+The Backport Action executes the following steps:
+- `auto-backport` label is checked when the PR is merged.
+- The action will look for all labels of the form`backport-to-BRANCHNAME`.
+- The action will then attempt to generate a backport for each label, leaving a notification reporting success or failure.
+
+> **Note:** This does require labels to be made and added to the corresponding branches that one intends to backport to.
+
+Automatic backports should be reviewed for correctness.
+
+### Manual Backporting
 The basic workflow involves:
 
 - Creating a new local branch from the stable tree you are targeting.
-- Selecting (or "cherry picking") the commits from your master branch PR into the stable branch.
-- Submitting your branch to GitHub as a PR against the stable branch (not to the `master` branch).
+- Selecting (or "cherry picking") the commits from your main branch PR into the stable branch.
+- Submitting your branch to GitHub as a PR against the stable branch (not to the `main` branch).
 
 ### Setup
 
@@ -114,23 +137,23 @@ The basic workflow involves:
 
 ### Locate commits to cherry pick
 
-To list all commits in the `master` branch which are not in the `stable-1.2`
+To list all commits in the `main` branch which are not in the `stable-1.2`
 branch:
 
 ```bash
-$ git log --oneline --no-merges ..master
+$ git log --oneline --no-merges ..main
 ```
 
 Make a note of the SHA values for the commits in the PR to backport.
 
-> **Note:** If your PR is in a local branch, substitute `master` for the name
+> **Note:** If your PR is in a local branch, substitute `main` for the name
 > of that branch.
 
 ### Apply the commits
 
 - Pull in your commits:
 
-  If you are pulling the commits in from the `master` branch, you can add the `-x`
+  If you are pulling the commits in from the `main` branch, you can add the `-x`
   argument to `git cherry-pick` to automatically add a reference in the
   commit to the original commits. This is strongly recommended to aid traceability.
   If you pick the commits from your local branch do *not* use `-x`; this
@@ -163,7 +186,7 @@ Make a note of the SHA values for the commits in the PR to backport.
   the guidance printed by `git cherry-pick` on processing and applying those fixes.
 
   If you hit a conflict, any effects of `-x` to `cherry-pick` might not be
-  applied. In this case, consider hand-adding the `master` SHA references and a note
+  applied. In this case, consider hand-adding the `main` SHA references and a note
   that you resolved a conflict to the commit message.
 
 ### Check the result
