@@ -1,0 +1,14 @@
+Name: Feng Wang
+
+Email: feng.wang@databricks.com
+
+Background:
+
+
+I’m a software engineer at Databricks, where I work on the multi-cloud platform team. I became involved in the project 14 months ago and have been an active contributor and community member since then.
+
+
+At Databricks, Kata Containers has become a foundational piece that drives multiple production use cases. In the near future, we’re expecting to onboard more use cases to Kata Containers at an even larger scale. A stable and high quality Kata Container runtime is critical for our business. The way Databricks uses Kata Containers also tests its limits. Within the past 12 months, we have found several stability bugs, feature and performance gaps.
+
+
+My main motivation is to make Kata Containers more stable and further improve its production quality, which is also essential for increasing its industry adoption. We at Databricks also made several performance improvements on Kata Containers, which I’d love to bring upstream for performance sensitive workloads. I’m also interested in continuing improving the integration between Kata Containers and kubelet/CSI/CNI/CRI, especially on device/resource allocation. Last but not least, I’m very excited with the runtime-rs and would love to help make the migration smooth and uneventful.
