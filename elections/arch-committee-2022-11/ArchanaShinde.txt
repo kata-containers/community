@@ -1,0 +1,16 @@
+Name: Archana Shinde
+Email: archana.m.shinde@intel.com
+
+Background:
+
+I am a software engineer at Intel with a focus on open-source technologies for Cloud. I have been a contributor and maintainer since the very beginning of the project and continue to be engaged in the Kata community.
+
+I have served on the Kata Containers Architecture committee in the past and would like to announce my candidacy for the upcoming elections so that I can continue to make meaningful contributions to the project in the capacity of Kata AC member.
+
+In the last few months, I have spent time optimizing Kata performance in terms of storage and network by leveraging multi-queue support. I also introduced support for linux "io-uring" for async IO operations. I continue to track further improvements made both in linux and qemu in this area to bypass some of the virtue-queues and plan to add support for these for both qemu and cloud-hypervisor. I was also involved in helping out the ACRN folks for adding support for ACRN hypervisor to Kata 2.x in terms of code, design and review. Additionally, I made several improvements to the local kata-deploy build process so that all Kata artifacts can be generated locally without any issues in a nested docker setup. 
+I have started making contributions to the kata-ctl tool in rust and plan to focus my energies on rust support and improving the test coverage for the rust codebase in Kata in the future. Adding rust support for cloud-hypervisor in Kata 3.x would be my primary focus over the next few months.
+
+I believe we have a lot of interesting features to be added to Kata in the near future and I look forward to play my part in Kata's continued success.
+
+Thanks,
+Archana Shinde
