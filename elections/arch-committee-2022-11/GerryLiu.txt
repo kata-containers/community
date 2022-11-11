@@ -1,0 +1,20 @@
+Name: Gerry Liu
+Email: gerry at linux dot alibaba dot com
+
+Background
+I’m a software engineer at Alibaba Cloud, working on Operating System and cloud infrastructure related technologies. I have rich development experiences about Linux kernel, container image acceleration, rust based micro-vm and confidential containers. 
+
+Since 2019 I’m working on technologies related to Kata Containers, and is one of the advocators to rustify Kata Containers. I have also contributed to Kata agent-rs, runtime-rs, embedded Dragonball vmm and Nydus image acceleration service. During last year I have put much efforts to enable new features for Kata Containers:
+1) introduced/contributed runtime-rs/Dragonball to Kata 3.0
+2) enhanced td-shim and image-rs to support confidential containers
+3) helped to integrate Nydus with Kata
+4) put Kata into production with large deploy base
+
+In the coming year, I plan to cooperate with the community to work on following topics:
+1) make runtime-rs/Dragonball as the default option
+2) enhance Dragonball to support confidential containers
+3) enhance Dragonball to better support GPUs, other accelerators and DPUs.
+4) share more code base between Dragonball and Cloud Hypervisor
+
+And most importantly I will help to integrate Kata Containers into OpenAnolis Linux distribution and enlarge the user base:)
+
