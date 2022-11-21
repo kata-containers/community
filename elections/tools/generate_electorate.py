@@ -80,12 +80,28 @@ end_time = datetime.datetime(2018, 8, 1, 0, 0, 0, tzinfo=pytz.UTC)
 # All commits
 number = -1
 projects = []
+ignored_repos = [
+        'qemu',
+        'linux',
+        'project-infra',
+        'govmm',
+        'resolve-pr-refs',
+        'is-organization-member',
+        'osbuilder',
+        'runtime',
+        'shim',
+        'packaging',
+        'ksm-throttler',
+        'documentation',
+        'agent',
+        'slash-command-action',
+        ]
 
 author_cache = {}
 for repo in org.repositories():
     # Skip these repos as they are not a core part of the project, and are
     # forked/imported so contain many contributors from outside the project.
-    if str(repo) in ['kata-containers/linux', 'kata-containers/qemu']:
+    if str(repo).split("/")[1] in ignored_repos:
         print('Skipping repo %s' % (repo))
         continue
     print('Looking for changes in %s between %s and %s' %
