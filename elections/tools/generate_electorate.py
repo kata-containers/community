@@ -23,8 +23,8 @@ def _authorset_representer(dumper, data):
 
 
 class Author(object):
-    def __init__(self, login, name=None, email=None):
-        self.login = login
+    def __init__(self, id, name=None, email=None):
+        self.id = id
         self.name = name
         self._emails = set()
         if email:
@@ -44,17 +44,17 @@ class Author(object):
         self._emails.add(email)
 
     def __eq__(self, other):
-        return self.login == other.login
+        return self.id == other.id
 
     def __lt__(self, other):
-        return self.login < other.login
+        return self.id < other.id
 
     def __hash__(self):
-        return hash(self.login)
+        return hash(self.id)
 
 
 def _author_representer(dumper, data):
-    o_dict = OrderedDict(github_id=data.login,
+    o_dict = OrderedDict(github_id=data.id,
                          name=data.name,
                          email=data.email,
                          # _emails is a private member and we probably
@@ -95,19 +95,29 @@ for repo in org.repositories():
     for commit in repo.commits(since=start_time, until=end_time,
                                number=number):
         if commit.author is None:
-            print('%s in %s has no author did this merge via GitHub?' %
-                  (commit, repo))
-            print('%s Appears to be from: %s' %
-                  (commit, commit.commit.author))
-            continue
+            if commit.commit.author is None:
+                print('Skipping %s in %s as it has no author. Did this merge via GitHub?' %
+                      (commit, repo))
+                continue
 
-        if commit.author.login not in author_cache:
-            _author = gh.user(commit.author.login)
-            author = Author(_author.login, email=_author.email,
-                            name=_author.name)
-            author_cache[commit.author.login] = author
+            author_id = commit.commit.author.get('email')
+            print('%s in %s as has no author. Using email (%s) as the author id' %
+                  (commit, repo, author_id))
+        else:
+            author_id = commit.author.login
 
-        author = author_cache[commit.author.login]
+        if author_id not in author_cache:
+            if commit.author is None:
+                author = Author(author_id, email=author_id,
+                                name=commit.commit.author.get('name'))
+            else:
+                _author = gh.user(commit.author.login)
+                author = Author(_author.login, email=_author.email,
+                                name=_author.name)
+
+            author_cache[author_id] = author
+
+        author = author_cache[author_id]
         author.commit_count += 1
 
         # If the GitHub account doesn't have a name or email address
