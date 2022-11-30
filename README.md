@@ -87,9 +87,9 @@ The Architecture Committee is responsible for architectural decisions, including
 The current Architecture Committee members are:
 
 - `Eric Ernst` ([`egernst`](https://github.com/egernst)), [Apple](https://apple.com/).
-- `Samuel Ortiz` ([`sameo`](https://github.com/sameo)), [Apple](https://apple.com/).
-- `Archana Shinde` ([`amshinde`](https://github.com/amshinde)), [Intel](https://www.intel.com).
-- `Peng Tao` ([`bergwolf`](https://github.com/bergwolf)), [Ant Financial](https://www.antfin.com/index.htm?locale=en_US).
+- `Samuel Ortiz` ([`sameo`](https://github.com/sameo)), [`Rivos Inc`](https://www.rivosinc.com/).
+- `Gerry Liu` ([`jiangliu`](https://github.com/jiangliu)), [`Alibaba Cloud`](https://www.alibabacloud.com/).
+- `Peng Tao` ([`bergwolf`](https://github.com/bergwolf)), [Ant Group](https://www.antfin.com/index.htm?locale=en_US).
 - `Fabiano Fidêncio` ([`fidencio`](https://github.com/fidencio)), [Intel](https://www.intel.com).
 
 Architecture Committee elections take place in September (3 seats available) and February (2 seats available). Anyone who has made contributions to the project will be eligible to run, and anyone who has had code merged into the Kata Containers project in the 12 months (a Contributor) before the election will be eligible to vote. There are no term limits, but in order to encourage diversity, no more than 2 of the 5 seats can be filled by any one organization.
