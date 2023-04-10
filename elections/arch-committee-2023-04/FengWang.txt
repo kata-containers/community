@@ -1,0 +1,26 @@
+Name: Feng Wang
+
+Email: fwang@confluent.io
+
+Background:
+
+I’m a software engineer at Confluent, where I work at the compute platform team.
+I became involved in the Kata Containers project since August 2021 and have been
+an active contributor and community member since then.
+
+Over the past two years, I have contributed extensively to the Kata Containers
+project, including enabling non-root VMM support, support direct-volume mount,
+and fixed a number of critical bugs. Through these contributions, I have
+developed a deep understanding of the project and have gained valuable experience
+working with the Kata Containers community.
+
+My main motivation is to improve the production adoption of the project by making
+it more stable, performant, production mature and accessible. Kata Containers as
+the leading sandboxed container runtime has its unique position in the cloud
+native world. However, based on my last two years of experience working at two
+different companies trying to adopt Kata Containers in production, there still
+remain many challenges for companies to adopt Kata Containers in production,
+especially for small size companies. Thanks to its compatability with runtime shim
+interface, onboarding a workload to Kata Containers is relatively simple, but the
+effort to operate it in production is nontrivial. As a community, we can focus more
+on improving the production quality, ease of operation, and community support.
