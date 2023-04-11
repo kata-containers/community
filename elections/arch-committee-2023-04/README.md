@@ -9,7 +9,7 @@ for election process, declaring candidacy, and eligible voters.
 
 Election Dates:
 
-* April 05, 15:00 UTC - April 12, 2022 14:59 UTC: Candidate nominations open
-* April 13, 15:00 UTC - April 23, 2022 14:59 UTC: Q&A/Debate period
-* April 24, 15:00 UTC - May 01, 2022 14:59 UTC: Voting open
-* May 02, 2022, results announced
+* April 05, 15:00 UTC - April 12, 2023 14:59 UTC: Candidate nominations open
+* April 13, 15:00 UTC - April 23, 2023 14:59 UTC: Q&A/Debate period
+* April 24, 15:00 UTC - May 01, 2023 14:59 UTC: Voting open
+* May 02, 2023, results announced
