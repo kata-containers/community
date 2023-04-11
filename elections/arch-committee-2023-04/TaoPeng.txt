@@ -1,0 +1,48 @@
+Name: Tao Peng
+
+Email: bergwolf@hyper.sh, bergwolf@antgroup.com
+
+Background:
+
+I am a staff engineer at Ant Group, where my primary focus is on cloud-native
+infrastructure related technologies, including both container runtimes and
+images.
+
+I have been an active contributor since the foundation of the Kata Containers
+project and even before that in the runV project. I am interested in many
+areas of the project, including runtime, agent, rust VMM, etc. I served as a
+member of the vulnerability management team, the release management team, and
+the architecture committee. Here, I would like to renew my seat in the
+architecture committee to continue my contribution to the Kata community.
+
+The Ant Group team is very dedicated to the Kata Containers project. We manage
+a large scale of Kata deployments in production and advocate for Kata online
+and offline wherever possible. We have been pioneers in new features as well
+as architecture improvements. We have been actively engaged in upstream
+development in the past and will continue to do so in the future.
+
+We released Kata 3.0 last year, bringing in many useful features like the rust
+runtime and dragonball-integrated VMM. Looking forward, I think there are more
+things to focus on, such as:
+
+1. Rust runtime production-ready. We released the Rust runtime as a preview
+feature in 3.0. We should continue to improve and polish it to make it
+production-ready so that users can actually benefit from its simplified
+architecture.
+
+2. Confidential container support. It has been developed in a separate dev
+branch for a long time, which brings a lot of maintenance burden and hides
+its radiance away from actual Kata users. We should put more effort into
+maturing the confidential container support and merge the code into the main
+branch sooner rather than later.
+
+3. Service mesh support. Within the service mesh context, we have observed
+more challenges on the Kata threat model and security boundary. We need to
+find a solid solution to the problem and push forward both the secure
+container as well as the service mesh world.
+
+These are just three things on top of my mind. I certainly believe that we
+have more to do, and I look forward to continuing to contribute to the
+community and help it thrive.
+
+-Tao
