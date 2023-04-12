@@ -1,0 +1,11 @@
+Name: Archana Shinde
+Email: archana.m.shinde@intel.com
+Background:
+I am a software engineer at Intel with a focus on open-source technologies for Cloud. I have been an active contributor and maintainer since the inception of the project and continue to be engaged in various aspects of the project.
+I have served on the Kata Containers Architecture committee in the past and would like to announce my candidacy for the upcoming elections.
+Over the past few years, I have been involved in various areas of the project including storage, device and network support for the runtime, support for shimv2, optimizations around I/O and Kata integrations with various open source projects. As part of the vulnerability management team, I helped close any CVE's or security vulnerabilities opened by end users. I have also helped streamline our releases by leveraging GitHub actions and continue to be part of the release management team, contributing to making releases for the project.
+Intel has been a key contributor to the project. We at Intel continue to focus on Kata Containers along with Confidential Containers.
+For the future, I plan to focus on improving support for cloud-hypervisor project for runtime-rs and make it production ready. I also plan adding support for network/storage in rust for the rust kata-ctl tool and runtime-rs. I also intend to work to on improving device support for Intel devices for both runtime-rs and confidential containers runtime.
+I believe there are quite a few  interesting features to be added to Kata in the near future and I look forward to contribute to the community.
+Thanks,
+Archana Shinde
