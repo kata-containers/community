@@ -1,0 +1,36 @@
+Name: Jeremi Piotrowski
+
+Email: jpiotrowski@microsoft.com, jpiotrowski@linux.microsoft.com
+
+Background:
+
+I'm a software engineer at Microsoft, where I work within Azure. My primary
+focus has been contributing to open source projects within the Cloud Native
+space, but I do not draw the line there and try to improve any and every part
+of the stack involved in running containers.
+
+For the past year I have been lurking around the Confidential Containers
+community, getting more actively involved since the beginning of this year. So
+far, I have mostly been visible helping out with CoCo releases, as well as
+fixing bugs and submitting improvements to CoCo/Kata tests/CI. You may also
+have seen me answering questions on slack and helping others understand the
+Kata design or debugging issues.
+
+Microsoft relies on Kata Containers in some of our product offerings, with more
+to come. We sponsor both the Kata as well CoCo CI infrastructures. We are also
+active in adjacent projects like Cloud Hypervisor. Our goal within the Kata
+project is simple: contribute to making it more secure and suitable for an even
+wider range of use cases. Part of this is taking our learnings from years of
+running hardware isolated containers and confidential computing workloads in
+production and contributing them to the project, in a way that benefits all
+users.
+
+Joining the Kata Architecure Committee will give me a chance to better serve
+the community. Kata is a very dynamic and friendly project, and I'd like to
+contribute to that. I care about expanding the project test matrix and making
+testing both faster and more reliable, so that it is easier for new
+contributors to join the project. I also want to work within the AC to see if
+we can reconcile some of the extensions that the community has built up around
+Kata.
+
+Jeremi
