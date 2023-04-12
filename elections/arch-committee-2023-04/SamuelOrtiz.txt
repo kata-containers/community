@@ -1,0 +1,29 @@
+Name: Samuel Ortiz
+
+Email: samuel.e.ortiz@protonmail.com
+
+Background:
+
+I am a software engineer at Rivos, where I work on container, virtualization and
+confidential computing related projects.
+
+A few years ago, together with Hyper and the OpenStack Foundation, we created
+the Kata Containers project. I've really enjoyed seeing it growing into a wide,
+cross-industry project with such a large customer base. Over those years, I
+actively contributed to many parts of the project and tried to make the Kata
+community both a welcoming and technologically innovative place.
+
+A couple of years ago, together with some other Kata contributors, we started to
+build a new project with the goal of making a fairly complex and new technology,
+Confidential Computing, seamlessly accessible through the canonical cloud native
+software stack: Kubernetes and its flourishing ecosystem. Kata Containers was
+the obvious choice and an almost perfect fit as the foundation for the
+Confidential Containers project, and it proves to be a very solid base. As both
+a Confidential and Kata Containers contributor and community member, I want to
+continue reinforcing the symbiosis that we created between those 2 projects. I
+believe that renewing my AC member seat would allow me to continue helping those
+2 projects benefiting from each others, and this what I intend to focus on for
+the upcoming year.
+
+Cheers,
+Samuel
