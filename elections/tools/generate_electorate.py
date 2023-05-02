@@ -81,6 +81,7 @@ end_time = datetime.datetime(2018, 8, 1, 0, 0, 0, tzinfo=pytz.UTC)
 number = -1
 projects = []
 ignored_repos = [
+        'edk2',
         'qemu',
         'linux',
         'project-infra',
@@ -88,6 +89,7 @@ ignored_repos = [
         'resolve-pr-refs',
         'is-organization-member',
         'osbuilder',
+        'proxy',
         'runtime',
         'shim',
         'packaging',
@@ -95,6 +97,11 @@ ignored_repos = [
         'documentation',
         'agent',
         'slash-command-action',
+        'tests-1',
+        'kata-containers-github-actions-tests',
+        'kata-containers-cache-kernel',
+        'kata-containers-2',
+        'kata-containers-1',
         ]
 
 author_cache = {}
