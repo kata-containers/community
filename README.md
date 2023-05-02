@@ -92,7 +92,7 @@ The current Architecture Committee members are:
 - `Peng Tao` ([`bergwolf`](https://github.com/bergwolf)), [Ant Group](https://www.antfin.com/index.htm?locale=en_US).
 - `Fabiano Fidêncio` ([`fidencio`](https://github.com/fidencio)), [Intel](https://www.intel.com).
 
-Architecture Committee elections take place in September (3 seats available) and February (2 seats available). Anyone who has made contributions to the project will be eligible to run, and anyone who has had code merged into the Kata Containers project in the 12 months (a Contributor) before the election will be eligible to vote. There are no term limits, but in order to encourage diversity, no more than 2 of the 5 seats can be filled by any one organization.
+Architecture Committee elections take place in the Autumn (3 seats available) and in the Spring (4 seats available). Anyone who has made contributions to the project will be eligible to run, and anyone who has had code merged into the Kata Containers project in the 12 months (a Contributor) before the election will be eligible to vote. There are no term limits, but in order to encourage diversity, no more than 2 of the 7 seats can be filled by any one organization.
 
 The exact size and model for the Architecture Committee may evolve over time based on the needs and growth of the project, but the governing body will always be committed to openness, diversity and the principle that technical decisions are made by technical contributors.
 
