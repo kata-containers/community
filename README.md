@@ -86,13 +86,15 @@ The Architecture Committee is responsible for architectural decisions, including
 
 The current Architecture Committee members are:
 
-- `Eric Ernst` ([`egernst`](https://github.com/egernst)), [Apple](https://apple.com/).
-- `Samuel Ortiz` ([`sameo`](https://github.com/sameo)), [`Rivos Inc`](https://www.rivosinc.com/).
-- `Gerry Liu` ([`jiangliu`](https://github.com/jiangliu)), [`Alibaba Cloud`](https://www.alibabacloud.com/).
-- `Peng Tao` ([`bergwolf`](https://github.com/bergwolf)), [Ant Group](https://www.antfin.com/index.htm?locale=en_US).
+- `Eric Ernst` ([`egernst`](https://github.com/egernst)), [Apple](https://apple.com).
 - `Fabiano Fidêncio` ([`fidencio`](https://github.com/fidencio)), [Intel](https://www.intel.com).
+- `Feng Wang` ([`fengwang666`](https://github.com/fengwang666)), [`Confluent`](https://www.confluent.io).
+- `Gerry Liu` ([`jiangliu`](https://github.com/jiangliu)), [`Alibaba Cloud`](https://www.alibabacloud.com).
+- `Peng Tao` ([`bergwolf`](https://github.com/bergwolf)), [Ant Group](https://www.antfin.com/index.htm?locale=en_US).
+- `Samuel Ortiz` ([`sameo`](https://github.com/sameo)), [`Rivos Inc`](https://www.rivosinc.com).
+- `Steve Horsman` ([`stevenhorsman`](https://github.com/stevenhorsman)), [`IBM`](https://www.ibm.com).
 
-Architecture Committee elections take place in September (3 seats available) and February (2 seats available). Anyone who has made contributions to the project will be eligible to run, and anyone who has had code merged into the Kata Containers project in the 12 months (a Contributor) before the election will be eligible to vote. There are no term limits, but in order to encourage diversity, no more than 2 of the 5 seats can be filled by any one organization.
+Architecture Committee elections take place in the Autumn (3 seats available) and in the Spring (4 seats available). Anyone who has made contributions to the project will be eligible to run, and anyone who has had code merged into the Kata Containers project in the 12 months (a Contributor) before the election will be eligible to vote. There are no term limits, but in order to encourage diversity, no more than 2 of the 7 seats can be filled by any one organization.
 
 The exact size and model for the Architecture Committee may evolve over time based on the needs and growth of the project, but the governing body will always be committed to openness, diversity and the principle that technical decisions are made by technical contributors.
 
