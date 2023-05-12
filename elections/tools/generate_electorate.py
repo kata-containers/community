@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+#
+# Copyright (c) 2023 Kata Contributors
+#
 # SPDX-License-Identifier: Apache-2.0
 #
 # Description: Generate a list of kata contributors by extracting contact
