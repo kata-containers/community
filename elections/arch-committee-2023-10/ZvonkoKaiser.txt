@@ -1,0 +1,64 @@
+Name: Zvonko Kaiser
+
+Email: zkaiser@nvidia.com
+
+Background: 
+
+I am a software engineer at NVIDIA, where I work on all things cloud-native. 
+At NVIDIA I am leading the Kata and Confidential Containers efforts and enabling 
+Kata and Confidential Containers on all of our architectures, platforms and 
+projects, ranging from embedded, edge devices to data centers and cloud. 
+
+Over the last two years, I have been actively involved in Kata, contributing
+my expertise and dedication towards its success. As a passionate and experienced
+professional in the field, I strongly believe that my skills and insights can
+greatly benefit the AC's decision-making process.
+
+Here are a few reasons why I believe I am well-suited for this role:
+
+Extensive Technical Knowledge: With over ten years of experience in system 
+software development/performance engineering and a strong background in
+virtualization from embedded to cloud, I possess a deep understanding of the
+technical aspects involved in our project. This knowledge allows me to provide
+valuable input and contribute to informed discussions within the committee.
+
+Additionally I have an broad experience and insight from various industry fields, 
+ranging from robotics at the Fraunhofer Institute, automotive doing autonomous
+parking at Mercedes Research to mainframe and blade servers at IBM to cloud and 
+Kubernetes at RedHat and NVIDIA. 
+
+Especially in Kata I have added the virtualization reference architecture to 
+support advanced use-cases like GPUDirect RDMA and GPUDirect GDS which is a must
+have for allmost all of the NVIDIA customers and internal projects leveraging
+Kata. Last year I added proper support for GPU, vGPU time-sliced, 
+vGPU MIG-backed and this year my focus was on the confidential GPU support. 
+
+Last but not least my insights through my work at NVIDIA on Confidential 
+Computing and AI/ML use-cases will help me as a member of the AC to help guide
+the project to support important use-cases and requirements.
+
+Strong Leadership Abilities: Throughout my career, I have demonstrated effective
+leadership skills by successfully leading cross-functional teams and delivering
+complex projects on time and within budget. My ability to collaborate with
+diverse stakeholders ensures that decisions made by the committee align with
+both technical requirements and overall project goals.
+
+Commitment to Continuous Improvement: As a member of the AC, I will strive to
+drive innovation and promote best practices within our project. By staying
+up-to-date with emerging technologies and industry trends, I can help guide our
+software towards greater efficiency, scalability, and user satisfaction.
+
+Excellent Communication Skills: Effective communication is crucial for any
+committee's success. With my strong verbal and written communication abilities,
+I can facilitate productive discussions among committee members, ensuring that
+ideas are shared openly and transparently.
+
+I am excited about the opportunity to contribute further to this project's
+growth as a member of the AC. If given the chance, I will dedicate myself
+wholeheartedly to fulfilling my responsibilities with utmost professionalism.
+
+Thank you for considering my nomination. 
+Mr. Z 
+
+
+
