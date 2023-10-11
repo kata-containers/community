@@ -1,0 +1,38 @@
+Name: Jeremi Piotrowski
+
+Email: jpiotrowski@microsoft.com
+
+Background:
+
+I'm a software engineer at Microsoft, where I work within Azure. My primary
+focus is contributing to open source projects within the Cloud Native space,
+but I do not draw the line there and try to improve any and every part of the
+stack involved in running containers.
+
+For more than a year now I have been active in both the Kata Containers and
+Confidential Containers communities. I have been working in numerous areas most
+recently CI stability, and reviewing contributions (especially Cloud-Hypervisor
+related) to ensure the project can incorporate them in a timely manner. Other
+areas I've helped with are CoCo releases, CoCo development related to
+attestation (TDX and SNP) and bugfixes in Kata (cgroups and others). You may
+also have seen me answering questions on slack and helping others understand
+the Kata design or debugging issues.
+
+Microsoft relies on Kata Containers in some of our service offerings, with more
+to come. We sponsor both the Kata as well CoCo CI infrastructures. We are also
+active in adjacent projects like Cloud Hypervisor. Our goal within the Kata
+project is simple: contribute to the security and reliability of the project
+and help make it suitable for an even wider range of use cases. Part of this is
+taking our learnings from years of running hardware isolated containers and
+confidential computing workloads in production and contributing them to the
+project, in a way that benefits all users.
+
+Joining the Kata Architecure Committee will give me a chance to better serve
+the community. Kata is a very dynamic and friendly project, and I'd like to
+contribute directly to that. I care about making the project more robust as the
+codebase grows, improving our test and release processes and making it is
+easier for new contributors to join the project. I also want to work within the
+AC to see if we can reconcile some of the extensions that the community has
+built up around Kata.
+
+Jeremi
