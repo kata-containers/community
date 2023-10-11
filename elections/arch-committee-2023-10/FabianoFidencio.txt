@@ -1,0 +1,52 @@
+Name: Fabiano Fidêncio
+
+Email: fabiano@fidencio.org
+
+Background:
+
+I am a Software Engineer, a tattoo canvas for abstract art, a music addict, a
+goats and pigs instagram follower, and a big fan of old video games.
+
+In the past 3.5 years I dedicated a huge chunk of my professional and personal
+time contributing to the Kata Containers project and community, with a strong
+focus on trying to keep the community as healthy as possible, while also
+focusing on efforts in the Confidential Containers space, and trying to
+reconcile the two projects as much as possible.
+
+My involvement with Kata Containers has been intense, to say the least.  I've
+been involved on pretty much every part of the project, and also on projects
+Kata Containers interacts with.  Moreover, I've already been serving the
+community as a current member of the Kata Containers Architecture Committee.
+
+In the enterprise world, while working for Intel, I've been working mostly on
+leveraging Intel's usage of Kata Containers, and also bringing Intel
+technologies to the project, such as the TDX support and integration work for
+Confidential Containers.  While I was still working for Red Hat,I worked on
+making the upstream project a Red Hat's downstream product, passing by Fedora,
+CentOS, Red Hat CoreOS, and OpenShift components, which led to the OpenShift
+Sandboxed Containers product, which uses Kata Containers underneath.
+
+In the community space, I also have helped on a lot of different parts of the
+project. connected people to have their problems solved, mentored both
+newcomers and students into our community, have led Architecture Committee
+meetings, helped organise Kata Containers vPTG sessions, presented the project
+at conferences, worked together with OIF on getting Study Cases published, and
+helped increase the number of members in our community.  I also am hands-on on
+CI, code-reviewing, development focusing on easing the adoption of the project.
+I've managed a whole bunch of releases, and have been working as much as
+possible to grow this community in a healthy way.
+
+Recently I've been leading the whole migration away from Jenkins to using
+GitHub Actions, which makes our CI more efficient, reliable, and our tests
+closer to the real life usage.
+
+My main motivations are still to increase Kata Containers adoption in the
+industry, while ensuring the project is stable and easily consumable.  This is
+more important now than ever as new players are adopting and contributing to
+the Kata Containers project, and we're transitioning to the runtime-rs.
+
+To make it possible, I plan to continue working in the integration bits, while
+connecting and facilitating the communication between the Kata Containers
+community and the communities that I am part of.
+
+Fabiano Fidêncio (Slack: fidencio)
