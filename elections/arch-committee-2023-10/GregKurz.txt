@@ -1,0 +1,42 @@
+Name: Greg Kurz
+
+Email: groug@kaod.org
+
+Background:
+
+I am a Senior Software Engineer at Red Hat. I work for the Openshift
+Sandboxed Containers project, which provides Kata Containers to the
+Openshift Container Platform. I initially joined the effort to share my
+expertise on system components involved in virtualization, most notably
+QEMU, but my interest now spans the full stack, in order to provide a
+well integrated and production grade software to end users.
+
+Being an open source enthousiast since the late 90s, with a strong focus
+on system programing, I have been involved in early implementations of
+containers in Linux (LXC). After a brief detour through a proprietary
+operating system, I came back even more convinced of the virtues of open
+source regarding software quality and personal development. I then spent
+nearly 10 years working in underlying virtualization technologies used by
+Kata Containers, especially QEMU where I actively contributed to IBM's POWER
+architecture support and acted as maintainer for the 9Pfs subsystem until
+today.
+
+I have developped over the years a strong appetite for "learning from"
+and "sharing with" people in open communities, with a peculiar interest
+in promoting good practices. The main piece I'd keep from my experience
+with QEMU and Linux, is the importance of accompanying and improving
+contributions so that new comers can fully benefit from the priceless
+expertise that was accumulated over the years. This is a key part for the
+success and sustainability of any community.
+
+I joined Kata Containers 2 years ago, as a developper first, but then
+quickly endorsed the roles of reviewer, maintainer and I got directly
+involved in several official releases. I am now ready to go one step
+further and join the Architecture Commitee in order to accompany the
+community even more on consolidating good practices and improving
+processes. This is crucial for the success of Kata Containers, now that
+it has become the de-facto vehicle to bring more and more virtualization
+features to the containers ecosystem, with its share of integration
+challenges.
+
+Greg
