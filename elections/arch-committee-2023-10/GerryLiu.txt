@@ -1,0 +1,23 @@
+Name: Gerry Liu
+Email: gerry at linux dot alibaba dot com
+
+Background
+I am a software engineer at Alibaba Cloud, engaged in operating system and cloud infrastructure related technologies. I have extensive development experience with Linux kernels, container image acceleration, Rust-based micro-virtual machines, and confidential containers. I have been working on software technologies related to Kata Containers since 2019 and have made many contributions to the Kata agent-rs/runtime-rs, Dragonball vmm and Nydus Image Service projects.
+
+I am also one of the advocates of rustify Kata Containers. Over the past four years, I've helped rustifying Kata agent/runtime and Dragonball step by step. For my own personal interest, I like to refactor existing code to get better abstractions :) I've also put a lot of effort into getting Kata into production to support Function Computing, Container Services, Machine Learning/AI and database workloads.
+
+Last year, I contributed to the community in the following ways:
+1) Refactor the storage object management subsystem in Kata runtime/agent.
+2) Help integrating Nydus Image Service into Dragonball vmm.
+3) Reconstruct Coco’s image management system to help merging Coco into the Kata main branch.
+4) Enhance Nydus image service to better support Coco.
+5) Put Kata related technologies into production and have a huge deployment base
+
+In the coming year, I plan to work with the community and focus on the following tasks:
+1) Get runtime-rs ready for production
+2) Get Dragonball ready for production
+3) Better cooperation between Coco and Kata, mainly integrating Coco into the Kata main branch
+4) Enhance Nydus Image Service to better support Kata
+5) Enhance Dragonball to better support GPU, other accelerators and DPU.
+
+Gerry
