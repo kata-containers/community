@@ -82,7 +82,7 @@ A Maintainer has the ability to merge code into the Kata Containers project. Mai
 
 ## Architecture Committee
 
-The Architecture Committee is responsible for architectural decisions, including standardization, and making final decisions if Maintainers disagree. It is comprised of 5 members, who are elected by contributors.
+The Architecture Committee is responsible for architectural decisions, including standardization, and making final decisions if Maintainers disagree. It is comprised of 7 members, who are elected by contributors.
 
 The current Architecture Committee members are:
 
