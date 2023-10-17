@@ -90,7 +90,7 @@ The current Architecture Committee members are:
 - `Fabiano Fidêncio` ([`fidencio`](https://github.com/fidencio)), [Intel](https://www.intel.com).
 - `Feng Wang` ([`fengwang666`](https://github.com/fengwang666)), [`Confluent`](https://www.confluent.io).
 - `Gerry Liu` ([`jiangliu`](https://github.com/jiangliu)), [`Alibaba Cloud`](https://www.alibabacloud.com).
-- `Peng Tao` ([`bergwolf`](https://github.com/bergwolf)), [Ant Group](https://www.antfin.com/index.htm?locale=en_US).
+- `Peng Tao` ([`bergwolf`](https://github.com/bergwolf)), [Ant Group](https://www.antgroup.com/en).
 - `Samuel Ortiz` ([`sameo`](https://github.com/sameo)), [`Rivos Inc`](https://www.rivosinc.com).
 - `Steve Horsman` ([`stevenhorsman`](https://github.com/stevenhorsman)), [`IBM`](https://www.ibm.com).
 
