@@ -84,6 +84,8 @@ end_time = datetime.datetime(2018, 8, 1, 0, 0, 0, tzinfo=pytz.UTC)
 number = -1
 projects = []
 ignored_repos = [
+        'cgroups-rs',
+        'dbs-snapshot',
         'edk2',
         'qemu',
         'linux',
