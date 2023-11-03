@@ -86,10 +86,10 @@ The Architecture Committee is responsible for architectural decisions, including
 
 The current Architecture Committee members are:
 
-- `Eric Ernst` ([`egernst`](https://github.com/egernst)), [Apple](https://apple.com).
 - `Fabiano Fidêncio` ([`fidencio`](https://github.com/fidencio)), [Intel](https://www.intel.com).
-- `Feng Wang` ([`fengwang666`](https://github.com/fengwang666)), [`Confluent`](https://www.confluent.io).
+- `Fupan Li` ([`lifupan`](https://github.com/lifupan)), [Ant Group](https://www.antgroup.com/en).
 - `Gerry Liu` ([`jiangliu`](https://github.com/jiangliu)), [`Alibaba Cloud`](https://www.alibabacloud.com).
+- `Greg Kurz` ([`gkurz`](https://github.com/gkurz)), [`Red Hat`](https://www.redhat.com).
 - `Peng Tao` ([`bergwolf`](https://github.com/bergwolf)), [Ant Group](https://www.antgroup.com/en).
 - `Samuel Ortiz` ([`sameo`](https://github.com/sameo)), [`Rivos Inc`](https://www.rivosinc.com).
 - `Steve Horsman` ([`stevenhorsman`](https://github.com/stevenhorsman)), [`IBM`](https://www.ibm.com).
