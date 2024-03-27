@@ -14,7 +14,7 @@ and tooling to run elections.
 
 # Architecture Committee Elections
 
-The Kata Architecture Committee is comprised of five seats, elected by the
+The Kata Architecture Committee is comprised of seven seats, elected by the
 eligible community, and one Committee Chair, selected by the five
 Architecture Committee members.
 
