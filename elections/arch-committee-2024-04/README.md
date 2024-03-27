@@ -1,7 +1,8 @@
 # Architecture Committee Elections: Apr 2024
 
-There are three Architecture Committee seats up for election. The seats up for
-election are currently filled by `Peng Tao`, `Samuel Ortiz` and `Steve Horsman`.
+There are four Architecture Committee seats up for election. The seats up for
+election are currently filled by `Fabiano Fidêncio`, `Peng Tao`, `Samuel Ortiz`
+and `Steve Horsman`.
 
 Refer to the [elections folder README](https://github.com/kata-containers/community/tree/main/elections)
 for election process, declaring candidacy, and eligible voters.
