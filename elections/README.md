@@ -36,8 +36,8 @@ mailing lists to learn the candidates platforms
 
 [Contributors](https://github.com/kata-containers/community#contributor)
 (defined as anyone who has had code merged in the Kata Containers
-project in the last 12 months) are eligible to vote in Architecture
-Committee elections.
+project in the last 12 months prior to the first day of the nomination period)
+are eligible to vote in Architecture Committee elections.
 
 ## Candidacy
 
