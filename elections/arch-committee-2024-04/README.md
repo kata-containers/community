@@ -8,6 +8,7 @@ for election process, declaring candidacy, and eligible voters.
 
 Election Dates:
 
+* April 01, 2024: Election officials are confirmed: @sprt, @Apokleos
 * April 08, 15:00 UTC - April 15, 2024 14:59 UTC: Candidate nominations open
 * April 15, 15:00 UTC - April 22, 2024 14:59 UTC: Q&A/Debate period
 * April 22, 15:00 UTC - April 29, 2024 14:59 UTC: Voting open
