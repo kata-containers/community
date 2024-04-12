@@ -1,0 +1,24 @@
+Name: Steve Horsman
+
+Email: steven@uk.ibm.com
+
+Background:
+
+I am a software engineer at IBM, where I work on Confidential Computing
+based on Z mainframe technology.
+
+I've been involved in the Kata Containers project since July 2021, when the
+development in the Confidential Containers started. My main focus has been
+working on the the CCv0 branch of kata-containers and tests, where I've helped
+add new features, test code, jobs, done many code reviews, helped with the CoCo
+release process and then helped to co-ordinate the migration of the CoCo
+function into the main branch in a proper way. In the last year I've served on
+the Architecture Committee.
+
+I've also been involved in helping with the CI and updated release process
+and I see my role going forwards to continue to be focused on the CoCo uses
+of kata and try and help bring between the community and help with CI
+stability and releases. I also look forward to some large changes in the near
+future like moving to containerd 2.0 and the transition to runtime-rs.
+
+Steve
