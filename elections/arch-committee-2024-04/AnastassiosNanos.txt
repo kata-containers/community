@@ -1,0 +1,24 @@
+Name: Anastassios Nanos
+
+Email: ananos@nubificus.co.uk
+
+Background:
+
+I am a Systems Researcher, with almost two decades of experience in systems software development. My journey in this field began with low-level system architecture and a drive to create efficient and robust systems software to accommodate high-performance application needs. Throughout my career, I had the privilege of working on various hypervisor projects, specializing in enhancing performance, security, and interoperability. Currently, I am juggling between academic and commercial projects, working on various aspects of the software stack to enable secure and efficient application execution in multi-tenant Cloud/Edge environments.
+
+My involvement with the Kata Containers project stems from a passion for pushing the boundaries of containers. I recognize the role hypervisor support plays in ensuring the project's success, and I am eager to lend my expertise to make it even more robust. From optimizing performance to fortifying security, and extending support to diverse hypervisor projects, I am committed to making (or keeping;-)) Kata Containers the de-facto microVM sandbox container runtime. As a team, we are involved in Kata<->Firecracker support, both in the go and rust runtime.
+
+If elected to the Kata Architecture Committee, my primary focus will be hypervisor support, particularly in the context of the runtime-rs port.
+
+A few thoughts: 
+
+- Strengthening Hypervisor Support: I will collaborate with the community to identify areas for improvement in hypervisor support and work tirelessly to address them. This includes optimizing hypervisor interactions, enhancing compatibility with diverse hypervisor platforms, and implementing robust error handling mechanisms.
+
+- Advancing CI Stability: I recognize the critical role CI plays in maintaining the project's health and stability. I will prioritize efforts to enhance the CI pipeline, especially in the context of catching hypervisor-related corner cases, and ensure timely detection and resolution of issues related to new features and the runtime-rs integration.
+
+- Fostering Collaboration: I believe in the power of collaboration to drive innovation. As a committee member, I will actively engage with stakeholders, solicit feedback from the community, and foster a culture of open communication and collaboration. I will strive to keep the inclusive environment that the community has created, where diverse perspectives are valued, and all voices are heard.
+
+I am deeply committed to advancing the Kata Containers project. With your support, I am confident that together, we can achieve new milestones and drive the project to even greater success.
+
+cheers,
+Tassos
