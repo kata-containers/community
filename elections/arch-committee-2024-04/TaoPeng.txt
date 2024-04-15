@@ -1,0 +1,42 @@
+Name: Tao Peng
+
+Email: bergwolf@hyper.sh, bergwolf@antgroup.com
+
+Background:
+
+I am a staff engineer at Ant Group, where my primary focus is cloud-native
+infrastructure-related technologies, including both container runtimes and
+images.
+
+I have been an active contributor since the foundation of Kata Containers
+project back in 2017. I used to work on many areas of the project including
+architectural design, development, releasing management, security auditing,
+event organizing, and community promoting. I have served as a member of the
+architecture committee since 2021 and would like to renew my seat to continue
+my contribution to the community.
+
+In the coming year, there are still quite a lot of interesting things going on
+in the community, out of which my main focus would mostly be around:
+
+1. Engaging more users. While Kata is getting more and more end users, it is
+also obvious that we are not getting enough feedback from them. The latest end-user
+survey is a good start. I would like to help engage more end users so
+that we can use their feedback to prioritize features of the project.
+
+2. Collaboration with the confidential container project. Coco is certainly one
+of the most important downstream of Kata. While Coco has been doing great so far,
+it has been living in the shadow for too long. We should merge it into the main
+branch soonish and ensure the roadmap-wise longterm alignment of Coco and Kata.
+
+3. PVM (Pagetable-based Virtual Machine) is a cutting-edge isolation technology
+developed by Ant Group and expands Kata's usage in nested VM environments. It
+is still in the process of being upstreamed in the Linux kernel community and I
+would devote part of my time to help integrate and promote it in the Kata
+community, especially to the SaaS/PaaS provider users of Kata who operate mostly
+in public cloud.
+
+Meanwhile, there is certainly more to do for the community and I look forward to
+continuing to serve the community and help it thrive.
+
+Cheers,
+Bergwolf
