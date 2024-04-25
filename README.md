@@ -86,13 +86,13 @@ The Architecture Committee is responsible for architectural decisions, including
 
 The current Architecture Committee members are:
 
-- `Fabiano Fidêncio` ([`fidencio`](https://github.com/fidencio)), [Intel](https://www.intel.com).
-- `Fupan Li` ([`lifupan`](https://github.com/lifupan)), [Ant Group](https://www.antgroup.com/en).
+- `Anastassios Nanos` ([`ananos`](https://github.com/ananos)), [`Nubificus Ltd`](https://nubificus.co.uk).
+- `Fupan Li` ([`lifupan`](https://github.com/lifupan)), [`Ant Group`](https://www.antgroup.com/en).
 - `Gerry Liu` ([`jiangliu`](https://github.com/jiangliu)), [`Alibaba Cloud`](https://www.alibabacloud.com).
 - `Greg Kurz` ([`gkurz`](https://github.com/gkurz)), [`Red Hat`](https://www.redhat.com).
-- `Peng Tao` ([`bergwolf`](https://github.com/bergwolf)), [Ant Group](https://www.antgroup.com/en).
-- `Samuel Ortiz` ([`sameo`](https://github.com/sameo)), [`Rivos Inc`](https://www.rivosinc.com).
+- `Peng Tao` ([`bergwolf`](https://github.com/bergwolf)), [`Ant Group`](https://www.antgroup.com/en).
 - `Steve Horsman` ([`stevenhorsman`](https://github.com/stevenhorsman)), [`IBM`](https://www.ibm.com).
+- `Zvonko Kaiser` ([`zvonkok`](https://github.com/zvonkok)), [`NVIDIA`](https://www.nvidia.com).
 
 Architecture Committee elections take place in the Autumn (3 seats available) and in the Spring (4 seats available). Anyone who has made contributions to the project will be eligible to run, and anyone who has had code merged into the Kata Containers project in the 12 months (a Contributor) before the election will be eligible to vote. There are no term limits, but in order to encourage diversity, no more than 2 of the 7 seats can be filled by any one organization.
 
