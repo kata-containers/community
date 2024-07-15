@@ -102,7 +102,7 @@ See [the elections documentation](elections) for further details.
 
 ### Architecture Committee Meetings
 
-The Architecture Committee meets every Tuesdays at 7:00am PST. Agenda & call info can be found [here](https://etherpad.opendev.org/p/Kata_Containers_Architecture_Committee_Mtgs).
+The Architecture Committee meets every Thursday at 1300 UTC. Agenda & call info can be found [here](https://etherpad.opendev.org/p/Kata_Containers_Architecture_Committee_Mtgs).
 
 In order to efficiently organize the Architecture Committee (AC) meetings, maximize the benefits for the community, and be as inclusive as possible, the AC recommends following a set of [guidelines](AC-Meeting-Guidelines.md) for raising topics during the weekly meetings.
 
