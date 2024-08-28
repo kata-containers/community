@@ -84,11 +84,14 @@ See the [election tools documentation](tools).
 
 ## Current elections
 
+- October 2024
+  - [election](arch-committee-2024-10)
+  
+## Previous elections
+
 - April 2024
   - [election](arch-committee-2024-04)
   - [results](arch-committee-2024-04/Results.md)
-
-## Previous elections
 
 - October 2023
   - [election](arch-committee-2023-10)
