@@ -76,11 +76,26 @@ Containers project. This includes, but is not limited to:
 ## System
 
 The Architecture Committee election uses
-[CIVS with Condorcet method voting](https://civs.cs.cornell.edu/)
+[CIVS with Condorcet method voting](https://civs.cs.cornell.edu/).
+You can find information about how to set up the voting on the
+related [OpenStack wiki](https://wiki.openstack.org/wiki/Election_Officiating_Guidelines#Running_the_election_itself).
+
+Due to CIVS policy, to vote in private CIVS polls, everyone in the
+electorate must opt in to email communication. CIVS has a
+[dedicated page](https://civs1.civs.us/cgi-bin/opt_in.pl) to register
+the email address they are using on GitHub. Once someone has
+opted into receiving e-mail from CIVS it should allow future
+ballots from any poll to be sent to the same e-mail address.
 
 ## Tools
 
 See the [election tools documentation](tools).
+
+## Process
+
+See the [election process documentation](process) for details on
+the process that election officials need to follow to successfully
+execute the AC election.
 
 ## Current elections
 
