@@ -61,7 +61,7 @@ Email and Slack announcement tips:
 - Describe candidacy process
 - Describe voting eligibility
 - Link to references from kata-containers/community
-- Example email from an earlier cycle: [draft etherpad](https://etherpad.opendev.org/p/r.256a531373da9595cf4c3af45bd58782)
+- Example email from an earlier cycle: [draft Etherpad](https://etherpad.opendev.org/p/r.256a531373da9595cf4c3af45bd58782)
 
 During the AC Candidacy round:
 - Election officials review the nominations on GitHub
@@ -71,7 +71,7 @@ During the AC Candidacy round:
   - Mention specifically the nomination deadline, and the
     full timeline
   - Example email from an earlier cycle:
-  	[October 2023 Kata Containers Architecture Committee elections candidate nomination reminder](https://lists.katacontainers.io/pipermail/kata-dev/2020-September/001512.html)
+  	[September 2020 Kata Containers Architecture Committee elections candidate nomination reminder](https://lists.katacontainers.io/pipermail/kata-dev/2020-September/001512.html)
 
 When AC Candidacy submission ends:
 
@@ -105,7 +105,7 @@ Before AC Election begins:
   - Check closing date
 
 
-When TSC Election begins:
+When AC Election begins:
 
 - Upload rolls
 - CIVS has a maximum number of electorate emails you can upload at a time without
@@ -113,7 +113,7 @@ When TSC Election begins:
 - Send Kata AC election - Voting period started email, and announce the start
   of the voting period on Slack
 
-A couple of days before the TSC Election ends:
+A couple of days before the AC Election ends:
 
 - Send Kata AC election - Voting period started reminder email and Slack
   note
