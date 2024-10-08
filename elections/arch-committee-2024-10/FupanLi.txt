@@ -1,0 +1,23 @@
+Name: Fupan Li
+
+Email: lifupan@gmail.com
+
+Background:
+
+I’m one of the Kata Containers communities maintainer and active contributor since 2018,
+during the past few years, I developed the Kata Containers shimv2, which promoted Kata
+Containers from multi process model  into only two process(shimv2 and vmm) model, at the
+same time, it made  Kata Containers much more populated and adoptable in the k8s community.
+In addition, I’m the author of the rust version of the kata-agent, which bring Kata Containers
+from 1.0 to 2.0. Last but not lease, I’m the architecture and key developer of the rust version’s
+kata runtime, which had been opened and contributed to runtime-rs.
+
+I was elected as a Kata AC member last year and have served the Kata community for a year. During
+this year, I actively promoted the maturity of Kata rust runtime and it has reached the requirements
+of product-level stability.
+
+In addition to that, I worked in Ant Group, which maintained the largest Kata Containers cluster,
+as an senior engineer, I’m responsible for the implementation and development of the kata container
+inside Ant, and I am confident that based on my development and land experience on the Ant Group,
+as well as the maintenance work of the community, I’d try my best to contribute much more to the
+Kata community.
