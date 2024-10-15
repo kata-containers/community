@@ -1,0 +1,40 @@
+Name: Aurelien Bombo
+
+Email: abombo@microsoft.com
+
+Background:
+
+I'm a software engineer at Microsoft, where I work on developing the
+Azure Linux OS for different offerings, including the Azure Kubernetes
+Service (AKS), and where my primary focus is to grow Kata Containers
+both outside and inside Microsoft.
+
+I joined the project at the beginning of last year, when I initially
+helped with the move from Jenkins to Github Actions in order to
+modernize the CI. Since then, I've been involved in both the Kata and
+CoCo communities, maintaining and strengthening our CI, reviewing
+contributions, and helping out cutting releases.
+
+Notably, as Microsoft sponsors the CI infrastructure for Kata and CoCo
+(as well as adjacent projects like Cloud Hypervisor), I've worked with
+Microsoft leadership to unlock $54,000 of funding for Azure resources
+for testing. Separately, I've worked with Github to upgrade our
+concurrent free runner limit from 20 to 100, significantly speeding up
+our CI at no extra cost. In everyday operations, I make it a point to
+ensure our CI usage continuously gives us a safe operating margin in
+terms of costs, and I bring my expertise in helping the community
+maintain the health of the test infrastructure relying on AKS.
+
+More recently, I've been leading a mentorship program with Boston
+University, in which a team of five students is working on turning our
+CI dashboard prototype into a production solution, as well as adding
+more automation to our CI. I've also been working more closely with
+the CoCo community to enable confidential storage features.
+
+In the next year, I plan to keep executing on these priorities and to
+further stabilize and strengthen Kata. As the project matures, a logical
+next step that I'd like to explore is advertising it around different
+online communities and increasing the reach and growth of the project
+this way.
+
+Aurelien
