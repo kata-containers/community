@@ -87,8 +87,8 @@ The Architecture Committee is responsible for architectural decisions, including
 The current Architecture Committee members are:
 
 - `Anastassios Nanos` ([`ananos`](https://github.com/ananos)), [`Nubificus Ltd`](https://nubificus.co.uk).
+- `Aurelien Bombo` ([`sprt`](https://github.com/sprt)), [`Microsoft`](https://www.microsoft.com/en-us/).
 - `Fupan Li` ([`lifupan`](https://github.com/lifupan)), [`Ant Group`](https://www.antgroup.com/en).
-- `Gerry Liu` ([`jiangliu`](https://github.com/jiangliu)), [`Alibaba Cloud`](https://www.alibabacloud.com).
 - `Greg Kurz` ([`gkurz`](https://github.com/gkurz)), [`Red Hat`](https://www.redhat.com).
 - `Peng Tao` ([`bergwolf`](https://github.com/bergwolf)), [`Ant Group`](https://www.antgroup.com/en).
 - `Steve Horsman` ([`stevenhorsman`](https://github.com/stevenhorsman)), [`IBM`](https://www.ibm.com).

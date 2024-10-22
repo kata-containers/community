@@ -101,7 +101,8 @@ execute the AC election.
 
 - October 2024
   - [election](arch-committee-2024-10)
-  
+  - [results](arch-committee-2024-10/Results.md)
+
 ## Previous elections
 
 - April 2024
