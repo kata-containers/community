@@ -10,7 +10,9 @@
 * [Governance](#governance)
     * [Developers](#developers)
         * [Contributor](#contributor)
-        * [Maintainer](#maintainer)
+        * [Committer](#committer)
+        * [Admin](#admin)
+        * [Owner](#owner)
     * [Architecture Committee](#architecture-committee)
         * [Architecture Committee Meetings](#architecture-committee-meetings)
 * [Vendoring code](#vendoring-code)
@@ -70,19 +72,48 @@ The Kata Containers project is governed according to the ["four opens"](https://
 
 ## Developers
 
-For code contributors, there are currently two roles relevant to project governance:
+For Kata developers, there are several roles relevant to project governance:
 
 ### Contributor
 
 A Contributor to the Kata Containers project is someone who has had code merged within the last 12 months. Contributors are eligible to vote in the Architecture Committee elections. Contributors have read only access to the Kata Containers repos on GitHub.
 
-### Maintainer
+### Committer
 
-A Maintainer has the ability to merge code into the Kata Containers project. Maintainers are active Contributors and participants in the projects. In order to become a Maintainer, you must be nominated and approved by the established Maintainers. Maintainers have write access to the Kata Containers repos on GitHub.
+Kata Containers Committers (as defined by the [kata-containers-committer team](https://github.com/orgs/kata-containers/teams/kata-containers-committer))
+have the ability to merge code into the Kata Containers project.
+Committers are active Contributors and participants in the project. In order to become a Committer, you must be nominated by established Committer and approved by quorum of the active Architecture Committee via an issue against the community repo
+e.g. https://github.com/kata-containers/community/issues/403. Committers have write access to the Kata Containers repos on GitHub, which
+gives the ability to approve PRs, trigger the CI and merge PRs.
+
+One of the requirements to be a committer is that you are an active Contributor to the project as adjudged by the above criteria. Assessing the list of active Contributors happens twice a year,
+lining up with the Architecture Committee election cycle. At that time, people who are in the kata-containers-committer team will also be reviewed, and a list of people, who are on the team,
+but who haven't been an active Contributor in the last 12 months will be created and shared with the Architecture Committee and community.
+After a short review period, to allow time to check for any errors, inactive team members will be removed.
+
+> [!Note]
+> See [issue #413](https://github.com/kata-containers/community/issues/413) for a potential change in how active contribution is assessed.
+
+### Admin
+
+Kata Containers Admins (as defined by the [kata-containers-admin team](https://github.com/orgs/kata-containers/teams/kata-containers-admin) have admin access to
+the kata-containers repo, allowing them to do actions like, change the branch protection rules for repositories, delete a repository and manage the access of others.
+The Admin group is intentionally kept small, however, individuals can be granted temporary admin access to carry out tasks, like creating a secret that is used in a particular CI infrastructure.
+The Admin list is reviewed and updated after each Architecture Committee election and typically contains:
+- The Architecture Committee
+- Optionally, some specific people that the Architecture Committee agree on adding for a specific purpose (e.g. to manage the CI)
+
+### Owner
+
+GitHub organization owners have complete admin access to the organization, and therefore this group is limited to a small number of individuals, for security reasons.
+The owners list is reviewed and updated after each Architecture Committee election and contains:
+- The Community Manager and one, or more extra people from the `OpenInfra Foundation` for redundancy and vacation cover
+- The Architecture Committee
+- Optionally, some specific people that the Architecture Committee agree on adding for a specific purpose (e.g. to help with repo/CI migration)
 
 ## Architecture Committee
 
-The Architecture Committee is responsible for architectural decisions, including standardization, and making final decisions if Maintainers disagree. It is comprised of 7 members, who are elected by contributors.
+The Architecture Committee is responsible for architectural decisions, including standardization, and making final decisions if Committers disagree. It is comprised of 7 members, who are elected by Contributors.
 
 The current Architecture Committee members are:
 
@@ -96,7 +127,7 @@ The current Architecture Committee members are:
 
 Architecture Committee elections take place in the Autumn (3 seats available) and in the Spring (4 seats available). Anyone who has made contributions to the project will be eligible to run, and anyone who has had code merged into the Kata Containers project in the 12 months (a Contributor) before the election will be eligible to vote. There are no term limits, but in order to encourage diversity, no more than 2 of the 7 seats can be filled by any one organization.
 
-The exact size and model for the Architecture Committee may evolve over time based on the needs and growth of the project, but the governing body will always be committed to openness, diversity and the principle that technical decisions are made by technical contributors.
+The exact size and model for the Architecture Committee may evolve over time based on the needs and growth of the project, but the governing body will always be committed to openness, diversity and the principle that technical decisions are made by technical Contributors.
 
 See [the elections documentation](elections) for further details.
 
