@@ -28,7 +28,7 @@ Things to keep in mind when selecting election dates:
 - Allow at least a week for nomination and campaign periods
 - The current AC needs to approve the timeline once there
   is a proposal
-  
+
 # Preparation
 As early as possible but at least a month before election
 starts:
@@ -91,6 +91,10 @@ The AC election includes a period after the candidates are defined
 but before the election, for candidates to answer questions from
 the community.
 
+The questions will be hosted in the Community repo's
+[discussions board](https://github.com/kata-containers/community/discussions)
+and tagged with the election date/name for ease of searching.
+
 Open this with Kata AC election - Campaign period started email, and
 also announce it on Slack.
 
@@ -117,7 +121,7 @@ A couple of days before the AC Election ends:
 
 - Send Kata AC election - Voting period started reminder email and Slack
   note
-  
+
 Ending the Kata AC Election:
 
 - Close the election and send Kata AC election - Voting period ended email, and

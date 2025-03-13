@@ -11,7 +11,7 @@ on:
 
 jobs:
   pr_wip_check:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     name: WIP Check
     steps:
     - name: WIP Check
