@@ -9,7 +9,7 @@ for election process, declaring candidacy, and eligible voters.
 
 Election Dates:
 
-* March 31, 2025: Election officials are confirmed:
+* March 31, 2025: Election officials are confirmed: @sprt, @Apokleos
 * April 07, 15:00 UTC - April 14, 2025 14:59 UTC: Candidate nominations open
 * April 14, 15:00 UTC - April 21, 2025 14:59 UTC: Q&A/Debate period
 * April 21, 15:00 UTC - April 28, 2025 14:59 UTC: Voting open
