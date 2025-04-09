@@ -1,0 +1,59 @@
+Name: Ruoqing He
+
+Email: heruoqing@iscas.ac.cn
+
+Background:
+
+I'm a software engineer at Institute of Software, Chinese Academy of Sciences,
+and my focus is virtualization and cloud-native on RISC-V architecture. More
+specifically, the software stack related/connected to and includes Kata
+Containers.
+
+I walked all the way up from rust-vmm -> cloud-hypervisor -> Kata Contaienrs,
+laid down the RISC-V CI infrastructures and introduced RISC-V architecture
+support, while actively maintaining them. Besides, we have been working on
+dragonball too since last year, those works will be put up and receive reviews
+in a few months after we figured out how to deal with and upgrade the rust-vmm
+dependencies correctly and elegantly.
+
+As for the RISC-V infrastructure, we are closely working with RISC-V hardware
+vendors, testing our works on their FPGA, QEMU and prototypes even before those
+products are manufactured. So for sure, we will get a hold on them when they
+(RISC-V hardware capable of running Kata Containers software stack) are made
+available to the market. As of now, we are maintaining the RISC-V runners we
+have in Kata community. With that being said, I would be actively playing with
+and maintaining our CI as of those connected/going to be connected machines, to
+establish solid ground for RISC-V work to stably progress.
+
+In the year ahead we are going to have real hardware that is capable of
+building, testing, and running full Kata Containers software stack, which would
+be an important milestone for both Kata and RISC-V. I will be pushing the
+following forward:
+
+- Extend/Upgrade the runner matrix in Kata self-hosted RISC-V runners:
+  Currently, we are using machines without hypervisor extension solely for
+  building, and my goal is always align with other architectures to build, test,
+  and run on self-hosted machines.
+
+- Expand RISC-V support for Kata components: This is my primary focus in our
+  community, I will continue to work out, stabilize and maintain RISC-V
+  architecture support all over the place.
+
+- Explore RISC-V Confidential Containers: Looking for works could/should be
+  done in both coco community and integrating them to Kata, and catching up the
+  developments of CoVE here.
+
+- Advocate Kata Containers: I have been talking about Kata Containers more than
+  ten times in the past year, to developers, end users, and the public. I
+  talked about Kata on RISC-V in FOSDEM 2025 [1] in Feb 2025, and I will bring
+  this topic to RISC-V Summit Europe 2025 in May 2025.
+
+apart from those, I will be committed to helping maintaining our CI
+infrastructure, reviewing/unblocking PRs and contributing like predecessors and
+current ACs/maintainers/contributors in our community did.
+
+Cheers,
+Ruoqing
+
+[1] https://fosdem.org/2025/schedule/event/fosdem-2025-4156-from-rust-vmm-to-katacontainers-the-development-of-h-ext-based-software-ecosystem/
+
