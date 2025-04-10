@@ -1,0 +1,42 @@
+Name: Zvonko Kaiser
+
+Email: zkaiser@nvidia.com
+
+Background:
+
+I would be honored to continue serving on the Architecture Committee and further
+contribute to our shared goals. I am a principal engineer at NVIDIA, focusing on
+cloud-native development and leading Kata and Confidential Containers efforts
+across various architectures—from embedded and edge devices to data centers and
+cloud platforms. Over the last four years, I’ve been deeply involved in Kata,
+bringing my expertise and dedication to help it flourish.
+
+Throughout my career, I’ve gained extensive technical knowledge in system
+software development, performance engineering, and virtualization—experience
+that spans robotics at the Fraunhofer Institute, automotive research at
+Mercedes, mainframe and blade servers at IBM, and cloud/Kubernetes roles at
+RedHat and NVIDIA. In Kata, I helped introduce the virtualization reference
+architecture to support advanced GPU use cases like GPUDirect RDMA and GPUDirect
+GDS. I also added GPU, vGPU (time-sliced and MIG-backed) support, and recently
+focused on confidential GPU capabilities. All of these efforts have aimed to
+expand Kata’s features and better serve the wider community.
+
+Collaboration and teamwork are at the heart of my approach. I have led
+cross-functional teams and worked with diverse stakeholders to ensure open
+communication and consensus-driven decisions. I stay up-to-date with emerging
+technologies and industry trends, continually seeking ways to enhance
+efficiency, scalability, and user satisfaction in our projects.
+
+Looking ahead, I am excited to help guide our work into the secure AI era. By
+strengthening confidential computing, advancing GPU virtualization technologies,
+and aligning with robust security standards, I believe we can ensure that our
+project remains at the forefront of modern AI use cases—empowering developers
+and users alike with trusted, scalable solutions.
+
+If given the opportunity, I will continue promoting innovation, community
+engagement, and transparency within the Architecture Committee. Thank you for
+considering my nomination, and I look forward to helping guide our work to even
+greater success.
+
+Sincerely,
+Mr. Z
