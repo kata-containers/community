@@ -1,0 +1,38 @@
+Name: Tao Peng
+
+Email: bergwolf@hyper.sh, bergwolf@antgroup.com
+
+Background:
+
+I am a staff engineer at Ant Group, where my primary focus is cloud-native
+infrastructure-related technologies, including both container runtimes and
+images.
+
+I have been an active member of the Kata Containers community since 2017.
+I worked on many areas of the project, including architectural design,
+development, releasing management, security auditing, event organizing, and
+community promoting. I've been part of the architecture Committee since 2021,
+and I'd be honored to continue serving the community.
+
+In the past years, the community has done tremendous work to bring a fast,
+secure and production-ready container runtime to the world. In the coming year,
+my main focus will mostly be around:
+
+1. runtime-rs maturity and adoption. We've been developing runtime-rs for
+quite some time. It is faster, more stable, and more memory efficient. It is
+now time to look at a realistic timeline to make it default and share it with
+a wider range of Kata Containers users.
+
+2. PVM (Pagetable-based Virtual Machine) is a cutting-edge isolation technology
+developed by Ant Group and expands Kata's usage in nested VM environments by
+removing the nested VT hardware requirement. While it is still in the process
+of being upstreamed in the Linux kernel community, we've been deploying it on
+a large scale internally, and there are community users around as well. I'd like
+to help integrate and promote it both in the Kata community and in the wider
+kernel community.
+
+I sincerely look forward to continuing to serve the Kata community and helping
+it thrives.
+
+Cheers,
+Bergwolf
