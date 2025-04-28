@@ -121,7 +121,7 @@ The current Architecture Committee members are:
 - `Aurelien Bombo` ([`sprt`](https://github.com/sprt)), [`Microsoft`](https://www.microsoft.com/en-us/).
 - `Fupan Li` ([`lifupan`](https://github.com/lifupan)), [`Ant Group`](https://www.antgroup.com/en).
 - `Greg Kurz` ([`gkurz`](https://github.com/gkurz)), [`Red Hat`](https://www.redhat.com).
-- `Peng Tao` ([`bergwolf`](https://github.com/bergwolf)), [`Ant Group`](https://www.antgroup.com/en).
+- `Ruoqing He` ([`RuoqingHe`](https://github.com/RuoqingHe)), [`ISCAS`](http://english.is.cas.cn).
 - `Steve Horsman` ([`stevenhorsman`](https://github.com/stevenhorsman)), [`IBM`](https://www.ibm.com).
 - `Zvonko Kaiser` ([`zvonkok`](https://github.com/zvonkok)), [`NVIDIA`](https://www.nvidia.com).
 
