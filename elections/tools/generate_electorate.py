@@ -9,8 +9,10 @@
 # Description: Generate a list of kata contributors by extracting contact
 # information from GitHub
 
+import argparse
 import datetime
-import pytz
+from datetime import timedelta
+import os
 import re
 import yaml
 
@@ -68,23 +70,22 @@ def _author_representer(dumper, data):
                          commit_count=data.commit_count)
     return dumper.represent_dict(o_dict.items())
 
+def find_authors_by_project(start_time, end_time):
+    dco_re = re.compile('signed.off.by[: ]*(?P<name>[^<]*)<(?P<email>.*)>$',
+                        re.IGNORECASE | re.MULTILINE)
+    # Get a token GitHub Personal API token see:
+    #   https://blog.github.com/2013-05-16-personal-api-tokens/
+    # for more information.
+    try:
+        personal_token=os.environ['GH_TOKEN']
+    except KeyError:
+        raise Exception("GH_TOKEN environment variable was not set")
 
-dco_re = re.compile('signed.off.by[: ]*(?P<name>[^<]*)<(?P<email>.*)>$',
-                    re.IGNORECASE | re.MULTILINE)
-# Get a token GitHub Personal API token see:
-#   https://blog.github.com/2013-05-16-personal-api-tokens/
-# for more information.
-gh = login(token='__API_TOKEN__')
-org = gh.organization('kata-containers')
-# Example dates for testing.
-start_time = datetime.datetime(2018, 1, 1, 0, 0, 0, tzinfo=pytz.UTC)
-end_time = datetime.datetime(2018, 8, 1, 0, 0, 0, tzinfo=pytz.UTC)
-# ... Or run just include all commits
-# start_time = end_time = None
-# All commits
-number = -1
-projects = []
-ignored_repos = [
+    gh = login(token=personal_token)
+    org = gh.organization('kata-containers')
+    number = -1
+    projects = []
+    ignored_repos = [
         'agent',
         'ci',
         'dbs-snapshot',
@@ -105,77 +106,97 @@ ignored_repos = [
         'shim',
         'slash-command-action',
         'tests',
-]
+    ]
 
 
-author_cache = {}
-for repo in org.repositories():
-    # Skip these repos as they are not a core part of the project, and are
-    # forked/imported/archived so contain many contributors from outside the project.
-    # Also skip the github security advisory repos for quicker processing
-    if str(repo).split("/")[1] in ignored_repos or str(repo).split("/")[1].startswith('kata-containers-ghsa'):
-        print('Skipping repo %s' % (repo))
-        continue
-    print('Looking for changes in %s between %s and %s' %
-          (repo, start_time, end_time))
-
-    authors = AuthorSet()
-    for commit in repo.commits(since=start_time, until=end_time, number=number):
-
-        # If a commit has >1 parents then it's a merge commit, so skip these
-        if len(commit.parents) > 1:
+    author_cache = {}
+    for repo in org.repositories():
+        # Skip these repos as they are not a core part of the project, and are
+        # forked/imported/archived so contain many contributors from outside the project.
+        # Also skip the github security advisory repos for quicker processing
+        if str(repo).split("/")[1] in ignored_repos or str(repo).split("/")[1].startswith('kata-containers-ghsa'):
+            print('Skipping repo %s' % (repo))
             continue
+        print('Looking for changes in %s between %s and %s' %
+            (repo, start_time, end_time))
 
-        if commit.author is None:
-            if commit.commit.author is None:
-                print('Skipping %s in %s as it has no author. Did this merge via GitHub?' %
-                        (commit, repo))
+        authors = AuthorSet()
+        for commit in repo.commits(since=start_time, until=end_time, number=number):
+            # If a commit has >1 parents then it's a merge commit, so skip these
+            if len(commit.parents) > 1:
                 continue
 
-            author_id = commit.commit.author.get('email')
-            print('%s in %s as has no author. Using email (%s) as the author id' %
-                    (commit, repo, author_id))
-        else:
-            author_id = commit.author.login
-
-        if author_id not in author_cache:
             if commit.author is None:
-                author = Author(author_id, email=author_id,
-                                name=commit.commit.author.get('name'))
+                if commit.commit.author is None:
+                    print('Skipping %s in %s as it has no author. Did this merge via GitHub?' %
+                            (commit, repo))
+                    continue
+
+                author_id = commit.commit.author.get('email')
+                print('%s in %s as has no author. Using email (%s) as the author id' %
+                        (commit, repo, author_id))
             else:
-                _author = gh.user(commit.author.login)
-                author = Author(_author.login, email=_author.email,
-                                name=_author.name)
+                author_id = commit.author.login
 
-            author_cache[author_id] = author
+            if author_id not in author_cache:
+                if commit.author is None:
+                    author = Author(author_id, email=author_id,
+                                    name=commit.commit.author.get('name'))
+                else:
+                    _author = gh.user(commit.author.login)
+                    author = Author(_author.login, email=_author.email,
+                                    name=_author.name)
 
-        author = author_cache[author_id]
-        author.commit_count += 1
+                author_cache[author_id] = author
 
-        # If the GitHub account doesn't have a name or email address
-        # the author *may* have included it in their git config.
-        if author.email is None and commit.commit.author.get('email'):
-            author.email = commit.commit.author.get('email')
-        if author.name is None and commit.commit.author.get('name'):
-            author.name = commit.commit.author.get('name')
+            author = author_cache[author_id]
+            author.commit_count += 1
 
-        # last ditch effort did the author use a valid email address in the
-        # DCO line?
-        match = dco_re.search(commit.message)
-        if match:
-            if ((author.email is None or
-                    'users.noreply.github.com' in author.email) and
-                    match.group('email')):
-                author.email = match.group('email')
-            if author.name is None and match.group('name'):
-                author.name = match.group('name')
-        authors.add(author)
-    projects.append({str(repo): authors})
+            # If the GitHub account doesn't have a name or email address
+            # the author *may* have included it in their git config.
+            if author.email is None and commit.commit.author.get('email'):
+                author.email = commit.commit.author.get('email')
+            if author.name is None and commit.commit.author.get('name'):
+                author.name = commit.commit.author.get('name')
 
-# Dark YAML voodoo
-yaml.Dumper.ignore_aliases = lambda *args: True
-yaml.Dumper.add_representer(AuthorSet, _authorset_representer)
-yaml.Dumper.add_representer(Author, _author_representer)
-with open('electorate.yaml', 'w') as f:
-    yaml.dump(projects, f, default_flow_style=False, default_style='',
-              explicit_start=True)
+            # last ditch effort did the author use a valid email address in the
+            # DCO line?
+            match = dco_re.search(commit.message)
+            if match:
+                if ((author.email is None or
+                        'users.noreply.github.com' in author.email) and
+                        match.group('email')):
+                    author.email = match.group('email')
+                if author.name is None and match.group('name'):
+                    author.name = match.group('name')
+            authors.add(author)
+        projects.append({str(repo): authors})
+    return projects
+
+def main():
+
+    parser = argparse.ArgumentParser(description='An electorate generation script')
+    parser.add_argument("-end", required=True,help='the end date of the period to examine in format %%d/%%m/%%y.')
+    parser.add_argument("-start",  help='the start date of the period to examine in format %%d/%%m/%%y.  If not set will default to' \
+    '365 days before the end time')
+
+    args = parser.parse_args()
+    end_time = datetime.datetime.strptime(args.end, '%d/%m/%y')
+    start_time = end_time - timedelta(days=365)
+    if args.start != None:
+        start_time = datetime.datetime.strptime(args.start, '%d/%m/%y')
+
+    print("Getting committers from", start_time, " -> ", end_time)
+
+    projects=find_authors_by_project(start_time, end_time)
+
+    # Dark YAML voodoo
+    yaml.Dumper.ignore_aliases = lambda *args: True
+    yaml.Dumper.add_representer(AuthorSet, _authorset_representer)
+    yaml.Dumper.add_representer(Author, _author_representer)
+    with open('electorate.yaml', 'w') as f:
+        yaml.dump(projects, f, default_flow_style=False, default_style='',
+                explicit_start=True)
+
+if __name__ == '__main__':
+    main()
