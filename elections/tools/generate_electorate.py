@@ -121,6 +121,11 @@ for repo in org.repositories():
 
     authors = AuthorSet()
     for commit in repo.commits(since=start_time, until=end_time, number=number):
+
+        # If a commit has >1 parents then it's a merge commit, so skip these
+        if len(commit.parents) > 1:
+            continue
+
         if commit.author is None:
             if commit.commit.author is None:
                 print('Skipping %s in %s as it has no author. Did this merge via GitHub?' %
