@@ -2,6 +2,7 @@
 
 #
 # Copyright (c) 2023 Kata Contributors
+# Copyright (c) 2025 IBM Corporation
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -119,53 +120,51 @@ for repo in org.repositories():
           (repo, start_time, end_time))
 
     authors = AuthorSet()
-    for branch in repo.branches():
-        for commit in repo.commits(sha=branch.name, since=start_time, until=end_time,
-                                   number=number):
+    for commit in repo.commits(since=start_time, until=end_time, number=number):
+        if commit.author is None:
+            if commit.commit.author is None:
+                print('Skipping %s in %s as it has no author. Did this merge via GitHub?' %
+                        (commit, repo))
+                continue
+
+            author_id = commit.commit.author.get('email')
+            print('%s in %s as has no author. Using email (%s) as the author id' %
+                    (commit, repo, author_id))
+        else:
+            author_id = commit.author.login
+
+        if author_id not in author_cache:
             if commit.author is None:
-                if commit.commit.author is None:
-                    print('Skipping %s in %s as it has no author. Did this merge via GitHub?' %
-                          (commit, repo))
-                    continue
-
-                author_id = commit.commit.author.get('email')
-                print('%s in %s as has no author. Using email (%s) as the author id' %
-                      (commit, repo, author_id))
+                author = Author(author_id, email=author_id,
+                                name=commit.commit.author.get('name'))
             else:
-                author_id = commit.author.login
+                _author = gh.user(commit.author.login)
+                author = Author(_author.login, email=_author.email,
+                                name=_author.name)
 
-            if author_id not in author_cache:
-                if commit.author is None:
-                    author = Author(author_id, email=author_id,
-                                    name=commit.commit.author.get('name'))
-                else:
-                    _author = gh.user(commit.author.login)
-                    author = Author(_author.login, email=_author.email,
-                                    name=_author.name)
+            author_cache[author_id] = author
 
-                author_cache[author_id] = author
+        author = author_cache[author_id]
+        author.commit_count += 1
 
-            author = author_cache[author_id]
-            author.commit_count += 1
+        # If the GitHub account doesn't have a name or email address
+        # the author *may* have included it in their git config.
+        if author.email is None and commit.commit.author.get('email'):
+            author.email = commit.commit.author.get('email')
+        if author.name is None and commit.commit.author.get('name'):
+            author.name = commit.commit.author.get('name')
 
-            # If the GitHub account doesn't have a name or email address
-            # the author *may* have included it in their git config.
-            if author.email is None and commit.commit.author.get('email'):
-                author.email = commit.commit.author.get('email')
-            if author.name is None and commit.commit.author.get('name'):
-                author.name = commit.commit.author.get('name')
-
-            # last ditch effort did the author use a valid email address in the
-            # DCO line?
-            match = dco_re.search(commit.message)
-            if match:
-                if ((author.email is None or
-                        'users.noreply.github.com' in author.email) and
-                        match.group('email')):
-                    author.email = match.group('email')
-                if author.name is None and match.group('name'):
-                    author.name = match.group('name')
-            authors.add(author)
+        # last ditch effort did the author use a valid email address in the
+        # DCO line?
+        match = dco_re.search(commit.message)
+        if match:
+            if ((author.email is None or
+                    'users.noreply.github.com' in author.email) and
+                    match.group('email')):
+                author.email = match.group('email')
+            if author.name is None and match.group('name'):
+                author.name = match.group('name')
+        authors.add(author)
     projects.append({str(repo): authors})
 
 # Dark YAML voodoo
