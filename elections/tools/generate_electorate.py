@@ -84,36 +84,35 @@ end_time = datetime.datetime(2018, 8, 1, 0, 0, 0, tzinfo=pytz.UTC)
 number = -1
 projects = []
 ignored_repos = [
-        'cgroups-rs',
+        'agent',
+        'ci',
         'dbs-snapshot',
+        'documentation',
         'edk2',
-        'qemu',
-        'linux',
-        'project-infra',
         'govmm',
-        'resolve-pr-refs',
         'is-organization-member',
+        'kata-containers-github-actions-tests',
+        'ksm-throttler',
+        'linux',
         'osbuilder',
+        'packaging',
+        'project-infra',
         'proxy',
+        'qemu',
+        'resolve-pr-refs',
         'runtime',
         'shim',
-        'packaging',
-        'ksm-throttler',
-        'documentation',
-        'agent',
         'slash-command-action',
-        'tests-1',
-        'kata-containers-github-actions-tests',
-        'kata-containers-cache-kernel',
-        'kata-containers-2',
-        'kata-containers-1',
-        ]
+        'tests',
+]
+
 
 author_cache = {}
 for repo in org.repositories():
     # Skip these repos as they are not a core part of the project, and are
-    # forked/imported so contain many contributors from outside the project.
-    if str(repo).split("/")[1] in ignored_repos:
+    # forked/imported/archived so contain many contributors from outside the project.
+    # Also skip the github security advisory repos for quicker processing
+    if str(repo).split("/")[1] in ignored_repos or str(repo).split("/")[1].startswith('kata-containers-ghsa'):
         print('Skipping repo %s' % (repo))
         continue
     print('Looking for changes in %s between %s and %s' %
