@@ -8,8 +8,8 @@ for election process, declaring candidacy, and eligible voters.
 
 Election Dates:
 
-* September 23, 2025: Election officials are confirmed:
-* September 30, 15:00 UTC - October 14, 2025 14:59 UTC: Candidate nominations open
-* October 14, 15:00 UTC - October 21, 2025 14:59 UTC: Q&A/Debate period
+* September 23, 2025: Election officials are confirmed: @wainersm
+* September 30, 15:00 UTC - October 10, 2025 14:59 UTC: Candidate nominations open
+* October 10, 15:00 UTC - October 21, 2025 14:59 UTC: Q&A/Debate period
 * October 21, 15:00 UTC - October 28, 2025 14:59 UTC: Voting open
 * October 28, 2025, results announced
