@@ -1,0 +1,29 @@
+Name: Aurelien Bombo
+
+Email: abombo@microsoft.com
+
+Background:
+
+I'm a software engineer at Microsoft on the Azure Linux team, where my
+focus is on growing Kata Containers as part of our cloud offering.
+
+I've been serving on the AC for a year and I initially joined the
+project around two years ago. Back then, I helped transition from
+Jenkins to Github Actions to modernize the CI. Nowadays I'm involved in
+both the Kata and CoCo communities, still improving and securing the CI,
+and making various contributions across the codebase, as well as
+triaging and reviewing external contributions.
+
+Some highlights:
+ - Led a mentorship program with five students from Boston University to
+   develop a CI dashboard for Kata [1].
+ - Secured $54K funding from Microsoft for CI resources in Azure as
+   Microsoft sponsors a significant part of the CI architecture. Ongoing
+   maintainership and monitoring of the sponsorship and spending.
+ - Worked with Github to raise various Github Actions usage limits to
+   significantly speed up CI and PR turnaround time, at no extra cost.
+ - Various improvements and security/bug fixes.
+
+[1] https://kata-containers.github.io
+
+Aurelien
