@@ -1,0 +1,22 @@
+Name: Greg Kurz
+
+Email: groug@kaod.org
+
+Background:
+
+I am a Senior Software Engineer at Red Hat. I work for the Openshift
+Sandboxed Containers project, which provides Kata Containers to the
+Openshift Container Platform. I initially joined the effort to share my
+expertise on system components involved in virtualization, most notably
+QEMU, but my interest now spans the full stack, in order to provide a
+well integrated and production grade software to end users.
+
+I joined Kata Containers four years ago, as a developper first, but then
+quickly endorsed the roles of reviewer, maintainer and I got directly
+involved in several official releases. I've served on the Architecture
+Committee for two years, helping with CI, releases and providing guidance
+on good coding practices during reviews. I want to continue the effort and
+help wherever I can.
+
+--
+Greg
