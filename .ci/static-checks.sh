@@ -20,6 +20,7 @@ clone_kata_repo() {
 		git checkout "${kata_default_branch}"
 		popd || exit
 	fi
+	ls -R "${kata_repo_dir}"
 }
 
 run_static_checks() {
