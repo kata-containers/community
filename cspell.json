@@ -1,0 +1,41 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "language": "en,en-GB",
+  "dictionaryDefinitions": [
+    {
+      "name": "kata-terms",
+      "path": "./kata-dictionary.txt",
+      "addWords": true
+    }
+  ],
+  "dictionaries": [
+    "en-GB",
+    "en_US",
+    "bash",
+    "git",
+    "golang",
+    "k8s",
+    "python",
+    "rust",
+    "companies",
+    "peopleNames",
+    "softwareTerms",
+    "kata-terms"
+  ],
+  "ignoreRegExpList": [
+    // Ignores words that look like names
+    // "/[\\p{Lu}][\\p{L}]+/gu",
+    // Ignores github handles
+    "/@[a-z\\d](?:[a-z\\d]|-(?=[a-z\\d])){0,38}/gi",
+    // Ignore code blocks
+    "/^\\s*`{3,}[\\s\\S]*?^\\s*`{3,}/gm",
+    "/`[^`\\n]+`/g"
+  ],
+  "ignorePaths": [
+    ".git/**",
+    "cspell.json",
+    "kata-dictionary.txt"
+  ],
+  "useGitignore": true
+}
