@@ -22,29 +22,19 @@ $ python3 -m venv .venv
 $ .venv/bin/pip install pytz github3.py pyyaml
 ```
 
-Before running the tool you will need to create a
+Before running the tool you will need to create a personal
 [GitHub API token](https://github.blog/2013-05-16-personal-api-tokens/)
+set as an environment variable called: `GH_TOKEN`
 
-replace `__API_TOKEN__` in the script with your personal token.
-
-Also update the election start and end times to cover the period being
-examined for this election period. The lines to edit look like:
-
-```python
-start_time = datetime.datetime(2018, 1, 1, 0, 0, 0, tzinfo=pytz.UTC)
-end_time = datetime.datetime(2018, 8, 1, 0, 0, 0, tzinfo=pytz.UTC)
-```
-
-Then run the tool with:
+Then run the tool supplying `-end <date of candidate nomination in %d/%m/%y format>`.
+e.g. if the nomination period began on 7th April 2025:
 
 ```bash
-$ .venv/bin/python ./generate_electorate.py
+$ .venv/bin/python ./generate_electorate.py -end 07/04/25
 ```
 
-The code looks at all commits in all Kata Containers repos *except*
-`kata-containers/linux` and `kata-containers/qemu`. As both of these are forks
-(in the GitHub sense) they'll have lots of contributors that may not be Kata
-contributors.
+The code looks at all commits in all the active Kata Containers repos . A number of
+archived/forks repos are ignored to save time/avoid including non Kata contributors.
 
 For contributors that have more than one email address it picks one as default
 but supplies all the others so  we can be smarter about where to send the
