@@ -117,13 +117,13 @@ The Architecture Committee is responsible for architectural decisions, including
 
 The current Architecture Committee members are:
 
-- `Anastassios Nanos` ([`ananos`](https://github.com/ananos)), [`Nubificus Ltd`](https://nubificus.co.uk).
-- `Aurelien Bombo` ([`sprt`](https://github.com/sprt)), [`Microsoft`](https://www.microsoft.com/en-us/).
-- `Fupan Li` ([`lifupan`](https://github.com/lifupan)), [`Ant Group`](https://www.antgroup.com/en).
-- `Greg Kurz` ([`gkurz`](https://github.com/gkurz)), [`Red Hat`](https://www.redhat.com).
-- `Ruoqing He` ([`RuoqingHe`](https://github.com/RuoqingHe)), [`ISCAS`](http://english.is.cas.cn).
-- `Steve Horsman` ([`stevenhorsman`](https://github.com/stevenhorsman)), [`IBM`](https://www.ibm.com).
-- `Zvonko Kaiser` ([`zvonkok`](https://github.com/zvonkok)), [`NVIDIA`](https://www.nvidia.com).
+- Anastassios Nanos ([@ananos](https://github.com/ananos)), [Nubificus Ltd](https://nubificus.co.uk).
+- Aurelien Bombo ([@sprt](https://github.com/sprt)), [Microsoft](https://www.microsoft.com/en-us/).
+- Fupan Li ([@lifupan](https://github.com/lifupan)), [Ant Group](https://www.antgroup.com/en).
+- Greg Kurz ([@gkurz](https://github.com/gkurz)), [Red Hat](https://www.redhat.com).
+- Ruoqing He ([@RuoqingHe](https://github.com/RuoqingHe)), [ISCAS](http://english.is.cas.cn).
+- Steve Horsman ([@stevenhorsman](https://github.com/stevenhorsman)), [IBM](https://www.ibm.com).
+- Zvonko Kaiser ([@zvonkok](https://github.com/zvonkok)), [NVIDIA](https://www.nvidia.com).
 
 Architecture Committee elections take place in the Autumn (3 seats available) and in the Spring (4 seats available). Anyone who has made contributions to the project will be eligible to run, and anyone who has had code merged into the Kata Containers project in the 12 months (a Contributor) before the election will be eligible to vote. There are no term limits, but in order to encourage diversity, no more than 2 of the 7 seats can be filled by any one organization.
 
