@@ -16,6 +16,9 @@ jobs:
         run: |
           sudo apt-get -y install moreutils hunspell hunspell-en-gb hunspell-en-us pandoc
 
+      - name: Setup Golang version ${{ env.GO_VERSION }}
+        uses: actions/setup-go@7a3fe6cf4cb3a834922a1244abfce67bcef6a0c5 # v6.2.0
+
       - name: Running static checks
         run: |
           export PATH=${GOPATH}/bin:${PATH}

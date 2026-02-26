@@ -22,11 +22,9 @@ clone_kata_repo() {
 	fi
 }
 
-run_static_checks()
-{
+run_static_checks() {
 	clone_kata_repo
 	INSTALL_IN_GOPATH=false bash "${kata_repo_dir}/ci/install_yq.sh"
-	bash "${kata_repo_dir}/tests/install_go.sh" -f -p
 	bash "${kata_repo_dir}/tests/static-checks.sh" "github.com/kata-containers/community"
 }
 
