@@ -108,6 +108,30 @@ def find_authors_by_project(start_time, end_time):
         'tests',
     ]
 
+    # Let's build a list of the users we can't get the logins for so
+    # we can prompt the runner to update the following map
+    unknown_logins = {}
+
+    # Some committers have emails that don't map to their
+    # userid properly, so maintain a map of these so the data is consistent
+    email_id_map = {
+        "fupan.lfp@antgroup.com":"lifupan",
+        "ankitapareek@microsoft.com": "Ankita13-code",
+        "chengyu.zhu@intel.com": "ChengyuZhu6",
+        "emlima@redhat.com": "lima-emanuel",
+        "leih@nvidia.com": "l8huang",
+        "mheberling@microsoft.com": "Bickor",
+        "huoqif@cn.ibm.com": "huoqifeng",
+        "niteesh@us.ibm.com": "niteeshkd",
+        "gpyrros@nubificus.co.uk": "gpyrros",
+        "chelsea.e.mafrica@intel.com": "cmaf",
+        "amshinde@ghonawax-mobl.amr.corp.intel.com": "amshinde",
+        "seunguk.shin@arm.com": "seungukshin",
+        "mahuber@microsoft.com": "manuelh-dev",
+        "ruini.xue@gmail.com": "xueruini",
+        "nlle@ambu.com": "nlle",
+        "443471302@qq.com": "Lu-yq",
+        }
 
     author_cache = {}
     for repo in org.repositories():
@@ -129,12 +153,17 @@ def find_authors_by_project(start_time, end_time):
             if commit.author is None:
                 if commit.commit.author is None:
                     print('Skipping %s in %s as it has no author. Did this merge via GitHub?' %
-                            (commit, repo))
+                        (commit, repo))
                     continue
 
                 author_id = commit.commit.author.get('email')
-                print('%s in %s as has no author. Using email (%s) as the author id' %
-                        (commit, repo, author_id))
+                if author_id in email_id_map:
+                    author_id = email_id_map[author_id]
+                else:
+                    if not author_id in unknown_logins:
+                        unknown_logins[author_id] = commit.html_url
+                    print('%s in %s as has no author. Using email (%s) as the author id' %
+                (commit, repo, author_id))
             else:
                 author_id = commit.author.login
 
@@ -171,6 +200,12 @@ def find_authors_by_project(start_time, end_time):
                     author.name = match.group('name')
             authors.add(author)
         projects.append({str(repo): authors})
+
+    if len(unknown_logins) > 0:
+        print("Warning: failed to match some emails. Please follow the commit link and add the email -> id " \
+        "map to `email_id_map` in generate_electorate.py:")
+        for email, commit_html in unknown_logins.items():
+            print("Email", email, "who committed", commit_html)
     return projects
 
 def main():
