@@ -37,7 +37,7 @@ The following GitHub team lists the users who are members of the Documentation T
 have the power to approve or reject PRs.
 
 If a Documentation Team review is required, the `CODEOWNERS` configuration will
-apply and the PR will be blocked until the required number of acks are
+apply and the PR will be blocked until the required number of approvals are
 obtained for the documentation changes.
 
 Technical writers from the Documentation Team will review the document
@@ -154,7 +154,7 @@ PTAL @kata-containers/documentation
 1. Request a project maintainer force-merges the PR.
 
    This operation bypasses the check that normally stops a PR from
-   landing until the Documentation Team acks the PR.
+   landing until the Documentation Team approves the PR.
 
 1. The maintainer should notify the Documentation Team out of courtesy that
    the PR has been merged.
