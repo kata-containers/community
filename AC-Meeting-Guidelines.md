@@ -18,7 +18,7 @@ communication media.
 Directly starting a proposal or trying to resolve new technical issues through
 the AC meeting has many drawbacks:
 * It potentially leaves a large part of the community out of the initial
-  dicussion.
+  discussion.
 * It does not give the AC meeting audience enough time to think through
   the proposal and give constructive and well thought feedback.
 * It makes it hard to track and share the discussion outcome.
@@ -54,7 +54,7 @@ For instance:
 * Are you looking for a possible **solution** to a problem exposed through
   GitHub or the mailing list?
 * Are you looking for a **resolution** of a conflict in a pull request?
-* Are you looking for a [**"go-nogo"**](https://github.com/kata-containers/community/blob/master/CONTRIBUTING.md#submit-issues-before-prs)
+* Are you looking for a [**"go/no go"**](./CONTRIBUTING.md#submit-issues-before-prs)
   from the community in order to start working on something?
 * Are you looking for technical **feedback and guidelines** on a pending
   technical proposal?

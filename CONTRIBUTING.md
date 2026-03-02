@@ -6,7 +6,7 @@
     * [Prerequisites](#prerequisites)
     * [Contributor roles](#contributor-roles)
     * [Golang coding style](#golang-coding-style)
-    * [Rustlang coding style](#rustlang-coding-style)
+    * [Rust coding style](#rust-coding-style)
     * [Certificate of Origin](#certificate-of-origin)
 * [GitHub best practices](#github-best-practices)
     * [Submit issues before PRs](#submit-issues-before-prs)
@@ -60,15 +60,15 @@ To get started, complete the prerequisites below.
 
 ### Prerequisites
 
-- Review [Contributor roles](#contributor-roles) that require special Git 
+- Review [Contributor roles](#contributor-roles) that require special Git
   configuration.
 
-- [Set up Git](https://help.github.com/en/github/getting-started-with-github/set-up-git). 
-  
-  >**Note:** The email address you specify must match the email address you 
+- [Set up Git](https://help.github.com/en/github/getting-started-with-github/set-up-git).
+
+  >**Note:** The email address you specify must match the email address you
   >use to sign-off commits.
 
-- [Fork and Clone](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) the relevant repository at the 
+- [Fork and Clone](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) the relevant repository at the
   [Kata Containers Project](https://github.com/kata-containers).
 
    Example: Your local clone should show `your-github-username`, as follows.
@@ -79,18 +79,18 @@ To get started, complete the prerequisites below.
 Special Git configuration is required for these contributors:
 
 * [Golang coding style](#golang-coding-style)
-* [Rustlang coding style](#rustlang-coding-style)
+* [Rust coding style](#rust-coding-style)
 * [Kata runtime static checks](#kata-runtime-static-checks)
 
 For all other contributor roles, follow the standard configuration, shown in
-Prerequisites. 
+Prerequisites.
 
 ### Golang coding style
 
 * Review [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments) to avoid common `Golang` errors.
 * Use `gofmt` to fix any mechanical style issues.
 
-### Rustlang coding style
+### Rust coding style
 
 * Use `rustfmt` to fix any mechanical style issues. `Rustfmt` uses a style which conforms to the
 [Rust Style Guide](https://github.com/rust-dev-tools/fmt-rfcs/blob/master/guide/guide.md).
@@ -112,13 +112,8 @@ used by the Linux kernel project.
 
 ### Submit issues before PRs
 
-Raise a GitHub issue **before** starting work on a PR.
-
-* Our process requires an issue to be associated with every PR (see [patch format](#patch-format))
-
-* If you are a new contributor, create an issue and add a comment stating 
-that you intend to work on the issue. This notifies our team of the work you 
-plan to do.
+It can be helpful to raise a GitHub issue before starting work on a PR for a new feature/bug to let the community
+know that you are planning to work on an item.
 
 ### Issue tracking
 
@@ -149,8 +144,8 @@ The issue is automatically closed by GitHub when the
 
 ## GitHub workflow
 
-Kata Containers employs certain augmentations to a 
-[standard GitHub workflow](https://guides.github.com/introduction/flow/). 
+Kata Containers employs certain augmentations to a
+[standard GitHub workflow](https://guides.github.com/introduction/flow/).
 In this section, we explain these augmentations in more detail. Follow these guidelines when contributing to Kata Containers repositories, except where noted below.
 
 * Complete the [GitHub basic setup](#github-basic-setup) above before continuing.
@@ -166,7 +161,7 @@ In this section, we explain these augmentations in more detail. Follow these gui
   is particularly relevant to maintain [Stable branch backports](#stable-branch-backports). See also [GitHub labels and keywords that block PRs](#github-labels-and-keywords-that-block-prs)
 
   >**Note:** External contributors should use keywords, explained in the
-  >link above. Labels may not be visible to external contributors. 
+  >link above. Labels may not be visible to external contributors.
 
 * [Rebase](https://help.github.com/en/github/using-git/about-git-rebase)
   commits on your branch and `force push` after each cycle of feedback.
@@ -174,8 +169,8 @@ In this section, we explain these augmentations in more detail. Follow these gui
 ### Configure your environment
 
 Most [Kata Containers repositories](https://github.com/kata-containers)
-contain code written in the [Go language (golang)](https://golang.org/). Go 
-requires all code to be put inside the directory specified by the `$GOPATH` 
+contain code written in the [Go language (golang)](https://golang.org/). Go
+requires all code to be put inside the directory specified by the `$GOPATH`
 variable. Follow this example to put the code in the standard location.
 
 ```sh
@@ -183,7 +178,7 @@ $ export GOPATH=${GOPATH:-$HOME/go}
 $ mkdir -p "$GOPATH"
 ```
 
-For further details on `golang`, refer to the 
+For further details on `golang`, refer to the
 [requirements section of the Kata Developer Guide](https://github.com/kata-containers/kata-containers/blob/main/docs/Developer-Guide.md#requirements-to-build-individual-components).
 
 >*Note*: If you intend to make minor edits, it's acceptable
@@ -191,7 +186,7 @@ For further details on `golang`, refer to the
 
 #### Fork and clone
 
-In this example, we configure a Git environment to contribute to this very 
+In this example, we configure a Git environment to contribute to this very
 `Community` repo. We create a sample branch, incorporate reviewer feedback, and rebase our commits.
 
 1. Fork the [upstream repository](https://help.github.com/articles/cloning-a-repository):
@@ -199,30 +194,30 @@ In this example, we configure a Git environment to contribute to this very
 1. [Clone your forked copy of the upstream repository](https://help.github.com/articles/cloning-a-repository):
 
 1. While on your *forked copy*, select the green button `Clone or download`
-   and copy the URL. 
+   and copy the URL.
 
 1. Run the commands below and **paste the copied URL** (previous step),
    so your real GitHub user name replaces `your-github-username` below.
-  
+
 ```sh
-$ dir="$GOPATH/src/github.com/kata-containers" 
+$ dir="$GOPATH/src/github.com/kata-containers"
 $ mkdir -p "$dir"
 $ cd "$dir"
 $ git clone https://github.com/{your-github-username}/community
 $ cd community
 ```
-   
+
 >**Note:** Cloning a forked repository automatically gives a remote `origin`.
 
 #### Configure the upstream remote
 
 Next, add the remote `upstream`. Configuring this remote allows you to
-synchronize your forked copy, `origin`, with the `upstream`. The 
-`upstream` URL varies by repository. We use the `upstream` from the Community for this example. 
+synchronize your forked copy, `origin`, with the `upstream`. The
+`upstream` URL varies by repository. We use the `upstream` from the Community for this example.
 
-1. Change directory into `community`. 
+1. Change directory into `community`.
 
-1. Set the remote `upstream` as follows. 
+1. Set the remote `upstream` as follows.
 
     ```sh
     $ git remote add upstream https://github.com/kata-containers/community
@@ -231,10 +226,10 @@ synchronize your forked copy, `origin`, with the `upstream`. The
 1. Run `git remote -v`. Your remotes should appear similar to these:
 
     ```
-    origin  https://github.com/your-github-username/community.git (fetch)  
-    origin  https://github.com/your-github-username/community.git (push)  
-    upstream  https://github.com/kata-containers/community (fetch)  
-    upstream  https://github.com/kata-containers/community (push)  
+    origin  https://github.com/your-github-username/community.git (fetch)
+    origin  https://github.com/your-github-username/community.git (push)
+    upstream  https://github.com/kata-containers/community (fetch)
+    upstream  https://github.com/kata-containers/community (push)
     ```
 
 For more details, see how to [set up a git remote](https://help.github.com/articles/configuring-a-remote-for-a-fork).
@@ -281,7 +276,7 @@ For more details, see how to [set up a git remote](https://help.github.com/artic
 
    >**Note:** The `-u` option tells `git` to "link" your local clone with
    > your remote fork so that it knows from now on that the local repository
-   > and the remote fork refer to "the same" upstream repository. Strictly 
+   > and the remote fork refer to "the same" upstream repository. Strictly
    >speaking, this option is only required the first time you call `git push`
    >for a new clone.
 
@@ -309,7 +304,7 @@ $ git log main.. --oneline --decorate=no
 60e2b2b doh - missed one
 ```
 
->**Note:** The `git log` command compares your current branch 
+>**Note:** The `git log` command compares your current branch
 >(`fix-contrib-bugs`) with the `main` branch and lists all the commits,
 >one per line.
 
@@ -353,7 +348,7 @@ multiple commits on your branch. Follow these steps.
     pick 3a4ba3f doh - missed one
     ```
 
-1. In your editor, read the comments at the bottom of the screen. 
+1. In your editor, read the comments at the bottom of the screen.
    Do not modify the first line, `pick 2e335ac docs: Fix typos ...`. Instead, revise `pick` to `squash` at the start of all following lines.
 
     Example output:
@@ -366,11 +361,11 @@ multiple commits on your branch. Follow these steps.
     ```
 
 1. Save your changes and quit the editor. Git puts you *back* into your
-   editor. You will see all the commit *messages*. 
+   editor. You will see all the commit *messages*.
 
-1. At top is your first commit, which should be in the 
-   [correct format](#patch-format). Keep your first commit and delete 
-   all the following commits, as appropriate, based on 
+1. At top is your first commit, which should be in the
+   [correct format](#patch-format). Keep your first commit and delete
+   all the following commits, as appropriate, based on
    the review feedback.
 
 1. Save the file and quit the editor. Once this operation completes, the four
@@ -395,7 +390,7 @@ multiple commits on your branch. Follow these steps.
 >those changes into your PR branch. This ensures your fork is now "up to
 >date" with the upstream repository. The `-f` option is a "force push". Since
 >you created a new commit using `git rebase`, you must "overwrite" the old
->copy of your branch in your fork on GitHub. 
+>copy of your branch in your fork on GitHub.
 
 Your PR is now updated on GitHub. To ensure team members are aware of this,
 leave a message on the PR stating something like, "Review feedback applied".
@@ -417,7 +412,7 @@ of labels or keywords:
 | -------- | ------------ | ----------------------- |
 | PR created "as an idea" and feedback sought | `rfc` | RFC |
 | PR incomplete - needs more work or rework | `do-not-merge` `wip` | WIP |
-| PR should not be merged (has all required "acks", but needs more reviewer input) | `do-not-merge` | |
+| PR should not be merged (has all required approvals, but needs more reviewer input) | `do-not-merge` | |
 | PR is a "work In progress", raised to get early feedback | `wip` | WIP |
 | PR is complete but depends on another so should not be merged (yet) | `do-not-merge` | |
 
@@ -425,8 +420,8 @@ If any of the values in the table above are set on a PR, it will be
 automatically blocked from merging.
 
 >**Note:** Often during discussions, the abbreviated and full terms are
->used interchangeably. For instance, often `DNM` is used in discussions as 
->shorthand for `do-not-merge`. The CI systems only recognise the above 
+>used interchangeably. For instance, often `DNM` is used in discussions as
+>shorthand for `do-not-merge`. The CI systems only recognise the above
 >phrases as shown.
 
 ## Re-vendor PRs
@@ -450,8 +445,8 @@ body:
 - The range of commits being added for these third-party packages.
 
   It is possible that re-vendoring a particular package will also result in
-  updates to other dependent packages. However, it is important to include 
-  the commit range (even if it is big) for the primary package(s) the 
+  updates to other dependent packages. However, it is important to include
+  the commit range (even if it is big) for the primary package(s) the
   re-vendor PR is raised for.
 
   These details allow for easier troubleshooting if the re-vendor PR
@@ -490,7 +485,7 @@ For additional information on using the `dep` tool, see
 
 * We strongly encourage you to run the same CI tests on individual PRs, using [static checks](https://github.com/kata-containers/tests/blob/main/.ci/static-checks.sh)
 
-In repositories where a `Makefile` is present, you can execute 
+In repositories where a `Makefile` is present, you can execute
 static checks for testing and development. To do so, invoke the `make check` and `make test` rules, after developer mode is enabled.
 
 ```sh
@@ -505,10 +500,10 @@ To replicate the static checks performed by the CI system:
 - [x] Ensure you have a "clean" source tree, as the checks cover all files
   present. Checks might fail if you have extra files or your files are out of date in your tree.
 
-- [x] Ensure [`golangci-lint`](https://github.com/golangci/golangci-lint) is 
-current or has not been previously installed (the static check scripts will 
+- [x] Ensure [`golangci-lint`](https://github.com/golangci/golangci-lint) is
+current or has not been previously installed (the static check scripts will
 install it if necessary). Changing the linters used or the Kata
-Containers code base can produce spurious errors that do not fail inside the 
+Containers code base can produce spurious errors that do not fail inside the
 CI systems.
 
 ### Fix failed static checks after submitting PRs
@@ -518,14 +513,14 @@ view its build logs to determine the cause of failure.
 
 1. At the bottom of the PR, if a message appears, "Some checks were not
    successful,"  select "Details", as shown below.
-    
+
     ![Failed CI-CD](fig1-ci-cd-failure.png)
 
 1. Upon entering the Travis CI* web page, select the first number that
    appears below "Build jobs."
 
-1. Scroll to the bottom of the build log and view the `ERROR` message(s). 
-   In the example below, the `ERROR` reads: `... no 
+1. Scroll to the bottom of the build log and view the `ERROR` message(s).
+   In the example below, the `ERROR` reads: `... no
    signed-off-by specified`. This is a requirement. To fix, use the signed-off-by method while pushing a commit. See [Patch format](
    #patch-format) for more details.
 
@@ -533,8 +528,8 @@ view its build logs to determine the cause of failure.
 
 ### Kata runtime static checks
 
-If working on `kata-runtime`, first ensure you run `make` and `make install` 
-in the `virtcontainers` subdirectory, as shown below. For more information, 
+If working on `kata-runtime`, first ensure you run `make` and `make install`
+in the `virtcontainers` subdirectory, as shown below. For more information,
 see [virtcontainers](https://github.com/kata-containers/kata-containers/blob/main/src/runtime/virtcontainers/documentation/Developers.md#testing).
 
 ```bash
@@ -544,7 +539,7 @@ $ sudo -E PATH=$PATH make install
 $ popd
 ```
 
->**Note:** The final `popd` is required to return to the top-level directory 
+>**Note:** The final `popd` is required to return to the top-level directory
 >from where other build rules can be executed.
 
 ## Porting
@@ -621,8 +616,8 @@ Kata Containers maintains a number of stable branch releases. Bug fixes to
 the main branch are selectively applied to (or "backported") these stable branches.
 
 In order to aid identification of commits that potentially should be
-backported to the stable branches, all PRs submitted must be labeled with 
-one or more of the following labels. At least one label that is *not* 
+backported to the stable branches, all PRs submitted must be labeled with
+one or more of the following labels. At least one label that is *not*
 `stable-candidate` must be included.
 
 | Label              | Meaning |
@@ -636,7 +631,7 @@ one or more of the following labels. At least one label that is *not*
 In the event that a bug fix PR is selected for backporting to the stable
 branches, the `stable-candidate` label is added if not already present, and
 the original author of the PR is asked if they will submit the relevant
-backport PRs. For a quick guide on how to perform and submit a backport, see 
+backport PRs. For a quick guide on how to perform and submit a backport, see
 the [Backport Guide](Backport-Guide.md) in this repository.
 
 ### Porting issue numbers
@@ -807,14 +802,14 @@ Signed-off-by: Contributors Name <contributor@foo.com>
 As shown above, pull requests must adhere to these guidelines:
 
 * Preface the PR title with the appropriate keyword found in [Subsystem](#subsystem)
-  
-* Ensure PR title length is 75 characters or fewer, including whichever 
+
+* Ensure PR title length is 75 characters or fewer, including whichever
   `subsystem` term is used.
 
 * Ensure the PR body line length is 150 characters or fewer.
 
-The body of the message is **not** a continuation of the subject line and is 
-not used to extend the subject line beyond its character limit. The subject 
+The body of the message is **not** a continuation of the subject line and is
+not used to extend the subject line beyond its character limit. The subject
 line is a complete sentence and the body is a complete, standalone paragraph.
 
 Additionally, PR body line length is not checked for special lines:
@@ -854,13 +849,13 @@ $ git log --no-merges --pretty="%s" | cut -d: -f1 | sort -u
 
 ### Best practices for patches
 
-We recommend that each patch fixes one thing. Smaller patches are easier to 
+We recommend that each patch fixes one thing. Smaller patches are easier to
 review, more likely to be accepted and merged, and more conducive for
 identifying problems during review.
 
-A PR can contain multiple patches. These patches should generally be related 
-to the [main patch](#main-patch) and the overall goal of the PR. However, it 
-is also acceptable to include additional or 
+A PR can contain multiple patches. These patches should generally be related
+to the [main patch](#main-patch) and the overall goal of the PR. However, it
+is also acceptable to include additional or
 [supplementary patches](#supplementary-patch) for things such as:
 
 - Formatting (or whitespace) fixes
@@ -910,7 +905,7 @@ Signed-off-by: James O. D. Hunt <james.o.hunt@intel.com>
 Before your PRs are merged into the main code base, they are reviewed. We
 encourage anybody to review any PR and leave feedback.
 
-See the [PR review guide](PR-Review-Guide.md) for tips on performing a 
+See the [PR review guide](PR-Review-Guide.md) for tips on performing a
 careful review.
 
 We use the GitHub [Required Reviews](https://help.github.com/articles/approving-a-pull-request-with-required-reviews/)
@@ -948,7 +943,7 @@ Some of the checks are:
 - Functional tests.
 - Integration tests.
 
-The Jenkins jobs will wait to be triggered. A maintainer must add a `/test` 
+The Jenkins jobs will wait to be triggered. A maintainer must add a `/test`
 comment on the PR to let the CI jobs run.
 
 All CI jobs must pass in order to merge your PR.

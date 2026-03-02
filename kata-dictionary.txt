@@ -1,0 +1,26 @@
+# Project terms
+CIVS
+devicemapper
+Etherpad
+kata
+katacontainers
+KCSA
+KCSN
+libcontainer
+rootfs
+virtcontainers
+
+# Names
+Anastassios
+Archana
+Aurelien
+Bombo
+Fabiano
+Fupan
+Horsman
+Kurz
+Ruoqing
+Zvonko
+
+ISCAS
+Nubificus

@@ -1,22 +1,19 @@
 on: ["pull_request"]
-name: Static checks
+
 jobs:
-  static-checks:
-    runs-on: ubuntu-24.04
-    env:
-      GOPATH: ${{ github.workspace }}
+  check-spelling:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           fetch-depth: 0
-          path: ./src/github.com/${{ github.repository }}
+          persist-credentials: false
 
-      - name: Install system dependencies
-        run: |
-          sudo apt-get -y install moreutils hunspell hunspell-en-gb hunspell-en-us pandoc
-
-      - name: Running static checks
-        run: |
-          export PATH=${GOPATH}/bin:${PATH}
-          ./src/github.com/${{ github.repository }}/.ci/static-checks.sh
+      - name: Check Spelling
+        uses: streetsidesoftware/cspell-action@9cd41bb518a24fefdafd9880cbab8f0ceba04d28  # 8.3.0
+        with:
+          # Only check markdown files
+          files: '**/*.md'
+          incremental_files_only: false # TODO revert once working
+          config: "cspell.json"
