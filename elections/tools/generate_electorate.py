@@ -231,7 +231,7 @@ def main():
     yaml.Dumper.add_representer(Author, _author_representer)
     with open('electorate.yaml', 'w') as f:
         yaml.dump(projects, f, default_flow_style=False, default_style='',
-                explicit_start=True)
+                explicit_start=True, allow_unicode=True)
 
 if __name__ == '__main__':
     main()
