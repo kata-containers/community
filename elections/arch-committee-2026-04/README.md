@@ -9,7 +9,7 @@ for election process, declaring candidacy, and eligible voters.
 
 Election Dates:
 
-* March 31, 2026: Election officials are confirmed:
+* March 31, 2026: Election officials are confirmed: @sprt, @ildikov
 * April 07, 15:00 UTC - April 14, 2026 14:59 UTC: Candidate nominations open
 * April 14, 15:00 UTC - April 21, 2026 14:59 UTC: Q&A/Debate period
 * April 21, 15:00 UTC - April 28, 2026 14:59 UTC: Voting open
