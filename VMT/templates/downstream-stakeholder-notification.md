@@ -32,9 +32,9 @@ Please do not make the issue public (or release public patches)
 before this coordinated embargo date.
 
 Original private report:
-https://bugs.launchpad.net/katacontainers.io/+bug/$NNNNNN
-For access to read and comment on this report, please reply to me
-with your Launchpad username and I will subscribe you.
+https://github.com/kata-containers/kata-containers/security/advisories/GHSA-xxxx-xxxx-xxxx
+For access to read and comment on the security report, please reply to me
+with your *GitHub* username and I will subscribe you.
 -- 
 $VMT_COORDINATOR_NAME
 Kata Containers Vulnerability Management Team
