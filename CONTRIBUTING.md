@@ -1,7 +1,9 @@
 # Contribute to the Kata Containers project
 
 * [Code of Conduct](#code-of-conduct)
-* [Pull requests](#pull-requests)
+* [Ways to contribute](#ways-to-contribute)
+    * [Report a bug](#report-a-bug)
+    * [Propose a new feature](#propose-a-new-feature)
 * [GitHub basic setup](#github-basic-setup)
     * [Prerequisites](#prerequisites)
     * [Contributor roles](#contributor-roles)
@@ -14,6 +16,7 @@
     * [Closing issues](#closing-issues)
 * [GitHub workflow](#github-workflow)
     * [Configure your environment](#configure-your-environment)
+    * [Pull requests](#pull-requests)
     * [GitHub labels and keywords that block PRs](#github-labels-and-keywords-that-block-prs)
 * [Re-vendor PRs](#re-vendor-prs)
 * [Use static checks for validation](#use-static-checks-for-validation)
@@ -42,17 +45,86 @@ The Kata Containers project is an open source project licensed under the
 [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
 It comprises a number of repositories under the [GitHub Kata
-Containers organisation](https://github.com/kata-containers). Unless
-explicitly stated otherwise, all the Kata Containers repositories follow the
-process documented here.
+Containers organisation](https://github.com/kata-containers), with most of the
+development happening in the [kata-containers repo](https://github.com/kata-containers/kata-containers).
+Unless explicitly stated otherwise, all the Kata Containers repositories
+follow the process documented here.
 
 ## Code of Conduct
 
-All contributors must agree to the project [code of conduct](CODE_OF_CONDUCT.md).
+All contributors must agree to the project’s [code of conduct](CODE_OF_CONDUCT.md).
 
-## Pull requests
+## Ways to Contribute
 
-All the repositories accept contributions via [GitHub Pull requests (PR)](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests). Submit PRs by following the [GitHub workflow](#github-workflow).
+The Kata Containers community appreciates all forms of contributions, such as
+reporting bugs and/or fixing bugs and proposing and implementing new features and
+functionality. If you are not ready to deep dive into the code just yet, you can also
+[get in touch with the community](#contact) and ask questions or share any feedback you
+have about Kata.
+
+### Report a bug
+
+If you encounter an issue while using the Kata runtime, like hitting an error or
+unexpected behavior in any component of the runtime, you can report a bug in a GitHub
+Issue in the [kata-containers repo](https://github.com/kata-containers/kata-containers).
+
+Before opening a new issue, please check if one has already be created for the bug
+you are about to report. If there is already a bug report, please add a note that you
+recently ran into the same problem and add any new information that might not have
+been captured before.
+
+To create a new bug report, navigate to the ‘Issues’ tab in the [kata-containers
+repo](https://github.com/kata-containers/kata-containers/issues) and click on the ‘New issue’ button.
+Pick ‘Bug report’ from the list of options.
+
+GitHub will display you a template to fill out, please be prepared to provide the
+following information about the bug:
+- Description of the problem
+- Expected behavior and output
+- Steps to reproduce the issue
+- Error message or logs to attach, where applicable
+
+Before reporting your bug, please also make sure that you reproduce it with the [latest
+release](https://github.com/kata-containers/kata-containers/releases/) of Kata Containers.
+
+### Propose a new feature
+
+If you’re adding new functionality or feature, you will first need to create a ‘Design proposal’
+before starting to work on the implementation.
+
+You will need to create a .md file in the [‘Proposals’](https://github.com/kata-containers/kata-containers/tree/main/docs/design/proposals)
+folder in the [kata-containers repo](https://github.com/kata-containers/kata-containers) to describe your proposal.
+
+Please include the following information:
+- Summary: A short description of the feature.
+- Motivation: The problem this solves and why it’s important for you and Kata, including use
+  case example(s).
+- Design: A detailed technical description of the changes that you are planning to make. Please
+  also include any impact on any of the Kata components, such as:
+  - Kata Runtime
+  - Kata Agent
+  - The guest kernel or rootfs.
+- Backward Compatibility: How this change affects existing users.
+
+To submit your design proposal, you will need to create a Pull Request (PR) in the [kata-containers repo](https://github.com/kata-containers/kata-containers)
+by following the steps outlined in the [GitHub workflow](#github-workflow) section.
+
+Once your pull request is approved and merged, you can start submitting your code changes,
+along with the corresponding test cases and documentation, by following the
+[GitHub workflow](#github-workflow) outlined below.
+
+### Enhancement requests
+
+If you are planning to make minor changes to any existing feature, you can submit an
+‘Enhancement request’ in the form of a GitHub issue. First, navigate to the ‘Issues’
+tab in the [kata-containers repo](https://github.com/kata-containers/kata-containers) and click on
+the ‘New issue’ button. Pick ‘Enhancement request’ from the list of options.
+
+GitHub will display you a template to fill out, please be prepared to provide the
+following information:
+- The feature that needs updates
+- The changes you are planning to make
+- How your changes are affecting user experience
 
 ## GitHub basic setup
 
@@ -112,8 +184,9 @@ used by the Linux kernel project.
 
 ### Submit issues before PRs
 
-It can be helpful to raise a GitHub issue before starting work on a PR for a new feature/bug to let the community
-know that you are planning to work on an item.
+Before starting to work on your PR, please make sure that there is a bug report or
+an accepted feature/enhancement proposal created by you or someone else to describe
+the work item you’re submitting code or documentation for.
 
 ### Issue tracking
 
@@ -165,6 +238,10 @@ In this section, we explain these augmentations in more detail. Follow these gui
 
 * [Rebase](https://help.github.com/en/github/using-git/about-git-rebase)
   commits on your branch and `force push` after each cycle of feedback.
+
+### Pull requests
+
+All the repositories accept contributions via [GitHub Pull requests (PR)](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests).
 
 ### Configure your environment
 
