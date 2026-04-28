@@ -99,11 +99,13 @@ execute the AC election.
 
 ## Current elections
 
+- October 2026 - TBA
+
+## Previous elections
+
 - April 2026
   - [election](arch-committee-2026-04)
   - [results](arch-committee-2026-04/Results.md)
-
-## Previous elections
 
 - October 2025
   - [election](arch-committee-2025-10)
