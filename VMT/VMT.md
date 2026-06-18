@@ -1,4 +1,11 @@
-# Vulnerability Management Process
+# Vulnerability Management Process - DOCUMENT UNDER MAINTENANCE
+
+> [!WARNING]  
+> Please note that this document is OUTDATED and is currently being revised by the Kata Containers Vulnerability Management Team (VMT).
+> If you found a vulnerability that you need to report, please follow the [security guidelines for vulnerability reporting](https://github.com/kata-containers/kata-containers/blob/main/SECURITY.md).
+> You can also find the list of published security advisories on the [security tab](https://github.com/kata-containers/kata-containers/security/advisories?state=published)
+> in the kata-containers repository.
+
 
 > The Kata Containers vulnerability management policy is derived from the [OpenStack Vulnerability Management Process](https://security.openstack.org/vmt-process.html) and licensed under the [Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/legalcode)
 
