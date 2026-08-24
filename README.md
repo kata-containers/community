@@ -17,6 +17,7 @@
         * [Architecture Committee Meetings](#architecture-committee-meetings)
 * [Vendoring code](#vendoring-code)
 * [Vulnerability Handling](#vulnerability-handling)
+    * [Vulnerability Management Team](#vulnerability-management-team)
     * [Reporting Vulnerabilities](#reporting-vulnerabilities)
     * [Vulnerability Disclosure Process](#vulnerability-disclosure-process)
 * [Week in Review template](#week-in-review-template)
@@ -148,6 +149,12 @@ Vulnerabilities in Kata are handled by the
 There are generally two phases:
 - The reporting of a vulnerability to the VMT
 - Handling and disclosure of the vulnerability by the VMT
+
+## Vulnerability Management Team
+
+The responsibilities of the VMT, the criteria for joining it, and the criteria
+for being removed from it are described in the
+[VMT charter](VMT/VMT-charter.md).
 
 ## Reporting Vulnerabilities
 

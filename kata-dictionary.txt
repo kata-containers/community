@@ -2,6 +2,7 @@
 CIVS
 Dragonball
 Etherpad
+GHSA
 KCSA
 KCSN
 devicemapper
