@@ -1,0 +1,24 @@
+Name: Fupan Li
+
+Email: lifupan@gmail.com
+
+Background:
+
+I have been a maintainer and active contributor to the Kata Containers community since 2018. 
+Over the years, I developed the Kata shimv2 to streamline the architecture into a two-process 
+model, significantly boosting its adoption in the Kubernetes ecosystem. I also authored the 
+Rust-based kata-agent that helped transition Kata from 1.0 to 2.0, and served as the architect 
+and key developer of runtime-rs.
+
+Since being elected as a Kata AC member last year, I have continued to drive the project forward. 
+As the maintainer of Dragonball, the inline VMM built into Kata, I have actively expanded its 
+capabilities, including driving support for Intel TDX. Building on this momentum, I successfully 
+promoted runtime-rs to become the default runtime—integrating our ongoing Confidential Computing (CoCo) 
+efforts—which directly facilitated the release of Kata 4.0 today, October 8, 2026.
+
+Professionally, I am a Senior Engineer at Ant Group, where I maintain the world's largest Kata Containers 
+cluster. Currently, I am also developing and maintaining Ant Group's AI agent sandbox system, actively 
+working to integrate Kata Containers into this infrastructure to provide secure, isolated environments 
+for AI workloads. My extensive experience bridging large-scale production deployments with upstream 
+community development equips me to make highly practical, impactful decisions. If re-elected, I will 
+continue dedicating myself to advancing Kata’s architecture, security, and broader industry adoption.
