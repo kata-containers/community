@@ -18,6 +18,7 @@ import yaml
 
 from collections import OrderedDict
 from github3 import login
+import github3.exceptions
 
 
 class AuthorSet(set):
@@ -85,7 +86,7 @@ def find_authors_by_project(start_time, end_time):
     org = gh.organization('kata-containers')
     number = -1
     projects = []
-    ignored_repos = [
+    ignored_repos = {
         'agent',
         'ci',
         'dbs-snapshot',
@@ -93,6 +94,7 @@ def find_authors_by_project(start_time, end_time):
         'edk2',
         'govmm',
         'is-organization-member',
+        'kata-containers-archive',
         'kata-containers-github-actions-tests',
         'ksm-throttler',
         'linux',
@@ -106,7 +108,7 @@ def find_authors_by_project(start_time, end_time):
         'shim',
         'slash-command-action',
         'tests',
-    ]
+    }
 
     # Let's build a list of the users we can't get the logins for so
     # we can prompt the runner to update the following map
@@ -116,29 +118,22 @@ def find_authors_by_project(start_time, end_time):
     # userid properly, so maintain a map of these so the data is consistent
     email_id_map = {
         "fupan.lfp@antgroup.com":"lifupan",
-        "ankitapareek@microsoft.com": "Ankita13-code",
-        "chengyu.zhu@intel.com": "ChengyuZhu6",
-        "emlima@redhat.com": "lima-emanuel",
-        "leih@nvidia.com": "l8huang",
-        "mheberling@microsoft.com": "Bickor",
-        "huoqif@cn.ibm.com": "huoqifeng",
-        "niteesh@us.ibm.com": "niteeshkd",
-        "gpyrros@nubificus.co.uk": "gpyrros",
-        "chelsea.e.mafrica@intel.com": "cmaf",
-        "amshinde@ghonawax-mobl.amr.corp.intel.com": "amshinde",
-        "seunguk.shin@arm.com": "seungukshin",
         "mahuber@microsoft.com": "manuelh-dev",
-        "ruini.xue@gmail.com": "xueruini",
         "nlle@ambu.com": "nlle",
         "443471302@qq.com": "Lu-yq",
+        "guptaharshit@microsoft.com": "harshitgupta1337",
+        "kevin.zhao@linaro.org": "kevinzs2048",
+        "arvinkum@amd.com": "arvindskumar99",
         }
 
+    used_email_id_map_keys = set()
     author_cache = {}
     for repo in org.repositories():
         # Skip these repos as they are not a core part of the project, and are
         # forked/imported/archived so contain many contributors from outside the project.
         # Also skip the github security advisory repos for quicker processing
-        if str(repo).split("/")[1] in ignored_repos or str(repo).split("/")[1].startswith('kata-containers-ghsa'):
+        repo_name = str(repo).split("/")[1]
+        if repo_name in ignored_repos or repo_name.startswith('kata-containers-ghsa'):
             print('Skipping repo %s' % (repo))
             continue
         print('Looking for changes in %s between %s and %s' %
@@ -158,9 +153,10 @@ def find_authors_by_project(start_time, end_time):
 
                 author_id = commit.commit.author.get('email')
                 if author_id in email_id_map:
+                    used_email_id_map_keys.add(author_id)
                     author_id = email_id_map[author_id]
                 else:
-                    if not author_id in unknown_logins:
+                    if author_id not in unknown_logins:
                         unknown_logins[author_id] = commit.html_url
                     print('%s in %s as has no author. Using email (%s) as the author id' %
                 (commit, repo, author_id))
@@ -172,9 +168,19 @@ def find_authors_by_project(start_time, end_time):
                     author = Author(author_id, email=author_id,
                                     name=commit.commit.author.get('name'))
                 else:
-                    _author = gh.user(commit.author.login)
-                    author = Author(_author.login, email=_author.email,
-                                    name=_author.name)
+                    try:
+                        gh_user = gh.user(commit.author.login)
+                        author = Author(gh_user.login, email=gh_user.email,
+                                        name=gh_user.name)
+                        noreply = author.email is None or 'users.noreply.github.com' in (author.email or '')
+                        if noreply:
+                            author.email = commit.commit.author.get('email')
+                    except github3.exceptions.NotFoundError:
+                        print('%s in %s: GitHub user %s not found (deleted/suspended). Using git author metadata.' %
+                              (commit, repo, commit.author.login))
+                        author = Author(author_id,
+                                        email=commit.commit.author.get('email'),
+                                        name=commit.commit.author.get('name'))
 
                 author_cache[author_id] = author
 
@@ -206,6 +212,13 @@ def find_authors_by_project(start_time, end_time):
         "map to `email_id_map` in generate_electorate.py:")
         for email, commit_html in unknown_logins.items():
             print("Email", email, "who committed", commit_html)
+
+    unused_map_keys = set(email_id_map.keys()) - used_email_id_map_keys
+    if unused_map_keys:
+        print("Info: the following email_id_map entries were not needed for this run (may be stale):")
+        for email in sorted(unused_map_keys):
+            print(" ", email, "->", email_id_map[email])
+
     return projects
 
 def main():
@@ -218,7 +231,7 @@ def main():
     args = parser.parse_args()
     end_time = datetime.datetime.strptime(args.end, '%d/%m/%y').replace(tzinfo=timezone.utc)
     start_time = end_time - timedelta(days=365)
-    if args.start != None:
+    if args.start is not None:
         start_time = datetime.datetime.strptime(args.start, '%d/%m/%y').replace(tzinfo=timezone.utc)
 
     print("Getting committers from", start_time, " -> ", end_time)
